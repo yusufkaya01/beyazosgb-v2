@@ -1,0 +1,24 @@
+logonun arka planını değiştir
+neden biz in css ini kontrol et text görünmüyor
+form için başlık "Anında fiyat t"
+
+menu sıralaması
+  1. beyaz osgb
+  2. hizmetlerimiz
+
+  kurumsal : hakkımızda, neden biz, sss, insan kaynakları(en alta  da ekle)
+  3. 
+  4. 
+  5. iletişim
+  
+  
+ayrı bir sayfa
+  7. 
+
+
+  hizmetlerimiz : 
+    osgb hizmetleri: [iş güvenliği hiz, iş sağlığı hiz, işe giriş sağlık raporları, periyodik sağlık kontrolleri, iş güvenliği eğitimleri] her biri ayrı sayfa
+    danışmanlık hiz : []
+    eğitimlerimiz : []
+
+    toplam form sayısı 2 adet, fiyat teklifi ve "Uzmana ücretsiz danış"

@@ -1,0 +1,801 @@
+body {
+    margin-top: 60px; /* Adjust this based on your menu height */
+}
+
+
+/* Static Logos Start*/
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Ensures it's above other content */
+    }
+  
+  .whatsapp-icon img {
+    width: 100px; /* Adjust the size as needed */
+    height: auto;
+  }
+  
+  .logo-icon {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 9990; /* Ensures it's above other content */
+    }
+  
+  .logo-icon img {
+    width: 80px; /* Adjust the size as needed */
+    height: auto;
+  }
+
+  /* Static Logos End*/
+
+
+
+/* Menu Start */
+.menu, .submenu {
+    list-style: none; /* Remove dots from menu and submenu items */
+}
+
+/* Navigation menu container */
+nav {
+    background-color: #; /* Set background color */
+    padding: 10px 0; /* Add padding for spacing */
+    position: fixed; /* Fix the menu to the top */
+    top: 0; /* Align at the top */
+    left: 0; /* Align to the left edge */
+    width: 100%; /* Make the menu full width */
+    z-index: 1000; /* Ensure the menu stays on top of other content */
+}
+
+/* Parent menu */
+.menu {
+    display: flex; /* Align menu items in one line */
+    justify-content: center; /* Center align the menu */
+    gap: 20px; /* Add space between menu items */
+}
+
+/* Menu items */
+.menu-item > a {
+    text-decoration: none; /* Remove underline */
+    color: #ff3c00; /* Text color */
+    padding: 10px 15px; /* Spacing for menu items */
+    display: block;
+    font-size: 16px;
+    transition: color 0.3s; /* Smooth hover effect */
+}
+
+.menu-item > a:hover {
+    color: #ce7500; /* Change color on hover */
+    background-color: #ffd3cd;
+}
+
+/* Submenu styling */
+.submenu {
+    display: none; /* Hide submenu by default */
+    position: absolute;
+    background-color: #fff; /* Submenu background color */
+    padding: 10px 0;
+    min-width: 200px; /* Set minimum width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.submenu li a {
+    text-decoration: none;
+    color: #ff3c00;
+    padding: 8px 15px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.submenu li a:hover {
+    color: #ce7500;
+    background-color: #ffd3cd;
+}
+
+/* Show submenu on hover */
+.menu-item {
+    position: relative; /* Needed for submenu positioning */
+}
+
+.menu-item:hover .submenu {
+    display: block; /* Show submenu when hovering over parent */
+}
+
+/* Menu End */
+
+
+
+/*Header Styles Start*/
+
+/* Header container styles */
+.header-container {
+    background-color:; /* Optional: Light background for the section */
+    padding: 50px 20px; /* Add spacing around the section */
+}
+
+/* Flexbox for layout */
+.header-content {
+    display: flex; /* Align children side by side */
+    align-items: center; /* Vertically align items */
+    justify-content: space-between; /* Space between text and image */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 20px; /* Add spacing between elements */
+}
+
+/* Header text styles */
+.header-text {
+    max-width: 50%; /* Take half the width */
+}
+
+.header-text h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.header-text em {
+    color: #ff9900; /* Highlight color */
+    font-style: italic;
+}
+
+.header-text p {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.header-text .btn-services {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.header-text .btn-services:hover {
+    background-color: #e65400; /* Darker hover effect */
+}
+
+/* Header image styles */
+.header-image {
+    max-width: 50%; /* Take half the width */
+    text-align: right; /* Align image to the right */
+}
+
+.header-image img {
+    max-width: 100%; /* Make image responsive */
+    height: auto;
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+
+
+/* Header Styles End*/
+
+
+
+/* Why Us Section Styles Start */
+/* General Styling for the Section */
+#why-us-section {
+    background-color: ; /* Light gray background */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Styling for the Main Heading */
+#why-us-section h1 {
+    font-size: 36px;
+    color: #ff3c00;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Styling for Individual Items */
+.why-us-item {
+    display: inline-block; /* Allows items to sit next to each other */
+    width: 25%; /* Each item takes up 30% of the width */
+    margin: 10px; /* Add spacing between items */
+    background: #fff; /* White background for each box */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a modern look */
+    text-align: center;
+}
+
+/* Styling for the Subheadings */
+.why-us-item h2 {
+    font-size: 24px;
+    color: #ff9900; /* A blue color for subheadings */
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Styling for the Images */
+.why-us-item img {
+    max-width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Styling for the Paragraphs */
+.why-us-item p {
+    font-size: 16px;
+    color: black;
+    line-height: 1.6;
+}
+
+
+/* Why Us Section Styles End */
+
+
+
+
+/* Services Section Styles Start */
+
+/* General Styling for the Services Section */
+#services-section {
+    background-color: #fff; /* White background */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Styling for the Main Heading (h1) */
+#services-section h1 {
+    color: #ff3c00; /* Orange color for the main heading */
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Styling for the Subheading (h2) */
+#services-section h2 {
+    color: #ff9900; /* Lighter orange color for subheadings */
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Styling for the List of Services */
+#services-section ul {
+    list-style: none; /* Remove the default list bullets */
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling for Individual Service Items */
+#services-section ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd; /* Light border for each service item */
+    border-radius: 10px;
+    background-color: #ffefef; /* Slightly  background for the list items */
+}
+
+/* Styling for the Service Icons (Images) */
+#services-section ul li img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+/* Styling for the Text Section inside the Service Item */
+#services-section ul li .text {
+    text-align: left;
+}
+
+/* Styling for the Service Title (h4) */
+#services-section ul li .text h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Styling for the Service Description */
+#services-section ul li .text p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Styling for the "Daha Fazla" Link */
+#services-section ul li .text a {
+    color: #ff3c00; /* Match the main heading color for the link */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#services-section ul li .text a:hover {
+    color: #ff9900; /* Lighter orange on hover */
+}
+
+
+/* Services Section Styles End */
+
+
+
+
+/* FAQ Section Start */
+
+/* FAQ Section Styles */
+#faq-section {
+    background-color: #fff; /* White background */
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+/* FAQ Header */
+#faq-section h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #ff9900; /* Orange color for the main header */
+    margin-bottom: 20px;
+}
+
+/* FAQ Description */
+#faq-section p {
+    text-align: center;
+    font-size: 18px;
+    color: #555; /* Light gray for paragraph text */
+    margin-bottom: 40px;
+}
+
+/* FAQ Question (h3) */
+#faq-section h3 {
+    font-size: 20px;
+    color: #ff3c00; /* Red color for question text */
+    margin-bottom: 10px;
+}
+
+/* FAQ Answer (p) */
+#faq-section div p {
+    font-size: 16px;
+    color: #666; /* Slightly lighter gray for answer text */
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Add some spacing between question and answer */
+#faq-section div {
+    margin-bottom: 30px;
+}
+
+/* Make the FAQ items stand out with a border */
+#faq-section div {
+    padding-left: 20px;
+}
+
+/* Add hover effect for questions */
+#faq-section h3:hover {
+    color: #ff6600; /* A slightly different shade of orange on hover */
+    cursor: pointer;
+}
+
+
+/* FAQ Section End */
+
+
+
+
+
+/* ***** Forms Start ***** */
+/* Service Request Form Styling */
+#service-request-section {
+    padding: 30px 0;
+    background-color: ;
+}
+
+#contact-us {
+    padding: 30px 0;
+    background-color: ;
+}
+
+/* Form container */
+form {
+    max-width: 800px; /* Limit the width of the form */
+    margin: 0 auto; /* Center the form horizontally */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Title */
+form h2 {
+    font-size: 24px;
+    color: #ff3c00;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Fieldset container for form fields */
+fieldset {
+    border: none;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+/* Input and textarea fields */
+input, textarea {
+    width: 100%; /* Make inputs full width */
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+/* For larger screens, show two input fields per row */
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between items */
+}
+
+.form-row .half-width {
+    width: 48%; /* Each field takes up half the width */
+}
+
+/* Submit button styling */
+button {
+    background-color: #ff3c00;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ce7500;
+}
+
+/* ***** Service Request Form End ***** */
+
+
+
+/* Footer Start */
+
+/* Footer Styling */
+footer {
+    background-color: #fff; /* White background for footer */
+    padding: 50px 0; /* Padding around the footer */
+    font-family: Arial, sans-serif; /* Font for footer content */
+}
+
+/* Footer Main Section */
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+footer .footer-text {
+    max-width: 50%;
+
+}
+
+/* Footer Heading */
+footer h2 {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ff3c00;
+    justify-content: center;
+    display: flex;
+}
+
+footer p {
+    font-size: 16px;
+    color: black;
+    text-align: justify;
+    width: 100%;
+    padding: 0 20px;
+}
+
+/* Google Map */
+footer .map-container {
+    flex: 1;
+    min-width: 250px; /* Make sure map is not too small */
+    height: 350px;
+    margin-top: 20px;
+}
+
+/* Social Media Container */
+.social-media {
+    display: flex; /* Use flexbox to align items */
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center; /* Center the icons vertically */
+    padding: 20px 0; /* Optional: Adjust padding if needed */
+    margin-top: 15px;
+}
+
+/* Social Media List */
+.social-media ul {
+    display: flex; /* Align list items in a row */
+    gap: 20px; /* Space between icons */
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+/* Social Media List Items */
+.social-media ul li {
+    display: inline-block; /* Display list items inline */
+}
+
+/* Icon Styling */
+.social-media i {
+    font-size: 30px; /* Size of the icon */
+    color: #333; /* Default color */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+.social-media i:hover {
+    color: #ff3c00; /* Color on hover */
+}
+
+
+/* Footer Menu - Columns */
+footer .footer-menu {
+    display: flex;
+    gap: 5%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer .footer-menu div {
+    width: 200px; /* Width for each column */
+}
+
+footer .footer-menu h4 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+footer .footer-menu ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+footer .footer-menu ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    display: block;
+    padding: 5px 0;
+    transition: color 0.3s;
+}
+
+footer .footer-menu ul li a:hover {
+    color: #ff3c00;
+}
+
+/* Submenu styles */
+footer .footer-menu .submenu {
+    display: none; /* Hide submenu by default */
+    padding-left: 15px;
+}
+
+footer .footer-menu ul li:hover .submenu {
+    display: block; /* Show submenu on hover */
+}
+
+/* Subfooter */
+.sub-footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+}
+
+#sub-footer-items {
+    text-align: center;
+}
+
+.sub-footer a {
+    color: #ff3c00;
+    text-decoration: none;
+}
+
+.sub-footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-icon {
+    width: 20px; /* Adjust the size of the icons */
+    height: auto;
+    vertical-align: middle; /* Ensure the icon aligns properly with the text */
+    margin: 0 5px; /* Add some space between the icon and the text */
+}
+
+/* Footer End */
+
+
+
+/* For Other Devices*/
+
+/* ********* Responsive Styles for Smaller Devices ********* */
+
+/* Mobile Devices - Portrait Mode */
+@media only screen and (max-width: 768px) {
+
+    /* Adjust the header content to be stacked */
+    .header-content {
+        flex-direction: column; /* Stack header elements */
+        align-items: center; /* Center align items */
+        text-align: center;
+    }
+
+    .header-text {
+        max-width: 100%; /* Allow text to take full width */
+    }
+
+    .header-image {
+        max-width: 100%; /* Allow image to take full width */
+        margin-top: 20px;
+    }
+
+    /* Adjust Menu */
+    .menu {
+        flex-direction: column; /* Stack menu items vertically */
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    /* Show menu items as tap-to-show for smaller screens */
+    .menu-item {
+        position: relative;
+        display: block; /* Make each item take full width */
+    }
+
+    .submenu {
+        display: none; /* Hide submenu by default */
+    }
+
+    .menu-item:hover .submenu {
+        display: block;
+    }
+
+    .menu-item > a {
+        padding: 12px 15px;
+        font-size: 18px;
+    }
+
+    /* Footer Menu - Columns */
+    .footer-menu {
+        flex-direction: column; /* Stack footer menu items */
+    }
+
+    .footer-menu div {
+        width: 100%; /* Allow footer menu columns to take full width */
+    }
+
+    .footer-menu h4 {
+        font-size: 20px; /* Adjust header size */
+    }
+
+    .footer-menu ul li a {
+        font-size: 16px;
+    }
+
+    /* Google Map */
+    .map-container {
+        width: 100%;
+        height: 250px; /* Adjust map height */
+    }
+}
+
+/* Tablets in Landscape and Smaller Devices (Max width 1024px) */
+@media only screen and (max-width: 1024px) {
+
+    /* Adjust Menu for Tablets */
+    .menu {
+        flex-direction: row;
+        justify-content: space-between; /* Align menu items across */
+    }
+
+    /* Footer Menu - Adjust for tablets */
+    .footer-menu {
+        flex-direction: column; /* Stack footer menu items */
+    }
+
+    /* Footer Menu Item Sizes */
+    .footer-menu div {
+        width: 100%;
+    }
+
+    /* Adjust footer map size for tablets */
+    .map-container {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+/* Small Screens (Phones, Portrait) */
+@media only screen and (max-width: 480px) {
+
+    /* Mobile Menu - Tap to Show */
+    .menu-item > a {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    /* Show/hide menu on tap */
+    .menu-item {
+        display: block;
+        position: relative;
+    }
+
+    .submenu {
+        display: none; /* Hide submenu by default */
+    }
+
+    .menu-item:hover .submenu {
+        display: block; /* Show submenu on hover */
+    }
+
+    .header-text h1 {
+        font-size: 28px; /* Adjust title font size for smaller screens */
+    }
+
+    .header-text p {
+        font-size: 16px;
+    }
+
+    /* Footer Menu */
+    .footer-menu {
+        flex-direction: column;
+    }
+
+    .footer-menu div {
+        width: 100%;
+    }
+
+    .footer-menu h4 {
+        font-size: 16px; /* Smaller font size for footer headings */
+    }
+
+    .footer-menu ul li a {
+        font-size: 14px;
+    }
+
+    /* Social Media Icons */
+    .social-media ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Footer subfooter (bottom text) */
+    .sub-footer {
+        font-size: 12px;
+    }
+}
+
+
+
+/* For Other Devices*/
