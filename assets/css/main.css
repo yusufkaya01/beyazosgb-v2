@@ -64,20 +64,32 @@ nav {
     color: #ff3c00; /* Text color */
     padding: 10px 15px; /* Spacing for menu items */
     display: block;
-    font-size: 16px;
+    font-size: 1rem;
     transition: color 0.3s; /* Smooth hover effect */
+    border: 2px solid #c7c3c1; /* Add border to create a box effect */
+    border-radius: 10px; /* Add rounded corners */
+    background-color: #fff; /* Set background color for the box */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+    font-weight: 600;
+
 }
 
 .menu-item > a:hover {
     color: #ce7500; /* Change color on hover */
-    background-color: #ffd3cd;
+    background-color: #faf5b5;
+    border-color: #ce7500; /* Slightly darker border on hover */
+    font-weight: 901;
+}
+
+#menu-item-box {
+    border: #666;
 }
 
 /* Submenu styling */
 .submenu {
     display: none; /* Hide submenu by default */
     position: absolute;
-    background-color: #fff; /* Submenu background color */
+    background-color: ; /* Submenu background color */
     padding: 10px 0;
     min-width: 200px; /* Set minimum width */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -90,11 +102,18 @@ nav {
     padding: 8px 15px;
     display: block;
     transition: background-color 0.3s;
+    border: 2px solid #ff3c00; /* Add border for submenu items */
+    border-radius: 8px; /* Add rounded corners */
+    background-color: #fff; /* Keep the background consistent */
+    color: #ff3c00; /* Keep text color */
+    font-weight: 400;
 }
 
 .submenu li a:hover {
     color: #ce7500;
-    background-color: #ffd3cd;
+    background-color: #faf5b5;
+    font-weight: 901;
+    
 }
 
 /* Show submenu on hover */
@@ -105,6 +124,15 @@ nav {
 .menu-item:hover .submenu {
     display: block; /* Show submenu when hovering over parent */
 }
+
+/* Resize logo */
+.menu-item img {
+    width: 50px;  /* Set the width of the logo */
+    height: auto;  /* Maintain aspect ratio (optional) */
+    max-width: 100%; /* Make sure it doesn't overflow */
+    background-color: ;
+}
+
 
 /* Menu End */
 
@@ -133,7 +161,7 @@ nav {
 }
 
 .header-text h1 {
-    font-size: 36px;
+    font-size: 2rem;
     font-weight: bold;
     color: black;
     margin-bottom: 20px;
@@ -146,7 +174,7 @@ nav {
 }
 
 .header-text p {
-    font-size: 18px;
+    font-size: 1rem;
     color: black;
     margin-bottom: 20px;
     line-height: 1.6;
@@ -159,7 +187,7 @@ nav {
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
     transition: background-color 0.3s;
 }
@@ -195,7 +223,7 @@ nav {
 
 /* Styling for the Main Heading */
 #why-us-section h1 {
-    font-size: 36px;
+    font-size: 2.5rem;
     color: #ff3c00;
     margin-bottom: 30px;
     font-weight: bold;
@@ -215,7 +243,7 @@ nav {
 
 /* Styling for the Subheadings */
 .why-us-item h2 {
-    font-size: 24px;
+    font-size: 1.7rem;
     color: #ff9900; /* A blue color for subheadings */
     margin-bottom: 15px;
     font-weight: bold;
@@ -230,7 +258,7 @@ nav {
 
 /* Styling for the Paragraphs */
 .why-us-item p {
-    font-size: 16px;
+    font-size: 1rem;
     color: black;
     line-height: 1.6;
 }
@@ -253,7 +281,7 @@ nav {
 /* Styling for the Main Heading (h1) */
 #services-section h1 {
     color: #ff3c00; /* Orange color for the main heading */
-    font-size: 36px;
+    font-size: 2.5rem;
     margin-bottom: 30px;
     font-weight: bold;
 }
@@ -261,16 +289,25 @@ nav {
 /* Styling for the Subheading (h2) */
 #services-section h2 {
     color: #ff9900; /* Lighter orange color for subheadings */
-    font-size: 28px;
+    font-size: 2.5rem;
     margin-bottom: 20px;
     font-weight: bold;
 }
 
 #services-section h2 a {
-    color: #ff9900; /* Lighter orange color for subheadings */
-    font-size: 28px;
+    color: #ff3c00; /* Lighter orange color for subheadings */
+    font-size: 2.5rem;
     margin-bottom: 20px;
     font-weight: bold;
+    text-decoration: none;
+}
+
+#services-section h2 a:hover {
+    color: #ff9900; /* Lighter orange color for subheadings */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 /* Styling for the List of Services */
@@ -293,8 +330,8 @@ nav {
 
 /* Styling for the Service Icons (Images) */
 #services-section ul li img {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     margin-right: 20px;
 }
 
@@ -305,7 +342,7 @@ nav {
 
 /* Styling for the Service Title (h4) */
 #services-section ul li .text h4 {
-    font-size: 20px;
+    font-size: 1.2rem;
     color: #333;
     margin-bottom: 10px;
     font-weight: bold;
@@ -313,7 +350,7 @@ nav {
 
 /* Styling for the Service Description */
 #services-section ul li .text p {
-    font-size: 16px;
+    font-size: 1rem;
     color: #666;
     line-height: 1.6;
 }
@@ -335,6 +372,93 @@ nav {
 
 
 
+/* Services Page Styles Start */
+
+/* Services Section Container */
+#services-page-section {
+    background-color: #f5f5f5; /* Light gray background */
+    padding: 50px 20px; /* Add padding for spacing */
+    text-align: center; /* Center-align the text */
+}
+
+/* Section Title (h1) */
+#services-page-section h1 {
+    font-size: 2.5rem; /* Larger font size for the title */
+    font-weight: bold;
+    margin-bottom: 40px; /* Add spacing below the title */
+    color: #ff3c00; /* Dark text color */
+}
+
+#services-page-section h2 > a {
+    font-size: 1.5rem; /* Larger font size for the title */
+    font-weight: bold;
+    margin-bottom: 40px; /* Add spacing below the title */
+    color: #fd4f1a; /* Dark text color */
+    text-decoration: none;
+}
+
+#services-page-section h2 > a:hover {
+    font-size: 1.5rem; /* Larger font size for the title */
+    font-weight: bold;
+    margin-bottom: 40px; /* Add spacing below the title */
+    color: #ff9900; /* Dark text color */
+    text-decoration: none;
+}
+
+/* Services Items Container */
+.services-page-item {
+    background-color: #ffffff; /* White background for the boxes */
+    border: 2px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Add padding inside the boxes */
+    margin: 20px auto; /* Space between boxes */
+    max-width: 300px; /* Set a fixed width for the boxes */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+    display: inline-block; /* Allow boxes to align side by side */
+    text-align: center; /* Center-align the content */
+}
+
+/* Hover Effect for Boxes */
+.services-page-item:hover {
+    transform: translateY(-10px); /* Lift the box on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* Service Icons (img) */
+.services-page-item img {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    margin-bottom: 15px; /* Space between icon and title */
+    display: block;
+    margin-left: auto; /* Center align */
+    margin-right: auto; /* Center align */
+}
+
+/* Service Title (h2) */
+.services-page-item h2 {
+    font-size: 1.2rem; /* Medium font size */
+    font-weight: bold;
+    margin: 10px 0; /* Add spacing above and below */
+    color: #ff3c00; /* Highlight color for the titles */
+}
+
+/* Service Links */
+.services-page-item h2 a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the h2 color */
+    transition: color 0.3s; /* Smooth hover effect */
+}
+
+/* Hover Effect for Links */
+.services-page-item h2 a:hover {
+    color: #ce7500; /* Change color on hover */
+}
+
+/* Services Page Styles End */
+
+
+
 
 /* FAQ Section Start */
 
@@ -349,7 +473,7 @@ nav {
 /* FAQ Header */
 #faq-section h2 {
     text-align: center;
-    font-size: 36px;
+    font-size: 2.5rem;
     color: #ff9900; /* Orange color for the main header */
     margin-bottom: 20px;
 }
@@ -357,21 +481,21 @@ nav {
 /* FAQ Description */
 #faq-section p {
     text-align: center;
-    font-size: 18px;
+    font-size: 1rem;
     color: #555; /* Light gray for paragraph text */
     margin-bottom: 40px;
 }
 
 /* FAQ Question (h3) */
 #faq-section h3 {
-    font-size: 20px;
+    font-size: 1.2rem;
     color: #ff3c00; /* Red color for question text */
     margin-bottom: 10px;
 }
 
 /* FAQ Answer (p) */
 #faq-section div p {
-    font-size: 16px;
+    font-size: 1rem;
     color: #666; /* Slightly lighter gray for answer text */
     margin-bottom: 20px;
     text-align: left;
@@ -416,15 +540,15 @@ nav {
 form {
     max-width: 800px; /* Limit the width of the form */
     margin: 0 auto; /* Center the form horizontally */
-    background-color: #fff;
+    background-color: #f8dada;
     padding: 20px;
-    border-radius: 8px; /* Rounded corners */
+    border-radius: 50px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 /* Title */
 form h2 {
-    font-size: 24px;
+    font-size: 2rem;
     color: #ff3c00;
     margin-bottom: 20px;
     text-align: center;
@@ -435,6 +559,7 @@ fieldset {
     border: none;
     margin-bottom: 15px;
     padding: 0;
+    
 }
 
 /* Input and textarea fields */
@@ -442,20 +567,21 @@ input, textarea {
     width: 100%; /* Make inputs full width */
     padding: 12px;
     border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-    color: #333;
+    border-radius: 15px;
+    font-size: 1rem;
+    color: #000000;
 }
 
 textarea {
     resize: vertical; /* Allow vertical resizing */
+    width: 98%;
 }
 
 /* For larger screens, show two input fields per row */
 .form-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Space between items */
+    gap: 15px; /* Space between items */
 }
 
 .form-row .half-width {
@@ -468,8 +594,8 @@ button {
     color: #fff;
     padding: 12px 20px;
     border: none;
-    border-radius: 4px;
-    font-size: 16px;
+    border-radius: 50px;
+    font-size: 1rem;
     cursor: pointer;
     width: 100%;
     transition: background-color 0.3s ease;
@@ -508,7 +634,7 @@ footer .footer-text {
 
 /* Footer Heading */
 footer h2 {
-    font-size: 24px;
+    font-size: 2rem;
     color: #333;
     font-weight: bold;
     margin-bottom: 20px;
@@ -518,7 +644,7 @@ footer h2 {
 }
 
 footer p {
-    font-size: 16px;
+    font-size: 1rem;
     color: black;
     text-align: justify;
     width: 100%;
@@ -558,7 +684,7 @@ footer .map-container {
 
 /* Icon Styling */
 .social-media i {
-    font-size: 30px; /* Size of the icon */
+    font-size: 2.5rem; /* Size of the icon */
     color: #333; /* Default color */
     transition: color 0.3s ease; /* Smooth color change on hover */
 }
@@ -581,7 +707,7 @@ footer .footer-menu div {
 }
 
 footer .footer-menu h4 {
-    font-size: 18px;
+    font-size: 1rem;
     color: #333;
     margin-bottom: 15px;
 }
@@ -594,7 +720,7 @@ footer .footer-menu ul {
 footer .footer-menu ul li a {
     text-decoration: none;
     color: #555;
-    font-size: 14px;
+    font-size: 0.9rem;
     display: block;
     padding: 5px 0;
     transition: color 0.3s;
@@ -618,12 +744,13 @@ footer .footer-menu ul li:hover .submenu {
 .sub-footer {
     margin-top: 30px;
     text-align: center;
-    font-size: 14px;
+    font-size: 1rem;
     color: black;
 }
 
 #sub-footer-items {
     text-align: center;
+    font-size: 0.8rem;
 }
 
 .sub-footer a {
@@ -692,7 +819,7 @@ footer .footer-menu ul li:hover .submenu {
 
     .menu-item > a {
         padding: 12px 15px;
-        font-size: 18px;
+        font-size: 1rem;
     }
 
     /* Footer Menu - Columns */
@@ -705,11 +832,11 @@ footer .footer-menu ul li:hover .submenu {
     }
 
     .footer-menu h4 {
-        font-size: 20px; /* Adjust header size */
+        font-size: 1.2rem; /* Adjust header size */
     }
 
     .footer-menu ul li a {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     /* Google Map */
@@ -751,7 +878,7 @@ footer .footer-menu ul li:hover .submenu {
     /* Mobile Menu - Tap to Show */
     .menu-item > a {
         padding: 10px 20px;
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     /* Show/hide menu on tap */
@@ -769,11 +896,11 @@ footer .footer-menu ul li:hover .submenu {
     }
 
     .header-text h1 {
-        font-size: 28px; /* Adjust title font size for smaller screens */
+        font-size: 2.5rem; /* Adjust title font size for smaller screens */
     }
 
     .header-text p {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     /* Footer Menu */
@@ -786,7 +913,7 @@ footer .footer-menu ul li:hover .submenu {
     }
 
     .footer-menu h4 {
-        font-size: 16px; /* Smaller font size for footer headings */
+        font-size: 1rem; /* Smaller font size for footer headings */
     }
 
     .footer-menu ul li a {
