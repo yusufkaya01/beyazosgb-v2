@@ -22,3 +22,10 @@ ayrı bir sayfa
     eğitimlerimiz : []
 
     toplam form sayısı 2 adet, fiyat teklifi ve "Uzmana ücretsiz danış"
+
+
+
+
+
+    logoyu menü ile birleştir
+    icon ve resimler değişecek
