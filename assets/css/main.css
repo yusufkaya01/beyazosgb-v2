@@ -14,7 +14,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../images/beyazosgb-logo.png'); /* Replace with your image path */
+    background-image: url('../images/body-background.png'); /* Replace with your image path */
     background-size: 36%; /* Make the image cover the entire background */
     background-repeat: no-repeat; /* Prevent the image from repeating */
     background-attachment: fixed; /* Keep the background static */
@@ -215,7 +215,7 @@ body::before {
   .logo-icon2 {
     position: fixed;
     top: 0px;
-    left: 350px;
+    left: 260px;
     z-index: 9990; /* Ensures it's above other content */
     }
   
@@ -276,8 +276,25 @@ nav {
     color: #a53501; /* Change color on hover */
     /*background-color: #faf5b5;
     border-color: #ce7500; /* Slightly darker border on hover */
-    font-weight: 700;
+    font-weight: 650;
     font-family: "Poppins", serif;
+}
+
+.menu-item-title {
+    text-decoration: none; /* Remove underline */
+    color: #a53501; /* Text color */
+    padding: 10px 15px; /* Spacing for menu items */
+    display: block;
+    font-size: 1.1rem;
+    transition: color 0.3s; /* Smooth hover effect */
+    /*border: 2px solid #c7c3c1; /* Add border to create a box effect */
+    /*border-radius: 10px; /* Add rounded corners */
+    /*background-color: #fff; /* Set background color for the box */
+    /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+    font-weight: 600;
+    font-family: "Poppins", serif;
+    font-style: normal;
+
 }
 
 #menu-item-box {
@@ -289,7 +306,7 @@ nav {
     display: none; /* Hide submenu by default */
     position: absolute;
     background-color: ; /* Submenu background color */
-    padding: 10px 0;
+    padding: 0px 0;
     min-width: 200px; /* Set minimum width */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
@@ -301,10 +318,10 @@ nav {
     color: black;
     padding: 8px 15px;
     display: block;
-    /*transition: background-color 0.3s;
-    border: 2px solid #ff3c00; /* Add border for submenu items */
-    /*border-radius: 8px; /* Add rounded corners */
-    /*background-color: #fff; /* Keep the background consistent */
+    transition: background-color 0.3s;
+    border: 2px solid white; /* Add border for submenu items */
+    border-radius: 8px; /* Add rounded corners */
+    background-color: whitesmoke; /* Keep the background consistent */
     font-weight: 400;
     font-family: "Poppins", serif;
 }
