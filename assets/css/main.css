@@ -3,8 +3,9 @@ body {
     margin-left: 8%;
     margin-right: 5%;
     font-family: 'Poppins';
-    position: relative;
     padding: 0;
+    z-index: 1;
+    display: ;
 }
 
 body::before {
@@ -20,8 +21,14 @@ body::before {
     background-attachment: fixed; /* Keep the background static */
     background-position: center; /* Center the image */
     opacity: 0.04; /* Adjust transparency (0 is fully transparent, 1 is fully opaque) */
-    z-index: 999; /* Keep the background behind the content */
+    z-index: -1; /* Set a lower z-index to ensure it's behind the content */
 }
+
+a {
+    position: relative;
+    z-index: 1; /* Ensure links stay above the background image */
+}
+
 
 
 /* Decors Start*/
@@ -34,7 +41,7 @@ body::before {
     display: inline-block;
     height: 110%;
     margin-top: -200px;
-    margin-left: 0px;
+    left: -8%;
   }
 
   .right-image-decor {
@@ -46,7 +53,10 @@ body::before {
     display: inline-block;
     height: 110%;
     margin-top: -200px;
+    right: -5%;
   }
+
+
   
 
 /* Decors End*/
@@ -212,14 +222,14 @@ body::before {
   }
 
   /* white logo */
-  .logo-icon2 {
+  .logo-icon-top {
     position: fixed;
     top: 0px;
     left: 260px;
     z-index: 9990; /* Ensures it's above other content */
     }
   
-  .logo-icon2 img {
+  .logo-icon-top img {
     width: 50px; /* Adjust the size as needed */
     height: auto;
   }
@@ -602,7 +612,7 @@ nav {
 
 /* Services Section Container */
 #services-page-section {
-    background-color: #f5f5f5; /* Light gray background */
+    background-color: white; /* Light gray background */
     padding: 50px 20px; /* Add padding for spacing */
     text-align: center; /* Center-align the text */
 }
@@ -700,7 +710,7 @@ nav {
 #faq-section h2 {
     text-align: center;
     font-size: 2.5rem;
-    color: #ff9900; /* Orange color for the main header */
+    color: black; /* Orange color for the main header */
     margin-bottom: 20px;
 }
 
@@ -754,12 +764,12 @@ nav {
 /* Service Request Form Styling */
 #service-request-section {
     padding: 30px 0;
-    background-color: ;
+    background-color: #fff; /* Ensure background color is set */
 }
 
 #contact-us {
     padding: 30px 0;
-    background-color: ;
+    background-color: #fff; /* Ensure background color is set */
 }
 
 /* Form container */
@@ -770,6 +780,8 @@ form {
     padding: 20px;
     border-radius: 50px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: relative; /* Ensure proper stacking context */
+    z-index: 1; /* Ensure form is above any background */
 }
 
 /* Title */
@@ -785,7 +797,6 @@ fieldset {
     border: none;
     margin-bottom: 15px;
     padding: 0;
-    
 }
 
 /* Input and textarea fields */
@@ -796,11 +807,13 @@ input, textarea {
     border-radius: 15px;
     font-size: 1rem;
     color: #000000;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
 
+/* Ensure textareas are resizable only vertically */
 textarea {
-    resize: vertical; /* Allow vertical resizing */
-    width: 98%;
+    resize: vertical;
+    min-height: 100px; /* Set a minimum height */
 }
 
 /* For larger screens, show two input fields per row */
@@ -825,13 +838,16 @@ button {
     cursor: pointer;
     width: 100%;
     transition: background-color 0.3s ease;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
 
+/* Button hover effect */
 button:hover {
     background-color: #ce7500;
 }
 
 /* ***** Service Request Form End ***** */
+
 
 
 
