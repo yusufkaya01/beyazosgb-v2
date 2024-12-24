@@ -197,8 +197,8 @@ a {
 
 .whatsapp-icon {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 2%;
+    right: 2%;
     z-index: 1000; /* Ensures it's above other content */
     }
   
@@ -211,26 +211,26 @@ a {
   /* red logo */
   .logo-icon { 
     position: fixed;
-    bottom: 20px;
-    left: 30px;
+    bottom: 2%;
+    left: 2%;
     z-index: 9990; /* Ensures it's above other content */
     }
   
   .logo-icon img {
-    width: 80px; /* Adjust the size as needed */
+    width: 20%; /* Adjust the size as needed */
     height: auto;
   }
 
   /* white logo */
   .logo-icon-top {
     position: fixed;
-    top: 0px;
-    left: 260px;
+    top: 0%;
+    left: 16%;
     z-index: 9990; /* Ensures it's above other content */
     }
   
   .logo-icon-top img {
-    width: 50px; /* Adjust the size as needed */
+    width: 12%; /* Adjust the size as needed */
     height: auto;
   }
 
@@ -561,7 +561,8 @@ nav {
     border: 1px solid #ddd; /* Light border for each service item */
     border-radius: 10px;
     background-color: #ffefef; /* Slightly  background for the list items */
-    width: 85%;
+    width: 70%;
+    margin-left: 15%;
 }
 
 /* Styling for the Service Icons (Images) */
@@ -1100,6 +1101,49 @@ footer .footer-menu ul li:hover .submenu {
 /* Tablets in Landscape and Smaller Devices (Max width 1024px) */
 @media only screen and (max-width: 1024px) {
 
+    /* Static Logos Start*/
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    z-index: 1000; /* Ensures it's above other content */
+    }
+  
+  .whatsapp-icon img {
+    width: 100px; /* Adjust the size as needed */
+    height: auto;
+  }
+  
+
+  /* red logo */
+  .logo-icon { 
+    position: fixed;
+    bottom: 2%;
+    left: 2%;
+    z-index: 9990; /* Ensures it's above other content */
+    }
+  
+  .logo-icon img {
+    width: 20%; /* Adjust the size as needed */
+    height: auto;
+  }
+
+  /* white logo */
+  .logo-icon-top {
+    position: fixed;
+    top: 0%;
+    left: 16%;
+    z-index: 9990; /* Ensures it's above other content */
+    }
+  
+  .logo-icon-top img {
+    width: 12%; /* Adjust the size as needed */
+    height: auto;
+  }
+
+  /* Static Logos End*/
+
     /* Adjust Menu for Tablets */
     .menu {
         flex-direction: row;
@@ -1125,6 +1169,49 @@ footer .footer-menu ul li:hover .submenu {
 
 /* Small Screens (Phones, Portrait) */
 @media only screen and (max-width: 480px) {
+
+    /* Static Logos Start*/
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    z-index: 1000; /* Ensures it's above other content */
+    }
+  
+  .whatsapp-icon img {
+    width: 100px; /* Adjust the size as needed */
+    height: auto;
+  }
+  
+
+  /* red logo */
+  .logo-icon { 
+    position: fixed;
+    bottom: 2%;
+    left: 2%;
+    z-index: 9990; /* Ensures it's above other content */
+    }
+  
+  .logo-icon img {
+    width: 20%; /* Adjust the size as needed */
+    height: auto;
+  }
+
+  /* white logo */
+  .logo-icon-top {
+    position: fixed;
+    top: 0%;
+    left: 16%;
+    z-index: 9990; /* Ensures it's above other content */
+    }
+  
+  .logo-icon-top img {
+    width: 12%; /* Adjust the size as needed */
+    height: auto;
+  }
+
+  /* Static Logos End*/
 
     /* Mobile Menu - Tap to Show */
     .menu-item > a {
