@@ -197,8 +197,8 @@ a {
 
 .whatsapp-icon {
     position: fixed;
-    bottom: 2%;
-    right: 2%;
+    bottom: 20px;
+    right: 25px;
     z-index: 1000; /* Ensures it's above other content */
     }
   
@@ -224,13 +224,13 @@ a {
   /* white logo */
   .logo-icon-top {
     position: fixed;
-    top: 0%;
-    left: 16%;
+    top: 0px;
+    left: 300px;
     z-index: 9990; /* Ensures it's above other content */
     }
   
   .logo-icon-top img {
-    width: 12%; /* Adjust the size as needed */
+    width: 50px; /* Adjust the size as needed */
     height: auto;
   }
 
