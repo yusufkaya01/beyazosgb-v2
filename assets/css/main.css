@@ -694,7 +694,16 @@ nav {
 /* Services Page Styles End */
 
 
+/* About US Page Styles Start */
 
+.about-us h1 {
+    font-size: 2.5rem; /* Larger font size for the title */
+    font-weight: bold;
+    margin-bottom: 40px; /* Add spacing below the title */
+    color: #ff3c00; /* Dark text color */
+}
+
+/* About US Page Styles End */
 
 /* FAQ Section Start */
 
