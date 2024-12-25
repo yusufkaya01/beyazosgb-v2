@@ -322,9 +322,10 @@ nav {
     font-family: "Poppins", serif;
 }
 
+/* kurumsal submenu etc*/
 .submenu li a:hover {
     color: #a53501;
-    background-color: whitesmoke; /* Keep background color unchanged */
+    background-color: none; /* Keep background color unchanged */
     font-weight: 400;
 }
 
@@ -373,10 +374,14 @@ nav {
 
 /* Add a ">" icon to the button */
 .toggle-btn::after {
-    content: " >"; /* Display the arrow icon */
+    content: ""; /* Display the arrow icon */
     font-size: 0.9rem; /* Slightly smaller for a clean look */
     margin-left: 5px; /* Add space before the icon */
     transition: transform 0.3s; /* Smooth rotation */
+}
+
+#menu-arrow::after {
+    content: " >";
 }
 
 /* Rotate the arrow when the submenu is visible */
@@ -384,7 +389,7 @@ nav {
     transform: rotate(90deg); /* Rotate the arrow downward */
 }
 
-/* New submenu styling */
+/* New submenu styling hizmetlerimiz etc*/
 .submenu-down {
     display: none; /* Hide submenu by default */
     position: absolute;
@@ -426,9 +431,14 @@ nav {
 
 /* Remove arrow icons from submenu buttons */
 .submenu-btn::after {
-    content: " >"; /* Remove arrow icon */
+    content: ""; /* Remove arrow icon */
     margin-left: 0; /* Remove space before icon */
 }
+
+#submenu-arrow::after {
+    content: " >";
+}
+
 
 /* Hizmetlerimiz sub-submenu style */
 .sub-submenu {
@@ -567,11 +577,18 @@ nav {
     display: inline-block; /* Allows items to sit next to each other */
     width: 25%; /* Each item takes up 30% of the width */
     margin: 10px; /* Add spacing between items */
-    background: #fff; /* White background for each box */
+    background: #fff3f3; /* White background for each box */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a modern look */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
     text-align: center;
+}
+
+.why-us-item:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 69, 0, 0.5); /* Glow effect */
 }
 
 /* Styling for the Subheadings */
@@ -767,7 +784,7 @@ nav {
 
 /* Services Items Container */
 .services-page-item {
-    background-color: #ffffff; /* White background for the boxes */
+    background-color: #fff3f3; /* White background for the boxes */
     border: 2px solid #ddd; /* Light gray border */
     border-radius: 8px; /* Rounded corners */
     padding: 20px; /* Add padding inside the boxes */
@@ -781,8 +798,9 @@ nav {
 
 /* Hover Effect for Boxes */
 .services-page-item:hover {
-    transform: translateY(-10px); /* Lift the box on hover */
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 69, 0, 0.5); /* Glow effect */
 }
 
 /* Service Icons (img) */

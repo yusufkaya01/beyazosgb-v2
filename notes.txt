@@ -29,3 +29,13 @@ ayrı bir sayfa
 
     logoyu menü ile birleştir
     icon ve resimler değişecek
+
+
+    top logo ve beyaz dan linki kaldır
+    sol alt logo scroll up yap
+    sss to new page
+    form and maps are side by side
+    contact logos go under footer
+    
+
+    other pages have an issue with justify item or flexbox related about the menu
