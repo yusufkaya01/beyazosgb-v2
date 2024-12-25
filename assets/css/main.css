@@ -1018,10 +1018,15 @@ footer .container {
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 30px;
+    margin-left: 15%;
+    margin-right: 20%;
+    background-color: #f8dada;
 }
 
 footer .footer-text {
-    max-width: 50%;
+    max-width: 100%;
+    margin-right: 30%;
+    margin-left: 20%;
 
 }
 
@@ -1050,6 +1055,7 @@ footer .map-container {
     min-width: 250px; /* Make sure map is not too small */
     height: 350px;
     margin-top: 20px;
+
 }
 
 /* Social Media Container */
