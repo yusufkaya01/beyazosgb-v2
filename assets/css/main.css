@@ -2,10 +2,9 @@ body {
     margin-top: 60px; /* Adjust this based on your menu height */
     margin-left: 8%;
     margin-right: 5%;
-    font-family: 'Poppins';
+    font-family: 'Poppins', serif;
     padding: 0;
     z-index: 1;
-    display: ;
 }
 
 body::before {
@@ -211,8 +210,8 @@ a {
   /* red logo */
   .logo-icon { 
     position: fixed;
-    bottom: 2%;
-    left: 2%;
+    bottom: 25px;
+    left: 20px;
     z-index: 9990; /* Ensures it's above other content */
     }
   
@@ -237,8 +236,7 @@ a {
   /* Static Logos End*/
 
 
-
-/* Menu Start */
+/****** Menu Start *********/
 .menu, .submenu {
     list-style: none; /* Remove dots from menu and submenu items */
 }
@@ -261,6 +259,7 @@ nav {
     justify-content: center; /* Center align the menu */
     gap: 20px; /* Add space between menu items */
     font-family: "Poppins", serif;
+    align-items: center; /* Ensure perfect vertical alignment */
 }
 
 /* Menu items */
@@ -271,23 +270,13 @@ nav {
     display: block;
     font-size: 1rem;
     transition: color 0.3s; /* Smooth hover effect */
-    /*border: 2px solid #c7c3c1; /* Add border to create a box effect */
-    /*border-radius: 10px; /* Add rounded corners */
-    /*background-color: #fff; /* Set background color for the box */
-    /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
-    font-weight: 600;
-    font-family: "Poppins", serif;
+    font-weight: 550;
     font-style: normal;
-
 }
 
-
 .menu-item > a:hover {
-    color: #a53501; /* Change color on hover */
-    /*background-color: #faf5b5;
-    border-color: #ce7500; /* Slightly darker border on hover */
+    color: #a53501; /* Change text color on hover */
     font-weight: 650;
-    font-family: "Poppins", serif;
 }
 
 .menu-item-title {
@@ -297,14 +286,11 @@ nav {
     display: block;
     font-size: 1.1rem;
     transition: color 0.3s; /* Smooth hover effect */
-    /*border: 2px solid #c7c3c1; /* Add border to create a box effect */
-    /*border-radius: 10px; /* Add rounded corners */
-    /*background-color: #fff; /* Set background color for the box */
-    /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
     font-weight: 600;
     font-family: "Poppins", serif;
     font-style: normal;
-
+    margin-top: 0px;
+    line-height: 1; /* Ensure consistent height */
 }
 
 #menu-item-box {
@@ -315,12 +301,12 @@ nav {
 .submenu {
     display: none; /* Hide submenu by default */
     position: absolute;
-    background-color: ; /* Submenu background color */
     padding: 0px 0;
     min-width: 200px; /* Set minimum width */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     z-index: 1000;
     font-family: "Poppins", serif;
+    list-style: none;
 }
 
 .submenu li a {
@@ -338,9 +324,8 @@ nav {
 
 .submenu li a:hover {
     color: #a53501;
-    background-color: #;
+    background-color: whitesmoke; /* Keep background color unchanged */
     font-weight: 400;
-    
 }
 
 /* Show submenu on hover */
@@ -348,19 +333,16 @@ nav {
     position: relative; /* Needed for submenu positioning */
 }
 
+/* Hide submenus for OSGB Hizmetleri, Eğitimlerimiz, Danışmanlık Hizmetleri */
 .menu-item:hover .submenu {
     display: block; /* Show submenu when hovering over parent */
 }
 
 /* Resize logo */
 .menu-item img {
-    width: 50px;  /* Set the width of the logo */
-    height: auto;  /* Maintain aspect ratio (optional) */
+    width: 50px; /* Set the width of the logo */
+    height: auto; /* Maintain aspect ratio */
     max-width: 100%; /* Make sure it doesn't overflow */
-    background-color: ;
-    color: #ff3c00; /* Text color */
-    padding: 10px 15px; /* Spacing for menu items */
-    display: block;
     transition: color 0.3s; /* Smooth hover effect */
     border: 2px solid #c7c3c1; /* Add border to create a box effect */
     border-radius: 10px; /* Add rounded corners */
@@ -368,9 +350,125 @@ nav {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
 }
 
+/* Style for the parent menu button */
+.toggle-btn {
+    background: none; /* No background */
+    border: none; /* Remove border */
+    font-size: 1rem; /* Match font size with other menu items */
+    font-family: "Poppins", serif; /* Match existing font */
+    color: black; /* Default text color */
+    padding: 0; /* Remove padding */
+    margin-left: 5px; /* Space before the icon */
+    cursor: pointer; /* Pointer cursor for better UX */
+    transition: color 0.3s; /* Smooth color transition */
+    font-weight: 550; /* Match font weight */
+    display: inline-flex; /* Align with text */
+    align-items: center; /* Center align icon */
+}
 
-/* Menu End */
+.toggle-btn:hover {
+    color: #a53501; /* Dark red color on hover */
+    background-color: white;
+}
 
+/* Add a ">" icon to the button */
+.toggle-btn::after {
+    content: " >"; /* Display the arrow icon */
+    font-size: 0.9rem; /* Slightly smaller for a clean look */
+    margin-left: 5px; /* Add space before the icon */
+    transition: transform 0.3s; /* Smooth rotation */
+}
+
+/* Rotate the arrow when the submenu is visible */
+.menu-item:hover .toggle-btn::after {
+    transform: rotate(90deg); /* Rotate the arrow downward */
+}
+
+/* New submenu styling */
+.submenu-down {
+    display: none; /* Hide submenu by default */
+    position: absolute;
+    left: 0%; /* Position submenu to the right of the parent */
+    padding: 0px 0;
+    min-width: 200px; /* Set minimum width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    z-index: 1000;
+    font-family: "Poppins", serif;
+    list-style: none;
+    background-color: whitesmoke;
+}
+
+/* Submenu buttons styling */
+.submenu-btn {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    display: block;
+    background: none; /* No background for buttons */
+    border: none; /* Remove border */
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: "Poppins", serif;
+    cursor: pointer; /* Pointer cursor for better UX */
+    transition: color 0.3s; /* Smooth hover effect */
+}
+
+.submenu-btn:hover {
+    color: #a53501; /* Change text color on hover */
+    font-weight: 650;
+    background: none;
+}
+
+/* Show submenu on hover for parent */
+.menu-item:hover .submenu-down {
+    display: block; /* Show submenu when hovering over parent */
+}
+
+/* Remove arrow icons from submenu buttons */
+.submenu-btn::after {
+    content: " >"; /* Remove arrow icon */
+    margin-left: 0; /* Remove space before icon */
+}
+
+/* Hizmetlerimiz sub-submenu style */
+.sub-submenu {
+    display: none; /* Hide submenu by default */
+    position: absolute;
+    top: 0; /* Align to the top of the parent item */
+    left: 100%; /* Position it to the right of the parent */
+    padding: 0px 0;
+    min-width: 200px; /* Set minimum width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    z-index: 1000;
+    font-family: "Poppins", serif;
+    list-style: none;
+    background-color: white; /* Add background color */
+}
+
+/* Submenu buttons styling */
+.sub-submenu li button {
+    padding: 8px 15px;
+    display: block;
+    font-size: 1rem;
+    color: black;
+    background-color: whitesmoke; /* Consistent background */
+    font-weight: 400;
+    border: 2px solid white;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.sub-submenu li button:hover {
+    background-color: #f0f0f0;
+    color: #a53501; /* Hover color */
+}
+
+/* Show submenu when hovering over the "OSGB Hizmetleri" item */
+.menu-item:hover .sub-submenu {
+    display: block; /* Display submenu */
+}
+
+/****** Menu End *********/
 
 
 /*Header Styles Start*/
@@ -404,7 +502,7 @@ nav {
 }
 
 .header-text em {
-    color: #a53501; /* Highlight color */
+    color: #ff3c00; /* Highlight color */
     font-style: italic;
 }
 
@@ -813,7 +911,7 @@ form {
     margin: 0 auto; /* Center the form horizontally */
     background-color: #f8dada;
     padding: 20px;
-    border-radius: 50px; /* Rounded corners */
+    border-radius: 20px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     position: relative; /* Ensure proper stacking context */
     z-index: 1; /* Ensure form is above any background */
@@ -1045,6 +1143,7 @@ footer .footer-menu ul li:hover .submenu {
     vertical-align: middle; /* Ensure the icon aligns properly with the text */
     margin: 0 5px; /* Add some space between the icon and the text */
 }
+
 
 /* Footer End */
 
