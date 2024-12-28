@@ -98,10 +98,48 @@
         <!-- ***** Header Text Start ***** -->
 
 
+        <!-- ***** Left Hand Menu Start ***** -->
+
+        <div class="left-hand-menu">
+            <div class="left-hand-menu-main-title" onclick="toggleSubMenu('left-hand-menu-osgb')">OSGB HİZMETLERİ</div>
+            <div id="left-hand-menu-osgb" class="left-hand-menu-sub-menu">
+                <div class="left-hand-menu-sub-title" onclick="showContent('left-hand-menu-isg-uzmani')">İş Güvenliği Uzmanı Hizmeti</div>
+                <div class="left-hand-menu-sub-title" onclick="showContent('left-hand-menu-is-yeri-hekimligi')">İşyeri Hekimliği Hizmeti</div>
+                <div class="left-hand-menu-sub-title" onclick="showContent('left-hand-menu-diger-saglik-personeli')">Diğer Sağlık Personeli Hizmeti</div>
+                <div class="left-hand-menu-sub-title" onclick="showContent('left-hand-menu-ise-giris-muayene')">İşe Giriş/Periyodik Muayene Sağlık Raporu</div>
+                <div class="left-hand-menu-sub-title" onclick="showContent('left-hand-menu-isg-egitim')">İş Sağlığı Ve Güvenliği Eğitim Hizmeti</div>
+                <div class="left-hand-menu-sub-title" onclick="showContent('left-hand-menu-risk-analizi')">İşyeri Risk Analizi Ve Acil Durum Eylem Planı Hazırlama Hizmeti</div>
+                <div class="left-hand-menu-sub-title" onclick="showContent('left-hand-menu-mobil-saglik')">Mobil Sağlık Tarama Aracı Hizmeti</div>
+                <div class="left-hand-menu-sub-title" onclick="showContent('left-hand-menu-yangin-tatbikat')">Acil Durum ve Yangın Tatbikat Hizmeti</div>
+            </div>
+            
+            <div class="left-hand-menu-main-title" onclick="toggleSubMenu('left-hand-menu-danismanlik')">DANIŞMANLIK HİZMETLERİ</div>
+            <div id="left-hand-menu-danismanlik" class="left-hand-menu-sub-menu">
+                <div class="left-hand-menu-sub-title" onclick="showContent('left-hand-menu-periyodik-kontrol')">Periyodik Kontrol Ve Ortam Ölçümleri</div>
+                <div class="left-hand-menu-sub-title" onclick="showContent('left-hand-menu-tehlikeli-madde')">Tehlikeli Madde Güvenlik Danışmanlığı Hizmeti</div>
+            </div>
+    
+            <div class="left-hand-menu-main-title" onclick="toggleSubMenu('left-hand-menu-egitim')">EĞİTİM HİZMETLERİ</div>
+            <div id="left-hand-menu-egitim" class="left-hand-menu-sub-menu">
+                <div class="left-hand-menu-sub-title" onclick="showContent('left-hand-menu-ilkyardim')">İlkyardım Eğitim Hizmeti[Sağlık Bakanlığı Onaylı]</div>
+                <div class="left-hand-menu-sub-title" onclick="showContent('left-hand-menu-yuksekte-calisma')">Yüksekte Çalışma Eğitimi</div>
+            </div>
+        </div>
+    
+        <div id="left-hand-menu-content" class="left-hand-menu-content">
+            <!-- Content will appear here -->
+        </div>
+
+
+        <!-- ***** Left Hand Menu End***** -->
+
+
+
+
 
         <!-- ***** Services Page Section Start ***** -->
 
-        <section id="services-page-section">
+        <section id="services-page-section" class="left-hand-menu-services">
             <div>
                 <h1>HİZMETLERİMİZ</h1>
                 <div class="services-page-item">
@@ -274,6 +312,6 @@
 
 
 
-    
+<script src="../assets/js/scripts.js"></script>
 </body>
 </html>

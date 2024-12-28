@@ -629,6 +629,45 @@ nav {
 
 
 
+/* left hand menu test start */
+
+.left-hand-menu {
+    margin-top: 50px;;
+    width: 250px;
+    float: left;
+}
+
+.left-hand-menu-main-title, .left-hand-menu-sub-title {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.left-hand-menu-main-title {
+    background-color: #d83200;
+    color: white;
+    margin-top: 5px;
+}
+
+.left-hand-menu-sub-menu {
+    display: none;
+    background-color: #f1f1f1;
+}
+
+.left-hand-menu-sub-title {
+    padding-left: 20px;
+}
+
+.left-hand-menu-content {
+    margin-left: 260px;
+    padding: 10px;
+}
+
+.left-hand-menu-services {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+/* left hand menu test end */
 
 /* Services Section Styles Start */
 
