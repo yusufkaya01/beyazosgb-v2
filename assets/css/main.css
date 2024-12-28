@@ -224,7 +224,7 @@ a {
   .logo-icon-top {
     position: fixed;
     top: 0px;
-    left: 300px;
+    left: 100px;
     z-index: 9990; /* Ensures it's above other content */
     }
   
@@ -517,7 +517,7 @@ nav {
     color: black;
     margin-bottom: 20px;
     line-height: 1.4;
-    font-family: "Libre Baskerville", serif;
+    font-family: "Poppins", serif;
     font-weight: 900;
     font-style: bold;
 }
