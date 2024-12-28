@@ -198,8 +198,8 @@
 <!-- ***** Footer Start ***** -->
 <footer class="footer-background"id="contact-us">
     <div class="footer-text">
-        <h2>Beyaz OSGB'ye Nasıl Ulaşabilirsiniz?</em></h2>
-        <p>Bizimle iletişime geçmek için formu doldurabilir, WhatsApp logosuna tıklayarak görüşme başlatabilir veya doğrudan bizi arayabilirsiniz.
+        <div class="fake-button"><h1>BEYAZ OSGB'YE NASIL ULAŞABİLİRSİNİZ?</em></h1></div>
+        <p>Bizimle iletişime geçmek için formu doldurup gönderebilir, WhatsApp logosuna tıklayarak görüşme başlatabilir ya da firmamızı ziyaret etmek isterseniz haritadaki konumdan bize ulaşabilirsiniz.
         </p>
     </div>
     <div class="container">
@@ -209,7 +209,7 @@
             <div>
                 <div>
                     <form action="https://formspree.io/f/mldddblk" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
-                        <h2>Bizimle İletişim Kurabilirsiniz</h2>
+                        <h2>İletişim Formu</h2>
                         <div class="form-row">
                             <div class="half-width">
                                 <fieldset>
@@ -218,19 +218,19 @@
                             </div>
                             <div class="half-width">
                                 <fieldset>
-                                    <input name="konu" type="text" id="konu" placeholder="Konu" required>
+                                    <input name="iletisim" type="number" id="iletisim" placeholder="Telefon Numarası">
                                 </fieldset>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="half-width">
                                 <fieldset>
-                                    <input name="company" type="text" id="company" placeholder="Şirket İsmi" required>
+                                    <input name="company" type="text" id="company" placeholder="Şirket İsmi" >
                                 </fieldset>
                             </div>
                             <div class="half-width">
                                 <fieldset>
-                                    <input name="email" type="email" id="email" placeholder="E-Mail Adresi" required>
+                                    <input name="email" type="email" id="email" placeholder="E-Mail Adresi" >
                                 </fieldset>
                             </div>
                         </div>
@@ -250,14 +250,17 @@
         <!-- Google Map Embed -->
         <div class="map-container">
             <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.903643464622!2d30.55149710167448!3d37.76748398358404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c5b5c9ae189e75%3A0xfe6bcba01032b8d3!2sBeyaz%20OSGB!5e0!3m2!1str!2str!4v1728487811911!5m2!1str!2str" 
-                width="100%" 
-                height="350" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy">
-            </iframe>
-            <button class="map-button" onclick="window.open('https://www.google.com/maps/place/Beyaz+OSGB/@37.7674839,30.5514971,17z', '_blank')" style="margin-top: 10px; padding: 10px 20px; background-color: #ff3c00; color: rgb(255, 255, 255); border: none; border-radius: 5px; cursor: pointer;">
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d788.4905555863446!2d30.55149710167448!3d37.76748398358404!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c5b5c9ae189e75%3A0xfe6bcba01032b8d3!2zQkVZQVogT1NHQiDEsMWeIFNBxJ5MScSeSSBWRSDEsMWeIEfDnFZFTkzEsMSexLAgSMSwWk1FVExFUsSw!5e0!3m2!1str!2str!4v1728487811911!5m2!1str!2str" 
+            width="100%" 
+            height="350" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+        
+        
+        
+            <button class="map-button" onclick="window.open('https://maps.app.goo.gl/3xJUPCTBHygypa4S7', '_blank')" style="margin-top: 10px; padding: 10px 20px; background-color: #ff3c00; color: rgb(255, 255, 255); border: none; border-radius: 5px; cursor: pointer;">
                 Haritada Gör
             </button>
 
@@ -331,8 +334,14 @@
 
     <div class="sub-footer">
         <p id="sub-footer-items">
+            <span><i class="fas fa-location-dot"></i> Adres: <a href="https://maps.app.goo.gl/3xJUPCTBHygypa4S7">Pirimehmet Mahallesi 1729. Sokak No:3/13 Merkez/ISPARTA</a></span><br>
             <span><i class="fas fa-envelope"></i> İletişim: <a href="mailto:bilgi@beyazosgb.tr">bilgi@beyazosgb.tr</a></span><br>
             <span><i class="fas fa-phone-alt"></i> <a href="tel:+905342943266">+90 (534) 294 32 66</a></span><br><br>
+        </p>
+    </div>
+    <br>
+    <div class="sub-footer-2">
+        <p id="sub-footer-items-2">
             <span><i ></i> Copyright &copy; 2024 Beyaz OSGB |</span>
             <span>Designed by <a rel="nofollow" href="https://yusufkaya.xyz"><i ></i> Yusuf Kaya</a></span>
         </p>

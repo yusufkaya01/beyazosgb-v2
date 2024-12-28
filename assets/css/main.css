@@ -224,7 +224,7 @@ a {
   .logo-icon-top {
     position: fixed;
     top: 0px;
-    left: 100px;
+    left: 210px;
     z-index: 9990; /* Ensures it's above other content */
     }
   
@@ -281,12 +281,12 @@ nav {
 
 .menu-item-title {
     text-decoration: none; /* Remove underline */
-    color: #a53501; /* Text color */
+    color: #d83200; /* Text color */
     padding: 10px 15px; /* Spacing for menu items */
     display: block;
     font-size: 1.1rem;
     transition: color 0.3s; /* Smooth hover effect */
-    font-weight: 400;
+    font-weight: 700;
     font-family: "Poppins", serif;
     font-style: normal;
     margin-top: 0px;
@@ -523,7 +523,7 @@ nav {
 }
 
 .header-text em {
-    color: #ff3c00; /* Highlight color */
+    color: #d83200; /* Highlight color */
     font-style: italic;
 }
 
@@ -537,7 +537,7 @@ nav {
 .header-text .btn-services {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ff3c00;
+    background-color: #d83200;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -605,7 +605,7 @@ nav {
 /* Styling for the Subheadings */
 .why-us-item h2 {
     font-size: 1.2rem;
-    color: #ff4800; /* A blue color for subheadings */
+    color: #d83200; /* A blue color for subheadings */
     margin-bottom: 15px;
     font-weight: bold;
 }
@@ -643,7 +643,7 @@ nav {
 #services-section .btn-services {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ff3c00;
+    background-color: #d83200;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -666,7 +666,7 @@ nav {
 
 /* Styling for the Main Heading (h1) */
 #services-section h1 {
-    color: #ff3c00; /* Orange color for the main heading */
+    color: #d83200; /* Red color for the main heading */
     font-size: 2rem;
     margin-bottom: 30px;
     font-weight: bold;
@@ -674,7 +674,7 @@ nav {
 
 /* Styling for the Subheading (h2) */
 #services-section h2 {
-    color: #ff9900; /* Lighter orange color for subheadings */
+    color: #d83200; /* Lighter orange color for subheadings */
     font-size: 2rem;
     margin-bottom: 20px;
     font-weight: bold;
@@ -689,7 +689,7 @@ nav {
 }
 
 #services-section h2 a:hover {
-    color: #ff9900; /* Lighter orange color for subheadings */
+    color: #a53501; /* Lighter orange color for subheadings */
     font-size: 2rem;
     margin-bottom: 20px;
     font-weight: bold;
@@ -745,14 +745,14 @@ nav {
 
 /* Styling for the "Daha Fazla" Link */
 #services-section ul li .text a {
-    color: #ff4800; /* Match the main heading color for the link */
+    color: #d83200; /* Match the main heading color for the link */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 #services-section ul li .text a:hover {
-    color: #ff9900; /* Lighter orange on hover */
+    color: #a53501; /* Lighter orange on hover */
 }
 
 
@@ -774,14 +774,14 @@ nav {
     font-size: 2rem; /* Larger font size for the title */
     font-weight: bold;
     margin-bottom: 40px; /* Add spacing below the title */
-    color: #ff3c00; /* Dark text color */
+    color: #d83200; /* Dark text color */
 }
 
 #services-page-section h2 > a {
     font-size: 1.5rem; /* Larger font size for the title */
     font-weight: bold;
     margin-bottom: 40px; /* Add spacing below the title */
-    color: #fd4f1a; /* Dark text color */
+    color: #d83200; /* Dark text color */
     text-decoration: none;
 }
 
@@ -789,7 +789,7 @@ nav {
     font-size: 1.5rem; /* Larger font size for the title */
     font-weight: bold;
     margin-bottom: 40px; /* Add spacing below the title */
-    color: #ff9900; /* Dark text color */
+    color: #a53501; /* Dark text color */
     text-decoration: none;
 }
 
@@ -829,7 +829,7 @@ nav {
     font-size: 1.2rem; /* Medium font size */
     font-weight: bold;
     margin: 10px 0; /* Add spacing above and below */
-    color: #ff3c00; /* Highlight color for the titles */
+    color: #d83200; /* Highlight color for the titles */
 }
 
 /* Service Links */
@@ -841,7 +841,7 @@ nav {
 
 /* Hover Effect for Links */
 .services-page-item h2 a:hover {
-    color: #ce7500; /* Change color on hover */
+    color: #a53501; /* Change color on hover */
 }
 
 /* Services Page Styles End */
@@ -853,7 +853,7 @@ nav {
     font-size: 2rem; /* Larger font size for the title */
     font-weight: bold;
     margin-bottom: 40px; /* Add spacing below the title */
-    color: #ff3c00; /* Dark text color */
+    color: #d83200; /* Dark text color */
 }
 
 /* About US Page Styles End */
@@ -887,7 +887,7 @@ nav {
 /* FAQ Question (h3) */
 #faq-section h3 {
     font-size: 1.2rem;
-    color: #ff3c00; /* Red color for question text */
+    color: #d83200; /* Red color for question text */
     margin-bottom: 10px;
 }
 
@@ -911,7 +911,7 @@ nav {
 
 /* Add hover effect for questions */
 #faq-section h3:hover {
-    color: #ff6600; /* A slightly different shade of orange on hover */
+    color: #a53501; /* A slightly different shade of orange on hover */
     cursor: pointer;
 }
 
@@ -949,7 +949,7 @@ form {
 /* Title */
 form h2 {
     font-size: 2rem;
-    color: #ff3c00;
+    color: #d83200;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -991,7 +991,7 @@ textarea {
 
 /* Submit button styling */
 button {
-    background-color: #ff3c00;
+    background-color: #d83200;
     color: #fff;
     padding: 12px 20px;
     border: none;
@@ -1005,7 +1005,7 @@ button {
 
 /* Button hover effect */
 button:hover {
-    background-color: #ce7500;
+    background-color: #a53501;
 }
 
 /* ***** Service Request Form End ***** */
@@ -1052,12 +1052,33 @@ footer .footer-text {
 }
 
 /* Footer Heading */
+
+.fake-button {
+
+    margin-bottom: 20px;
+    justify-content: center;
+    display: flex;
+    background-color: #d83200;
+    border-radius: 5px;
+    border-style: ;
+}
+
+.fake-button h1 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 20px;
+    justify-content: center;
+    display: flex;
+    font-weight: 900;
+    font-family: "Libre Baskerville", serif;;
+
+}
+
 footer h2 {
     font-size: 2rem;
-    color: #333;
+    color: #555;
     font-weight: bold;
     margin-bottom: 20px;
-    color: #ff3c00;
     justify-content: center;
     display: flex;
 }
@@ -1103,7 +1124,7 @@ footer p {
 }
 
 .social-media i:hover {
-    color: #ff3c00; /* Color on hover */
+    color: #a53501; /* Color on hover */
 }
 
 
@@ -1140,7 +1161,7 @@ footer .footer-menu ul li a {
 }
 
 footer .footer-menu ul li a:hover {
-    color: #ff3c00;
+    color: #d83200;
 }
 
 /* Submenu styles */
@@ -1163,16 +1184,22 @@ footer .footer-menu ul li:hover .submenu {
 
 #sub-footer-items {
     text-align: center;
+    font-size: 1.3rem;
+}
+
+#sub-footer-items-2 {
+    text-align: center;
     font-size: 0.8rem;
 }
 
 .sub-footer a {
-    color: #ff3c00;
+    color: #d83200;
     text-decoration: none;
 }
 
 .sub-footer a:hover {
     text-decoration: underline;
+    color: #a53501;
 }
 
 .footer-icon {
