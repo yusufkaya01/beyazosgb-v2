@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,9 @@
 
     <!-- Font Awesome CDN -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 
     <link rel="icon" href="../../assets/images/beyazosgb-logo.png" type="image/x-icon">
@@ -33,41 +36,62 @@
                 <div class="row">
                     <div class="col-12">
                         <nav class="">
-                             <!-- ***** Menu Start ***** -->
-                             <nav>
-                                <ul class="menu">
-                                    <li class="menu-item-title">
-                                        <a>BEYAZ OSGB
-                                        </a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="../../index.html">ANASAYFA
-                                        </a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a>HİZMETLERİMİZ</a>
-                                        <ul class="submenu">
-                                            <li><a href="../../pages/hizmetlerimiz/osgb-hizmetleri.html">OSGB Hizmetleri</a></li>
-                                            <li><a href="../../pages/hizmetlerimiz/danismanlik-hizmetleri.html">Danışmanlık Hizmetleri</a></li>
-                                            <li><a href="../../pages/hizmetlerimiz/egitimlerimiz.html">Eğitimlerimiz</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a >KURUMSAL</a>
-                                        <ul class="submenu">
-                                            <li><a class="scroll-to-section" href="../../index.html#why-us-section">Neden Biz</a></li>
-                                            <li><a href="#faq-section">Sıkça Sorulan Sorular</a></li>
-                                            <li><a href="../../pages/kurumsal/about-us.html">Hakkımızda</a></li>
-                                            <li><a href="../../pages/kurumsal/insan-kaynaklari.html">İnsan Kaynakları</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item"><a href="../../pages/hizli-fiyat-teklifi-al.html">HIZLI FİYAT TEKLİFİ AL</a></li>
-                                    <li class="menu-item"><a href="../../pages/uzmana-danis.html">UZMANA ÜCRETSİZ DANIŞ</a></li>
-                                    <li class="menu-item"><a href="#contact-us">BİZİMLE İLETİŞİM KUR</a></li>
-                                </ul>
-                            </nav>
-                            <!-- ***** Menu End ***** -->
-
+                        <!-- ***** Menu Start ***** -->
+                        <nav>
+                            <ul class="menu">
+                                <li class="menu-item-title">
+                                    <a>BEYAZ OSGB</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a>|</a>
+                                </li>
+                                <li class="menu-item">
+                                    <button class="toggle-btn" aria-label="Go to homepage" onclick="window.location.href='../../index.html'">ANASAYFA</button>
+                                </li>
+                                <li class="menu-item">
+                                    <button id="menu-arrow" class="toggle-btn" aria-label="Toggle submenu">HİZMETLERİMİZ</button>
+                                    <ul class="submenu-down">
+                                        <li class="menu-item">
+                                            <button id="submenu-arrow" class="submenu-btn" aria-label="OSGB Hizmetleri" onclick="location.href='../../pages/hizmetlerimiz/osgb-hizmetleri.html', '_blank'">OSGB Hizmetleri</button>
+                                            <ul class="submenu sub-submenu">
+                                                <li><button class="submenu-btn" aria-label="İş Güvenliği Hizmetleri" onclick="location.href='../../pages/hizmetlerimiz/osgb-hizmetleri/is-guvenligi-hizmetleri.html'">İş Güvenliği Hizmetleri</button></li>
+                                                <li><button class="submenu-btn" aria-label="İş Sağlığı Hizmetleri" onclick="location.href='../../pages/hizmetlerimiz/osgb-hizmetleri/is-sagligi-hizmetleri.html'">İş Sağlığı Hizmetleri</button></li>
+                                                <li><button class="submenu-btn" aria-label="Periyodik Sağlık Kontrolleri" onclick="location.href='../../pages/hizmetlerimiz/osgb-hizmetleri/periyodik-saglik-kontrolleri.html'">Periyodik Sağlık Kontrolleri</button></li>
+                                                <li><button class="submenu-btn" aria-label="İşe Giriş Sağlık Raporları Hizmetleri" onclick="location.href='../../pages/hizmetlerimiz/osgb-hizmetleri/ise-giris-saglik-raporlari-hizmetleri.html'">İşe Giriş Sağlık Raporları Hizmetleri</button></li>
+                                            </ul>
+                                        </li> 
+                                        <li class="menu-item">
+                                            <button class="submenu-btn" aria-label="Danışmanlık Hizmetleri" onclick="location.href='../../pages/hizmetlerimiz/danismanlik-hizmetleri.html'">Danışmanlık Hizmetleri</button>
+                                        </li>
+                                        <li class="menu-item">
+                                            <button class="submenu-btn" aria-label="Eğitimlerimiz" onclick="location.href='../../pages/hizmetlerimiz/egitimlerimiz.html'">Eğitimlerimiz</button>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <button id="menu-arrow" class="toggle-btn" aria-label="Toggle submenu">KURUMSAL</button>
+                                    <ul class="submenu">
+                                        <li><a class="scroll-to-section" href="../../index.html#why-us-section">Neden Biz</a></li>
+                                        <li><a href="#faq-section">Sıkça Sorulan Sorular</a></li>
+                                        <li><a href="../../pages/kurumsal/about-us.html">Hakkımızda</a></li>
+                                        <li><a href="../../pages/kurumsal/insan-kaynaklari.html">İnsan Kaynakları</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <button class="toggle-btn" aria-label="Redirect to Hızlı Fiyat Teklifi" onclick="window.location.href='../../pages/hizli-fiyat-teklifi-al.html'">HIZLI FİYAT TEKLİFİ AL</button>
+                                </li>
+                                <li class="menu-item">
+                                    <button class="toggle-btn" aria-label="Redirect to Uzman Danış" onclick="window.location.href='../../pages/uzmana-danis.html'">UZMANA ÜCRETSİZ DANIŞ</button>
+                                </li>
+                                <li class="menu-item">
+                                    <button class="toggle-btn" aria-label="Redirect to Contact Us" onclick="window.location.href='../../pages/ilkyardim-egitimleri.html'">İLKYARDIM EĞİTİMLERİ</button>
+                                </li>
+                                <li class="menu-item">
+                                    <button class="toggle-btn" aria-label="Redirect to Contact Us" onclick="window.location.href='#contact-us'">BİZİMLE İLETİŞİM KUR</button>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- ***** Menu End ***** -->
                         </nav>
                     </div>
                 </div>
@@ -172,6 +196,7 @@
                 <li><a href="../../pages/hizmetlerimiz/osgb-hizmetleri.html">OSGB Hizmetleri</a></li>
                 <li><a href="../../pages/hizmetlerimiz/danismanlik-hizmetleri.html">Danışmanlık Hizmetleri</a></li>
                 <li><a href="../../pages/hizmetlerimiz/egitimlerimiz.html">Eğitimlerimiz</a></li>
+                <li><a href="../../pages/ilkyardim-egitimleri.html">İlkyardım Eğitimleri</a></li>
             </ul>
         </div>
         <div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,14 +43,23 @@
                                     <a>BEYAZ OSGB</a>
                                 </li>
                                 <li class="menu-item">
+                                    <a>|</a>
+                                </li>
+                                <li class="menu-item">
                                     <button class="toggle-btn" aria-label="Go to homepage" onclick="window.location.href='../../index.html'">ANASAYFA</button>
                                 </li>
                                 <li class="menu-item">
                                     <button id="menu-arrow" class="toggle-btn" aria-label="Toggle submenu">HİZMETLERİMİZ</button>
                                     <ul class="submenu-down">
                                         <li class="menu-item">
-                                            <button class="submenu-btn" aria-label="OSGB Hizmetleri" onclick="location.href='../../pages/hizmetlerimiz/osgb-hizmetleri.html'">OSGB Hizmetleri</button>
-                                        </li>
+                                            <button id="submenu-arrow" class="submenu-btn" aria-label="OSGB Hizmetleri" onclick="location.href='../../pages/hizmetlerimiz/osgb-hizmetleri.html', '_blank'">OSGB Hizmetleri</button>
+                                            <ul class="submenu sub-submenu">
+                                                <li><button class="submenu-btn" aria-label="İş Güvenliği Hizmetleri" onclick="location.href='../../pages/hizmetlerimiz/osgb-hizmetleri/is-guvenligi-hizmetleri.html'">İş Güvenliği Hizmetleri</button></li>
+                                                <li><button class="submenu-btn" aria-label="İş Sağlığı Hizmetleri" onclick="location.href='../../pages/hizmetlerimiz/osgb-hizmetleri/is-sagligi-hizmetleri.html'">İş Sağlığı Hizmetleri</button></li>
+                                                <li><button class="submenu-btn" aria-label="Periyodik Sağlık Kontrolleri" onclick="location.href='../../pages/hizmetlerimiz/osgb-hizmetleri/periyodik-saglik-kontrolleri.html'">Periyodik Sağlık Kontrolleri</button></li>
+                                                <li><button class="submenu-btn" aria-label="İşe Giriş Sağlık Raporları Hizmetleri" onclick="location.href='../../pages/hizmetlerimiz/osgb-hizmetleri/ise-giris-saglik-raporlari-hizmetleri.html'">İşe Giriş Sağlık Raporları Hizmetleri</button></li>
+                                            </ul>
+                                        </li> 
                                         <li class="menu-item">
                                             <button class="submenu-btn" aria-label="Danışmanlık Hizmetleri" onclick="location.href='../../pages/hizmetlerimiz/danismanlik-hizmetleri.html'">Danışmanlık Hizmetleri</button>
                                         </li>
@@ -73,6 +82,9 @@
                                 </li>
                                 <li class="menu-item">
                                     <button class="toggle-btn" aria-label="Redirect to Uzman Danış" onclick="window.location.href='../../pages/uzmana-danis.html'">UZMANA ÜCRETSİZ DANIŞ</button>
+                                </li>
+                                <li class="menu-item">
+                                    <button class="toggle-btn" aria-label="Redirect to Contact Us" onclick="window.location.href='../../pages/ilkyardim-egitimleri.html'">İLKYARDIM EĞİTİMLERİ</button>
                                 </li>
                                 <li class="menu-item">
                                     <button class="toggle-btn" aria-label="Redirect to Contact Us" onclick="window.location.href='#contact-us'">BİZİMLE İLETİŞİM KUR</button>
@@ -196,6 +208,7 @@
                 <li><a href="../../pages/hizmetlerimiz/osgb-hizmetleri.html">OSGB Hizmetleri</a></li>
                 <li><a href="../../pages/hizmetlerimiz/danismanlik-hizmetleri.html">Danışmanlık Hizmetleri</a></li>
                 <li><a href="../../pages/hizmetlerimiz/egitimlerimiz.html">Eğitimlerimiz</a></li>
+                <li><a href="../../pages/ilkyardim-egitimleri.html">İlkyardım Eğitimleri</a></li>
             </ul>
         </div>
         <div>
