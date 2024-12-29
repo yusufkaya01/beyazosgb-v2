@@ -420,7 +420,7 @@ nav {
 
 .submenu-btn:hover {
     color: #a53501; /* Change text color on hover */
-    font-weight: 450;
+    font-weight: 420;
     background: none;
 }
 
@@ -577,16 +577,24 @@ nav {
 
 /* Styling for the Main Heading */
 #why-us-section h1 {
-    font-size: 2rem;
-    color: black;
+    display: block; /* Ensure it takes the full width available */
+    font-size: 1.5rem;
+    color: white; /* Font color */
     margin-bottom: 30px;
     font-weight: bold;
+    background-color: #d83200; /* Background color */
+    padding: 10px 20px; /* Padding around the text */
+    border: 2px solid #d83200; /* Border color */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    width: fit-content; /* Dynamic width based on text size */
+    margin-left: auto; /* Center the heading */
+    margin-right: auto; /* Center the heading */
 }
 
 /* Styling for Individual Items */
 .why-us-item {
     display: inline-block; /* Allows items to sit next to each other */
-    width: 25%; /* Each item takes up 30% of the width */
+    width: 25%; /* Each item takes up 25% of the width */
     margin: 10px; /* Add spacing between items */
     background: #fff3f3; /* White background for each box */
     padding: 20px;
@@ -605,7 +613,7 @@ nav {
 /* Styling for the Subheadings */
 .why-us-item h2 {
     font-size: 1.2rem;
-    color: #d83200; /* A blue color for subheadings */
+    color: #d83200; /* A red color for subheadings */
     margin-bottom: 15px;
     font-weight: bold;
 }
@@ -624,17 +632,17 @@ nav {
     line-height: 1.6;
 }
 
-
 /* Why Us Section Styles End */
 
 
 
 /* left hand menu test start */
 
+
 .left-hand-menu {
-    margin-top: 50px;;
     width: 250px;
     float: left;
+    margin-top: 50px;
 }
 
 .left-hand-menu-main-title, .left-hand-menu-sub-title {
@@ -649,8 +657,15 @@ nav {
 }
 
 .left-hand-menu-sub-menu {
-    display: none;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.8s ease-out;
     background-color: #f1f1f1;
+}
+
+.left-hand-menu-sub-menu.open {
+    max-height: 1000px; /* Adjust as needed */
+    transition: max-height 0.8s ease-in;
 }
 
 .left-hand-menu-sub-title {
@@ -658,16 +673,27 @@ nav {
 }
 
 .left-hand-menu-content {
-    margin-left: 260px;
+    margin-top: 100px;
+    margin-left: 360px;
     padding: 10px;
+    margin-bottom: 700px;
+    text-align: justify;
 }
 
-.left-hand-menu-services {
-    margin-top: 200px;
-    margin-bottom: 200px;
+footer .services-container {
+    display: flex;
+    align-items: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-left: 20%;
+    margin-right: 15%;
+    background-color: #f8dada;
+    position: static;
 }
 
-/* left hand menu test end */
+
+
+/* left hand menu end */
 
 /* Services Section Styles Start */
 
@@ -683,10 +709,10 @@ nav {
     display: inline-block;
     padding: 10px 20px;
     background-color: #d83200;
-    color: #fff;
+    color: white;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     transition: background-color 0.3s;
 }
@@ -695,10 +721,10 @@ nav {
     background-color: #a53501; /* Darker hover effect */
     display: inline-block;
     padding: 10px 20px;
-    color: #fff;
+    color: white;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     transition: background-color 0.3s;
 }
@@ -889,10 +915,22 @@ nav {
 /* About US Page Styles Start */
 
 .about-us h1 {
+    margin-top: 100px;
     font-size: 2rem; /* Larger font size for the title */
     font-weight: bold;
     margin-bottom: 40px; /* Add spacing below the title */
     color: #d83200; /* Dark text color */
+    text-align: center; /* Center-align the text */
+}
+
+.about-us p {
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 1rem; /* Regular font size for the text */
+    color: black; /* Light gray text color */
+    line-height: 2; /* Increase line height for readability */
+    margin-bottom: 50px; /* Add spacing below the paragraphs */
+    text-align: justify;
 }
 
 /* About US Page Styles End */
@@ -1093,13 +1131,12 @@ footer .footer-text {
 /* Footer Heading */
 
 .fake-button {
-
+    margin-left: 100px;
     margin-bottom: 20px;
     justify-content: center;
     display: flex;
     background-color: #d83200;
     border-radius: 5px;
-    border-style: ;
 }
 
 .fake-button h1 {

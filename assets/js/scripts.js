@@ -1,9 +1,18 @@
 function toggleSubMenu(id) {
+    // Get all elements with the class 'left-hand-menu-sub-menu'
+    var subMenus = document.getElementsByClassName('left-hand-menu-sub-menu');
+
+    // Loop through all sub-menus and collapse them
+    for (var i = 0; i < subMenus.length; i++) {
+        subMenus[i].classList.remove('open');
+    }
+
+    // Expand the selected sub-menu
     var subMenu = document.getElementById(id);
-    if (subMenu.style.display === "block") {
-        subMenu.style.display = "none";
+    if (subMenu.classList.contains('open')) {
+        subMenu.classList.remove('open');
     } else {
-        subMenu.style.display = "block";
+        subMenu.classList.add('open');
     }
 }
 
@@ -85,3 +94,4 @@ function showContent(id) {
 
     document.getElementById('left-hand-menu-content').innerHTML = content[id] || "Content not found.";
 }
+

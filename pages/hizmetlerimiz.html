@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,6 +41,9 @@
                                 <ul class="menu">
                                     <li class="menu-item-title">
                                         <a>BEYAZ OSGB</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a>|</a>
                                     </li>
                                     <li class="menu-item">
                                         <button class="toggle-btn" aria-label="Go to homepage" onclick="window.location.href='../index.html'">ANASAYFA</button>
@@ -98,38 +101,39 @@
         <!-- ***** Header Text Start ***** -->
 
 
-        <!-- ***** Left Hand Menu Start ***** -->
-
-        <div class="left-hand-menu">
-            <div class="left-hand-menu-main-title" onclick="toggleSubMenu('left-hand-menu-osgb')">OSGB HİZMETLERİ</div>
-            <div id="left-hand-menu-osgb" class="left-hand-menu-sub-menu">
-                <div class="left-hand-menu-sub-title" onclick="showContent('left-hand-menu-isg-uzmani')">İş Güvenliği Uzmanı Hizmeti</div>
-                <div class="left-hand-menu-sub-title" onclick="showContent('left-hand-menu-is-yeri-hekimligi')">İşyeri Hekimliği Hizmeti</div>
-                <div class="left-hand-menu-sub-title" onclick="showContent('left-hand-menu-diger-saglik-personeli')">Diğer Sağlık Personeli Hizmeti</div>
-                <div class="left-hand-menu-sub-title" onclick="showContent('left-hand-menu-ise-giris-muayene')">İşe Giriş/Periyodik Muayene Sağlık Raporu</div>
-                <div class="left-hand-menu-sub-title" onclick="showContent('left-hand-menu-isg-egitim')">İş Sağlığı Ve Güvenliği Eğitim Hizmeti</div>
-                <div class="left-hand-menu-sub-title" onclick="showContent('left-hand-menu-risk-analizi')">İşyeri Risk Analizi Ve Acil Durum Eylem Planı Hazırlama Hizmeti</div>
-                <div class="left-hand-menu-sub-title" onclick="showContent('left-hand-menu-mobil-saglik')">Mobil Sağlık Tarama Aracı Hizmeti</div>
-                <div class="left-hand-menu-sub-title" onclick="showContent('left-hand-menu-yangin-tatbikat')">Acil Durum ve Yangın Tatbikat Hizmeti</div>
-            </div>
-            
-            <div class="left-hand-menu-main-title" onclick="toggleSubMenu('left-hand-menu-danismanlik')">DANIŞMANLIK HİZMETLERİ</div>
-            <div id="left-hand-menu-danismanlik" class="left-hand-menu-sub-menu">
-                <div class="left-hand-menu-sub-title" onclick="showContent('left-hand-menu-periyodik-kontrol')">Periyodik Kontrol Ve Ortam Ölçümleri</div>
-                <div class="left-hand-menu-sub-title" onclick="showContent('left-hand-menu-tehlikeli-madde')">Tehlikeli Madde Güvenlik Danışmanlığı Hizmeti</div>
-            </div>
-    
-            <div class="left-hand-menu-main-title" onclick="toggleSubMenu('left-hand-menu-egitim')">EĞİTİM HİZMETLERİ</div>
-            <div id="left-hand-menu-egitim" class="left-hand-menu-sub-menu">
-                <div class="left-hand-menu-sub-title" onclick="showContent('left-hand-menu-ilkyardim')">İlkyardım Eğitim Hizmeti[Sağlık Bakanlığı Onaylı]</div>
-                <div class="left-hand-menu-sub-title" onclick="showContent('left-hand-menu-yuksekte-calisma')">Yüksekte Çalışma Eğitimi</div>
-            </div>
+    <!-- ***** Left Hand Menu Start ***** -->
+    <div class="left-hand-menu">
+        <div class="left-hand-menu-main-title" onclick="toggleSubMenu('left-hand-menu-osgb')">OSGB HİZMETLERİ</div>
+        <div id="left-hand-menu-osgb" class="left-hand-menu-sub-menu">
+            <div class="left-hand-menu-sub-title" onclick="showContent('left-hand-menu-isg-uzmani')">İş Güvenliği Uzmanı Hizmeti</div>
+            <div class="left-hand-menu-sub-title" onclick="showContent('left-hand-menu-is-yeri-hekimligi')">İşyeri Hekimliği Hizmeti</div>
+            <div class="left-hand-menu-sub-title" onclick="showContent('left-hand-menu-diger-saglik-personeli')">Diğer Sağlık Personeli Hizmeti</div>
+            <div class="left-hand-menu-sub-title" onclick="showContent('left-hand-menu-ise-giris-muayene')">İşe Giriş/Periyodik Muayene Sağlık Raporu</div>
+            <div class="left-hand-menu-sub-title" onclick="showContent('left-hand-menu-isg-egitim')">İş Sağlığı Ve Güvenliği Eğitim Hizmeti</div>
+            <div class="left-hand-menu-sub-title" onclick="showContent('left-hand-menu-risk-analizi')">İşyeri Risk Analizi Ve Acil Durum Eylem Planı Hazırlama Hizmeti</div>
+            <div class="left-hand-menu-sub-title" onclick="showContent('left-hand-menu-mobil-saglik')">Mobil Sağlık Tarama Aracı Hizmeti</div>
+            <div class="left-hand-menu-sub-title" onclick="showContent('left-hand-menu-yangin-tatbikat')">Acil Durum ve Yangın Tatbikat Hizmeti</div>
         </div>
-    
-        <div id="left-hand-menu-content" class="left-hand-menu-content">
-            <!-- Content will appear here -->
+        
+        <div class="left-hand-menu-main-title" onclick="toggleSubMenu('left-hand-menu-danismanlik')">DANIŞMANLIK HİZMETLERİ</div>
+        <div id="left-hand-menu-danismanlik" class="left-hand-menu-sub-menu">
+            <div class="left-hand-menu-sub-title" onclick="showContent('left-hand-menu-periyodik-kontrol')">Periyodik Kontrol Ve Ortam Ölçümleri</div>
+            <div class="left-hand-menu-sub-title" onclick="showContent('left-hand-menu-tehlikeli-madde')">Tehlikeli Madde Güvenlik Danışmanlığı Hizmeti</div>
         </div>
 
+        <div class="left-hand-menu-main-title" onclick="toggleSubMenu('left-hand-menu-egitim')">EĞİTİM HİZMETLERİ</div>
+        <div id="left-hand-menu-egitim" class="left-hand-menu-sub-menu">
+            <div class="left-hand-menu-sub-title" onclick="showContent('left-hand-menu-ilkyardim')">İlkyardım Eğitim Hizmeti[Sağlık Bakanlığı Onaylı]</div>
+            <div class="left-hand-menu-sub-title" onclick="showContent('left-hand-menu-yuksekte-calisma')">Yüksekte Çalışma Eğitimi</div>
+        </div>
+    </div>
+
+    <div id="left-hand-menu-content" class="left-hand-menu-content">
+        <p>Beyaz İş Sağlığı ve İş Güvenliği Hizmetleri Tic. Ltd. Şti., 2013 yılında ısparta’da, İş Sağlığı ve Güvenliği Kanunu ile birlikte doğmuş bir kuruluştur. Isparta ve komşu illerdeki hizmetlerini başarıyla sürdüren kuruluşumuz, faaliyete geçtiği günden bu yana 1000’e yakın firmayla iş birliği yaparak, İş Sağlığı ve Güvenliği alanında güçlü bir çözüm ortağı haline gelmiştir.</p>
+            <p>Önceliğimiz, iş kazalarını önlemek, denetim süreçlerinde firmalarımızın yanında yer alarak idari para cezalarını engellemek ve yenilikçi çözümlerle iş yerlerine değer katmaktır. Bu hedef doğrultusunda, OSGB Hizmetleri, Danışmanlık Hizmetleri ve Eğitimlerimiz gibi kapsamlı çalışmalarımızla işverenlerin yasal yükümlülüklerini yerine getirmelerine ve çalışanlarının refahını artırmalarına destek sağlıyoruz.</p>
+            <p>Misyonumuz, iş sağlığı ve güvenliği standartlarını en üst seviyeye taşıyarak, iş yerlerinde sürdürülebilir bir güvenlik kültürü oluşturmaktır. Vizyonumuz ise, sektördeki etkin konumumuzu daha da güçlendirmek ve Türkiye’nin dört bir yanına bu bilinci yayarak hizmet götürmektir.</p>
+            <p>Beyaz İş Sağlığı ve İş Güvenliği Hizmetleri Tic. Ltd. Şti., Uzman kadrosu, sektörel deneyimi ve yenilikçi yaklaşımıyla güvenilir bir çözüm ortağınız olmaya devam etmektedir.</p>
+    </div>
 
         <!-- ***** Left Hand Menu End***** -->
 
@@ -137,27 +141,7 @@
 
 
 
-        <!-- ***** Services Page Section Start ***** -->
 
-        <section id="services-page-section" class="left-hand-menu-services">
-            <div>
-                <h1>HİZMETLERİMİZ</h1>
-                <div class="services-page-item">
-                    <a href="../pages/hizmetlerimiz/osgb-hizmetleri.html"><img src="../assets/images/services-1.png" alt="OSGB Hizmetleri Icon"></a>
-                    <h2><a href="../pages/hizmetlerimiz/osgb-hizmetleri.html">OSGB Hizmetleri</a></h2>
-                </div>
-                <div class="services-page-item">
-                    <a href="../pages/hizmetlerimiz/danismanlik-hizmetleri.html"><img src="../assets/images/services-2.png" alt="Danışmanlık Hizmetleri Icon"></a>
-                    <h2><a href="../pages/hizmetlerimiz/danismanlik-hizmetleri.html">Danışmanlık Hizmetleri</a></h2>
-                </div>
-                <div class="services-page-item">
-                    <a href="../pages/hizmetlerimiz/egitimlerimiz.html"><img src="../assets/images/services-3.png" alt="Eğitimlerimiz Icon"></a>
-                    <h2><a href="../pages/hizmetlerimiz/egitimlerimiz.html">Eğitimlerimiz</a></h2>
-                </div>
-            </div>
-        </section>
-        
-        <!-- ***** Services Page Section End ***** -->
 
 
 
@@ -169,7 +153,7 @@
         <p>Bizimle iletişime geçmek için formu doldurup gönderebilir, WhatsApp logosuna tıklayarak görüşme başlatabilir ya da firmamızı ziyaret etmek isterseniz haritadaki konumdan bize ulaşabilirsiniz.
         </p>
     </div>
-    <div class="container">
+    <div class="services-container">
 
         <!-- ***** Service Request Start ***** -->
         <section>
@@ -313,5 +297,6 @@
 
 
 <script src="../assets/js/scripts.js"></script>
+
 </body>
 </html>
