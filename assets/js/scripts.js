@@ -95,3 +95,7 @@ function showContent(id) {
     document.getElementById('left-hand-menu-content').innerHTML = content[id] || "Content not found.";
 }
 
+function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+}
