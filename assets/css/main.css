@@ -216,7 +216,7 @@ a {
     }
   
   .logo-icon img {
-    width: 20%; /* Adjust the size as needed */
+    width: 80px; /* Adjust the size as needed */
     height: auto;
   }
 
@@ -486,6 +486,91 @@ nav {
     display: block; /* Display submenu */
 }
 
+.hamburger {
+    display: none;
+}
+
+/* General styles for smaller devices */
+@media (max-width: 768px) {
+    /* Hide the menu items and show the hamburger icon */
+    .menu {
+        display: none; /* Hide the menu items */
+    }
+
+    .menu.active {
+        display: flex; /* Show the menu items when active */
+        flex-direction: column; /* Stack menu items vertically */
+        position: absolute; /* Position the menu absolutely */
+        top: 40px; /* Position below the fixed nav */
+        left: 0; /* Align to the left edge */
+        width: 100%; /* Full width */
+        background-color: white; /* Background color */
+        z-index: 1000; /* Ensure it stays on top */
+    }
+
+    .menu-item {
+        width: 100%; /* Full width for menu items */
+        text-align: center; /* Center align text */
+    }
+
+    .menu-item-title {
+        text-align: center; /* Center align title */
+        font-size: 1.2rem; /* Adjust font size */
+        padding: 10px 0; /* Padding for spacing */
+    }
+
+    .toggle-btn {
+        display: block; /* Show the buttons */
+        width: 100%; /* Full width */
+        text-align: left; /* Align text to left */
+        padding: 10px 15px; /* Padding for spacing */
+    }
+
+    /* Adjust submenu styles */
+    .submenu, .submenu-down, .sub-submenu {
+        position: static; /* Position relative to parent */
+        box-shadow: none; /* Remove shadow */
+        width: 100%; /* Full width */
+    }
+
+    .submenu li a, .submenu-btn {
+        padding: 10px 15px; /* Padding for spacing */
+    }
+
+    .submenu li a:hover, .submenu-btn:hover {
+        background-color: #f0f0f0; /* Hover background color */
+    }
+
+    /* Hamburger icon styles */
+    .hamburger {
+        display: block; /* Show the hamburger */
+        position: absolute; /* Position absolutely */
+        top: 10px; /* Align at the top */
+        right: 100px; /* Align to the right edge */
+        font-size: 1.5rem; /* Adjust font size */
+        cursor: pointer; /* Pointer cursor */
+        z-index: 1001; /* Ensure it stays above menu */
+    }
+}
+
+/* Styles for even smaller devices like smartphones */
+@media (max-width: 480px) {
+    .menu-item-title {
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    .toggle-btn {
+        font-size: 0.9rem; /* Adjust font size */
+    }
+
+    .submenu li a, .submenu-btn {
+        font-size: 0.9rem; /* Adjust font size */
+    }
+
+    .hamburger {
+        font-size: 1.8rem; /* Adjust font size */
+    }
+}
 
 /****** Menu End *********/
 
@@ -505,6 +590,7 @@ nav {
     justify-content: space-between; /* Space between text and image */
     flex-wrap: wrap; /* Allow wrapping for smaller screens */
     gap: 20px; /* Add spacing between elements */
+    text-align: justify
 }
 
 /* Header text styles */

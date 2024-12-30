@@ -27,7 +27,7 @@
     <a target="_blank" class="logo-icon-top">
         <img src="./assets/images/body-background.png"  alt="Beyaz OSGB Logo" />
     </a>
-
+    
     <a href="./index.html" target="_blank" class="logo-icon">
         <img src="./assets/images/beyazosgb-logo.png"  alt="Beyaz OSGB Logo" />
     </a>
@@ -40,6 +40,7 @@
                         <nav class="">
 <!-- ***** Menu Start ***** -->
 <nav>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
     <ul class="menu">
         <li class="menu-item-title">
             <a>BEYAZ OSGB</a>
@@ -54,30 +55,13 @@
             <button id="menu-arrow" class="toggle-btn" aria-label="Toggle submenu">HİZMETLERİMİZ</button>
             <ul class="submenu-down">
                 <li class="menu-item">
-                    <button id="submenu-arrow" class="submenu-btn" aria-label="OSGB Hizmetleri" onclick="location.href='./pages/hizmetlerimiz.html'">OSGB HİZMETLERİ</button>
-                    <ul class="submenu sub-submenu">
-                        <li><button class="submenu-btn" aria-label="İş Güvenliği Uzmanı Hizmeti" onclick="location.href='./pages/hizmetlerimiz.html'">İş Güvenliği Uzmanı Hizmeti</button></li>
-                        <li><button class="submenu-btn" aria-label="İşyeri Hekimliği Hizmeti" onclick="location.href='./pages/hizmetlerimiz.html'">İşyeri Hekimliği Hizmeti</button></li>
-                        <li><button class="submenu-btn" aria-label="Diğer Sağlık Personeli Hizmeti" onclick="location.href='./pages/hizmetlerimiz.html'">Diğer Sağlık Personeli Hizmeti</button></li>
-                        <li><button class="submenu-btn" aria-label="İşe Giriş/Periyodik Muayene Sağlık Raporu" onclick="location.href='./pages/hizmetlerimiz.html'">İşe Giriş/Periyodik Muayene Sağlık Raporu</button></li>
-                        <li><button class="submenu-btn" aria-label="İş Sağlığı Ve Güvenliği Eğitim Hizmeti" onclick="location.href='./pages/hizmetlerimiz.html'">İş Sağlığı Ve Güvenliği Eğitim Hizmeti</button></li>
-                        <li><button class="submenu-btn" aria-label="İşyeri Risk Analizi Ve Acil Durum Eylem Planı Hazırlama Hizmeti" onclick="location.href='./pages/hizmetlerimiz.html'">İşyeri Risk Analizi Ve Acil Durum Eylem Planı Hazırlama Hizmeti</button></li>
-                        <li><button class="submenu-btn" aria-label="Mobil Sağlık Tarama Aracı Hizmeti" onclick="location.href='./pages/hizmetlerimiz.html'">Mobil Sağlık Tarama Aracı Hizmeti</button></li>
-                        <li><button class="submenu-btn" aria-label="Acil Durum ve Yangın Tatbikat Hizmeti" onclick="location.href='./pages/hizmetlerimiz.html'">Acil Durum ve Yangın Tatbikat Hizmeti</button></li>
-                    </ul>
+                    <button id="submenu-btn" class="submenu-btn" aria-label="OSGB Hizmetleri" onclick="location.href='./pages/hizmetlerimiz.html'">OSGB Hizmetleri</button>
                 </li>
                 <li class="menu-item">
-                    <button class="submenu-btn" aria-label="Danışmanlık Hizmetleri" onclick="location.href='./pages/hizmetlerimiz.html'">DANIŞMANLIK HİZMETLERİ</button>
-                    <ul class="submenu sub-submenu">
-                        <li><button class="submenu-btn" aria-label="Periyodik Kontrol Ve Ortam Ölçümleri" onclick="location.href='./pages/hizmetlerimiz.html'">Periyodik Kontrol Ve Ortam Ölçümleri</button></li>
-                        <li><button class="submenu-btn" aria-label="Tehlikeli Madde Güvenlik Danışmanlığı Hizmeti" onclick="location.href='./pages/hizmetlerimiz.html'">Tehlikeli Madde Güvenlik Danışmanlığı Hizmeti</button></li>
-                    </ul>
+                    <button class="submenu-btn" aria-label="Danışmanlık Hizmetleri" onclick="location.href='./pages/hizmetlerimiz.html'">Danışmanlık Hizmetleri</button>
                 </li>
                 <li class="menu-item">
-                    <button class="submenu-btn" aria-label="Eğitim Hizmetleri" onclick="location.href='./pages/hizmetlerimiz.html'">EĞİTİM HİZMETLERİ</button>
-                    <ul class="submenu sub-submenu">
-                        <li><button class="submenu-btn" aria-label="İlkyardım Eğitim Hizmeti" onclick="location.href='./pages/hizmetlerimiz.html'">İlkyardım Eğitim Hizmeti</button></li>
-                    </ul>
+                    <button class="submenu-btn" aria-label="Eğitim Hizmetleri" onclick="location.href='./pages/hizmetlerimiz.html'">Eğitim Hizmetleri</button>
                 </li>
             </ul>
         </li>
@@ -119,7 +103,7 @@
                     <h1>BEYAZ İŞ SAĞLIĞI<br>VE GÜVENLİĞİ HİZMETLERİNE<em><br>HOŞGELDİNİZ</em></h1>
                     <p>T.C. Çalışma Bakanlığı tarafından yetkilendirilmiş olan Isparta’nın ilk Ortak Sağlık Güvenlik Birimi Beyaz İş Sağlığı ve Güvenliği,  bünyesindeki  etkin iş güvenliği  uzmanlarımız  ve deneyimli hekimlerimizle İş Sağlığı ve Güvenliği konusunda yükünüzü almak için buradayız.</p>
                     <p>Müşterilerimizin ihtiyaçları ve mevzuatın gereklilikleri arasında köprü olmak, ayrıca İş Sağlığı ve Güvenliği konusunda işyerinize Beyaz bir sayfa açmak için hizmetinizdeyiz.</p>
-                    <a href="./pages/hizmetlerimiz.html" class="btn-services">HİZMETLERİMİZ</a>
+                    <a href="#services-section" class="btn-services">HİZMETLERİMİZ</a>
                 </div>
                 <div class="header-image">
                     <img src="./assets/images/test-header.png" alt="Header Image">
@@ -143,25 +127,25 @@
                             <li>
                                 <img src="assets/images/services-1.png" alt="OSGB Hizmetleri">
                                 <div class="text">
-                                    <h4><a href="./pages/hizmetlerimiz/osgb-hizmetleri.html">OSGB Hizmetleri</a></h4>
+                                    <h4><a href="./pages/hizmetlerimiz.html">OSGB Hizmetleri</a></h4>
                                     <p>Çalışanlarımıza, iş yerinde güvenliğin artırılması amacıyla iş güvenliği konusunda kapsamlı eğitimler veriyoruz.</p>
-                                    <br><a href="./pages/hizmetlerimiz/osgb-hizmetleri.html">Daha Fazla</a>
+                                    <br><a href="./pages/hizmetlerimiz.html">Daha Fazla</a>
                                 </div>
                             </li>
                             <li>
                                 <img src="assets/images/services-2.png" alt="Danışmanlık Hizmetleri">
                                 <div class="text">
-                                    <h4><a href="./pages/hizmetlerimiz/danismanlik-hizmetleri.html">Danışmanlık Hizmetleri</a></h4>
+                                    <h4><a href="./pages/hizmetlerimiz.html">Danışmanlık Hizmetleri</a></h4>
                                     <p>Çalışanlarımız, acil durumlarda hızlı ve etkili hareket etmeleri için özel eğitim programlarına katılmaktadır.</p>
-                                    <br><a href="./pages/hizmetlerimiz/danismanlik-hizmetleri.html">Daha Fazla</a>
+                                    <br><a href="./pages/hizmetlerimiz.html">Daha Fazla</a>
                                 </div>
                             </li>
                             <li>
                                 <img src="assets/images/services-3.png" alt="Eğitimlerimiz">
                                 <div class="text">
-                                    <h4><a href="./pages/hizmetlerimiz/egitimlerimiz.html">Eğitimlerimiz</a></h4>
+                                    <h4><a href="./pages/hizmetlerimiz.html">Eğitimlerimiz</a></h4>
                                     <p>Çalışan sağlığına önem veriyor ve düzenli sağlık taramaları ile bilinçlendirme eğitimleri gerçekleştiriyoruz.</p>
-                                    <br><a href="./pages/hizmetlerimiz/egitimlerimiz.html">Daha Fazla</a>
+                                    <br><a href="./pages/hizmetlerimiz.html">Daha Fazla</a>
                                 </div>
                             </li>
                         </ul>

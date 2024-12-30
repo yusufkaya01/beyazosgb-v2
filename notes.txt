@@ -6,3 +6,7 @@
     
 
     other pages have an issue with justify item or flexbox related about the menu
+
+    <section id="services-section">
+    try addd,ng table for contents
+    submenus lower case
