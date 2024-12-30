@@ -1,101 +1,150 @@
-function toggleSubMenu(id) {
-    // Get all elements with the class 'left-hand-menu-sub-menu'
-    var subMenus = document.getElementsByClassName('left-hand-menu-sub-menu');
+document.addEventListener('DOMContentLoaded', function() {
+    const links = document.querySelectorAll('[data-content]');
+    const contentDisplay = document.getElementById('content-display');
 
-    // Loop through all sub-menus and collapse them
-    for (var i = 0; i < subMenus.length; i++) {
-        subMenus[i].classList.remove('open');
-    }
-
-    // Expand the selected sub-menu
-    var subMenu = document.getElementById(id);
-    if (subMenu.classList.contains('open')) {
-        subMenu.classList.remove('open');
-    } else {
-        subMenu.classList.add('open');
-    }
-}
-
-function showContent(id) {
-    var content = {
-        "left-hand-menu-isg-uzmani": `
-            <div style="margin-top: 50px; margin-right: 250px;">
-                <span style="color: #d83200; font-weight: bold;">İş Güvenliği Uzmanı Hizmeti</span><br><br>
-                <span style="color: black; text-align: justify;">İş güvenliği hizmetimiz kapsamında etkin iş güvenliği uzmanlarımızla, iş kazalarını önlemeye yönelik kapsamlı risk analizleri ve güvenlik önlemleri sağlıyoruz. İş yerinizdeki potansiyel tehlike ve riskleri belirleyerek çalışanların güvenli ortamda çalışması için tespit ve öneride bulunuyoruz, güvenli bir çalışma ortamı oluşturmak için saha raporları sunuyoruz. Sahada gösterdiğimiz eforu aynı zamanda ISG mevzuat prosedürlerine göre ISG dosyasını hazırlarken de gösteriyoruz. Acil durum planları ve çalışanlara yönelik eğitimlerle iş güvenliğini en üst seviyeye çıkarıyoruz. İş güvenliği çözümlerimizle iş yerinizi güvenli hale getirmek ve iş kazalarını önlemek için şimdi bizimle iletişime geçin.</span>
+    const contents = {
+        'is-guvenligi-uzmani-hizmeti': `
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h2>İş Güvenliği Uzmanı Hizmeti</h2>
+                    <p>İş güvenliği hizmetimiz kapsamında etkin iş güvenliği uzmanlarımızla, iş kazalarını önlemeye yönelik kapsamlı risk analizleri ve güvenlik önlemleri sağlıyoruz. İş yerinizdeki potansiyel tehlike ve riskleri belirleyerek çalışanların güvenli ortamda çalışması için tespit ve öneride bulunuyoruz, güvenli bir çalışma ortamı oluşturmak için saha raporları sunuyoruz. Sahada gösterdiğimiz eforu aynı zamanda ISG mevzuat prosedürlerine göre ISG dosyasını hazırlarken de gösteriyoruz. Acil durum planları ve çalışanlara yönelik eğitimlerle iş güvenliğini en üst seviyeye çıkarıyoruz. İş güvenliği çözümlerimizle iş yerinizi güvenli hale getirmek ve iş kazalarını önlemek için şimdi bizimle iletişime geçin.</p>
+                </div>
+                <div class="image-content">
+                    <img src="../../assets/images/services-page.png" alt="İş Güvenliği Uzmanı Hizmeti">
+                </div>
             </div>
         `,
-        "left-hand-menu-is-yeri-hekimligi": `
-            <div style="margin-top: 50px; margin-right: 250px;">
-                <span style="color: #d83200; font-weight: bold;">İşyeri Hekimliği Hizmeti</span><br><br>
-                <span style="color: black; text-align: justify;">İş sağlığı hizmetimiz kapsamında deneyimli işyeri hekimlerimizle, çalışanların sağlık gözetimi ve çalışma ortamının sağlık gözetimi ile ilgili işverene rehberlik yapıyoruz. İşe giriş sağlık tahlilleri ile çalışanın işyeriniz için uygun olup olmadığına işyeri hekimlerimizle karar veriyoruz. Saha ziyaretlerimizde çalışanlarınız işyeri hekimlerimiz tarafından muayene edilip reçete yazma hizmeti sağlıyoruz. İş sağlığı ve güvenliği alanında yapılacak araştırmalara katılmak, ayrıca işin yürütümünde ergonomik ve psikososyal riskler açısından çalışanların fiziksel ve zihinsel kapasitelerini dikkate alarak iş ile çalışanın uyumunun sağlanması ve çalışma ortamındaki stres faktörlerinden korunmaları için araştırmalar yapmak ve bu araştırma sonuçlarını rehberlik faaliyetlerinde dikkate almak. İşyeri bina ve eklentilerinin genel hijyen şartlarını sürekli izleyip denetleyerek, çalışanlara yürütülen işin gerektirdiği beslenme ihtiyacının ve uygun içme suyunun sağlanması konularında tavsiyelerde bulunmak. Kantin, yemekhane, yatakhane, kreş ve emzirme odaları ile soyunma odaları, duş ve tuvaletlerin bakımı ve temizliği konusunda gerekli kontrolleri yaparak tavsiyelerde bulunmak. İşyerinde meydana gelen iş kazası ve meslek hastalıklarının nedenlerinin araştırılması ve tekrarlanmaması için alınacak önlemler konusunda çalışmalar yaparak işverene önerilerde bulunmak.</span>
+        'isyeri-hekimligi-hizmeti': `
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h2>İşyeri Hekimliği Hizmeti</h2>
+                    <p>İş sağlığı hizmetimiz kapsamında deneyimli işyeri hekimlerimizle, çalışanların sağlık gözetimi ve çalışma ortamının sağlık gözetimi ile ilgili işverene rehberlik yapıyoruz. İşe giriş sağlık tahlilleri ile çalışanın işyeriniz için uygun olup olmadığına işyeri hekimlerimizle karar veriyoruz. Saha ziyaretlerimizde çalışanlarınız işyeri hekimlerimiz tarafından muayene edilip reçete yazma hizmeti sağlıyoruz. İş sağlığı ve güvenliği alanında yapılacak araştırmalara katılmak, ayrıca işin yürütümünde ergonomik ve psikososyal riskler açısından çalışanların fiziksel ve zihinsel kapasitelerini dikkate alarak iş ile çalışanın uyumunun sağlanması ve çalışma ortamındaki stres faktörlerinden korunmaları için araştırmalar yapmak ve bu araştırma sonuçlarını rehberlik faaliyetlerinde dikkate almak. İşyeri bina ve eklentilerinin genel hijyen şartlarını sürekli izleyip denetleyerek, çalışanlara yürütülen işin gerektirdiği beslenme ihtiyacının ve uygun içme suyunun sağlanması konularında tavsiyelerde bulunmak. Kantin, yemekhane, yatakhane, kreş ve emzirme odaları ile soyunma odaları, duş ve tuvaletlerin bakımı ve temizliği konusunda gerekli kontrolleri yaparak tavsiyelerde bulunmak. İşyerinde meydana gelen iş kazası ve meslek hastalıklarının nedenlerinin araştırılması ve tekrarlanmaması için alınacak önlemler konusunda çalışmalar yaparak işverene önerilerde bulunmak.</p>
+                </div>
+                <div class="image-content">
+                    <img src="../../assets/images/services-2.png" alt="İşyeri Hekimliği Hizmeti">
+                </div>
             </div>
         `,
-        "left-hand-menu-diger-saglik-personeli": `
-            <div style="margin-top: 50px; margin-right: 250px;">
-                <span style="color: #d83200; font-weight: bold;">Diğer Sağlık Personeli Hizmeti</span><br><br>
-                <span style="color: black; text-align: justify;">Diğer Sağlık Personeli Hizmetimizle İşyerimizdeki Sağlık Tarama Ve Mobil Sağlık Taramalarımızda İşyeri Hekimlerimize Destek Olmasını Sağlıyoruz.</span>
+        'diger-saglik-personeli-hizmeti': `
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h2>Diğer Sağlık Personeli Hizmeti</h2>
+                    <p>Diğer Sağlık Personeli Hizmetimizle işyerimizdeki sağlık tarama ve mobil sağlık taramalarımızda işyeri hekimlerimize destek olmasını sağlıyoruz.</p>
+                </div>
+                <div class="image-content">
+                    <img src="../../assets/images/services-3.png" alt="Diğer Sağlık Personeli Hizmeti">
+                </div>
             </div>
         `,
-        "left-hand-menu-ise-giris-muayene": `
-            <div style="margin-top: 50px; margin-right: 250px;">
-                <span style="color: #d83200; font-weight: bold;">İşe Giriş/Periyodik Muayene Sağlık Raporu</span><br><br>
-                <span style="color: black; text-align: justify;">İşe giriş sağlık raporu hizmetimizle işe alacağınız çalışanların işyerinde maruz kalacakları sağlık ve güvenlik risklerini dikkate alarak sağlık gözetimine ve tahlillere tabi tutulmalarını sağlıyoruz. İşe uygun olup olmadığı konusunda işverene rehberlik ediyoruz. Periyodik muayene sağlık raporu hizmetimizle kanunda belirtilen yasal periyodik sürelerde mevcut çalışanların sağlık muayenelerini yapıyoruz personelin sağlık gidişatı ile ilgili personele ve işverene rehberlik yapıyoruz.</span>
+        'ise-giris-muayene': `
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h2>İşe Giriş/Periyodik Muayene Sağlık Raporu</h2>
+                    <p>İşe giriş sağlık raporu hizmetimizle işe alacağınız çalışanların işyerinde maruz kalacakları sağlık ve güvenlik risklerini dikkate alarak sağlık gözetimine ve tahlillere tabi tutulmalarını sağlıyoruz. İşe uygun olup olmadığı konusunda işverene rehberlik ediyoruz. Periyodik muayene sağlık raporu hizmetimizle kanunda belirtilen yasal periyodik sürelerde mevcut çalışanların sağlık muayenelerini yapıyoruz. Personelin sağlık gidişatı ile ilgili personele ve işverene rehberlik yapıyoruz.</p>
+                </div>
+                <div class="image-content">
+                    <img src="../../assets/images/services-1.png" alt="İşe Giriş/Periyodik Muayene Sağlık Raporu">
+                </div>
             </div>
         `,
-        "left-hand-menu-isg-egitim": `
-            <div style="margin-top: 50px; margin-right: 250px;">
-                <span style="color: #d83200; font-weight: bold;">İş Sağlığı Ve Güvenliği Eğitim Hizmeti</span><br><br>
-                <span style="color: black; text-align: justify;">İş sağlığı ve güvenliği eğitim hizmetlerimizle, 6331 sayılı iş sağlığı ve güvenliği kanunu çalışanların eğitimi madde 17 kapsamında çalışanların ISG ile ilgili mevzuatta belirtilen tüm eğitimlerini veriyoruz. Eğitimler işletmelerde sağlıklı ve güvenli ortamlar oluşturmak, iş kazaları ve meslek hastalıklarını azaltmak amacıyla düzenlenmektedir. Bu eğitimlerde çalışanlar yasal hak ve sorumlulukları konusunda ve karşılaşabilecekleri mesleki riskler ve bu riskler için alınması gerekli tedbirler konusunda bilinçlendirilirler. Çalışanlara eğitimler sonunda sertifikalarını veriyoruz.</span>
+        'isg-egitim': `
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h2>İş Sağlığı Ve Güvenliği Eğitim Hizmeti</h2>
+                    <p>İş sağlığı ve güvenliği eğitim hizmetlerimizle, 6331 sayılı iş sağlığı ve güvenliği kanunu çalışanların eğitimi madde 17 kapsamında çalışanların ISG ile ilgili mevzuatta belirtilen tüm eğitimlerini veriyoruz. Eğitimler işletmelerde sağlıklı ve güvenli ortamlar oluşturmak, iş kazaları ve meslek hastalıklarını azaltmak amacıyla düzenlenmektedir. Bu eğitimlerde çalışanlar yasal hak ve sorumlulukları konusunda ve karşılaşabilecekleri mesleki riskler ve bu riskler için alınması gerekli tedbirler konusunda bilinçlendirilirler. Çalışanlara eğitimler sonunda sertifikalarını veriyoruz.</p>
+                </div>
+                <div class="image-content">
+                    <img src="../../assets/images/services-2.png" alt="İş Sağlığı Ve Güvenliği Eğitim Hizmeti">
+                </div>
             </div>
         `,
-        "left-hand-menu-risk-analizi": `
-            <div style="margin-top: 50px; margin-right: 250px;">
-                <span style="color: #d83200; font-weight: bold;">İşyeri Risk Analizi Ve Acil Durum Eylem Planı Hazırlama Hizmeti</span><br><br>
-                <span style="color: black; text-align: justify;">İşyeri Risk Analizi Hizmetimizle İşyerinizdeki Tehlike Ve Risklere Göre Kapsamlı Ve İnteraktif Risk Değerlendirmeleri Hazırlıyoruz. Hizmetimiz Sürecinde İşyerinizde Alacağınız Önlemler İçin Mevzuat Dayanağında Önerilerde Bulunuyoruz. Aksiyon Planlarımız İle Risk Değerlendirmenizi Güncel Ve Dinamik Tutuyoruz. Acil Durum Eylem Planı Hazırlama Hizmetimizle İşyerinizde Karşılaştığınız Ya Da Karşılaşma Olasılığı Olan Tüm Acil Durumların Tespit Edilmesi Ve Alınacak Aksiyonlar Hakkında Eylem Planı Hazırlıyoruz.</span>
+        'risk-analizi': `
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h2>İşyeri Risk Analizi Ve Acil Durum Eylem Planı Hazırlama Hizmeti</h2>
+                    <p>İşyeri risk analizi hizmetimizle işyerinizdeki tehlike ve risklere göre kapsamlı ve interaktif risk değerlendirmeleri hazırlıyoruz. Hizmetimiz sürecinde işyerinizde alacağınız önlemler için mevzuat dayanağında önerilerde bulunuyoruz. Aksiyon planlarımız ile risk değerlendirmenizi güncel ve dinamik tutuyoruz. Acil durum eylem planı hazırlama hizmetimizle işyerinizde karşılaştığınız ya da karşılaşma olasılığı olan tüm acil durumların tespit edilmesi ve alınacak aksiyonlar hakkında eylem planı hazırlıyoruz.</p>
+                </div>
+                <div class="image-content">
+                    <img src="../../assets/images/services-3.png" alt="İşyeri Risk Analizi Ve Acil Durum Eylem Planı Hazırlama Hizmeti">
+                </div>
             </div>
         `,
-        "left-hand-menu-mobil-saglik": `
-            <div style="margin-top: 50px; margin-right: 250px;">
-                <span style="color: #d83200; font-weight: bold;">Mobil Sağlık Tarama Aracı Hizmeti</span><br><br>
-                <span style="color: black; text-align: justify;">Mobil sağlık tarama aracı hizmetimizle periyodik sağlık kontrollerinizi işyerinizde yapıp sizin zaman ve enerji kaybınızı en aza indiriyoruz.</span>
+        'mobil-saglik': `
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h2>Mobil Sağlık Tarama Aracı Hizmeti</h2>
+                    <p>Mobil sağlık tarama aracı hizmetimizle periyodik sağlık kontrollerinizi işyerinizde yapıp sizin zaman ve enerji kaybınızı en aza indiriyoruz.</p>
+                </div>
+                <div class="image-content">
+                    <img src="../../assets/images/services-1.png" alt="Mobil Sağlık Tarama Aracı Hizmeti">
+                </div>
             </div>
         `,
-        "left-hand-menu-yangin-tatbikat": `
-            <div style="margin-top: 50px; margin-right: 250px;">
-                <span style="color: #d83200; font-weight: bold;">Acil Durum Ve Yangın Tatbikat Hizmeti</span><br><br>
-                <span style="color: black; text-align: justify;">Acil Durum Ve Yangın Tatbikat Hizmetimizle İşyerinde Bulunan Acil Durum Planı Kapsamında Tatbikat Öncesi Ekipler Oluşturuyoruz Ve Ekiplere Uygun Eğitimlerini Veriyoruz. İşyerinize Uygun Tatbikatlar Yapıp Sonuçları Hakkında Çalışanları Ve İşverenleri Bilgilendiriyoruz.</span>
+        'yangin-tatbikat': `
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h2>Acil Durum Ve Yangın Tatbikat Hizmeti</h2>
+                    <p>Acil durum ve yangın tatbikat hizmetimizle işyerinde bulunan acil durum planı kapsamında tatbikat öncesi ekipler oluşturuyoruz ve ekiplere uygun eğitimlerini veriyoruz. İşyerinize uygun tatbikatlar yapıp sonuçları hakkında çalışanları ve işverenleri bilgilendiriyoruz.</p>
+                </div>
+                <div class="image-content">
+                    <img src="../../assets/images/services-2.png" alt="Acil Durum Ve Yangın Tatbikat Hizmeti">
+                </div>
             </div>
         `,
-        "left-hand-menu-periyodik-kontrol": `
-            <div style="margin-top: 50px; margin-right: 250px;">
-                <span style="color: #d83200; font-weight: bold;">Periyodik Kontrol Ve Ortam Ölçümleri</span><br><br>
-                <span style="color: black; text-align: justify;">İş güvenliği uzmanlarımız ve mühendis ekibimizle birlikte işyerinizin mevzuat kapsamında periyodik kontrol yaptırılması gereken makine ve elektrik ekipmanlarını belirliyoruz. Çözüm ortaklarımızla ölçümlerinizin yaptırılmasını sağlıyoruz. Ölçüm sonuçlarına göre işyerinizi risk değerlendirmesini yapıyoruz kontrolden geçmeyen ekipmanlarınıza düzeltici, önleyici faaliyet formu hazırlıyoruz.</span>
+        'periyodik-kontrol': `
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h2>Periyodik Kontrol Ve Ortam Ölçümleri</h2>
+                    <p>İş güvenliği uzmanlarımız ve mühendis ekibimizle birlikte işyerinizin mevzuat kapsamında periyodik kontrol yaptırılması gereken makine ve elektrik ekipmanlarını belirliyoruz. Çözüm ortaklarımızla ölçümlerinizin yaptırılmasını sağlıyoruz. Ölçüm sonuçlarına göre işyerinizi risk değerlendirmesini yapıyoruz. Kontrolden geçmeyen ekipmanlarınıza düzeltici, önleyici faaliyet formu hazırlıyoruz.</p>
+                </div>
+                <div class="image-content">
+                    <img src="../../assets/images/services-3.png" alt="Periyodik Kontrol Ve Ortam Ölçümleri">
+                </div>
             </div>
         `,
-        "left-hand-menu-tehlikeli-madde": `
-            <div style="margin-top: 50px; margin-right: 250px;">
-                <span style="color: #d83200; font-weight: bold;">Tehlikeli Madde Güvenlik Danışmanlığı Hizmeti</span><br><br>
-                <span style="color: black; text-align: justify;">İşyerinizin Adr Kapsamında Olup Olmadığına Karar Veriyoruz. Adr / Imdg / Rıd’e Göre, Tehlikeli Maddelerin Lojistiği Sürecinde, Ulusal Ve Uluslararası Karmaşık Mevzuat Yapılarına Uyulması Gerekmektedir. İşyerinizi Tehlikeli Madde Taşımacılığı Konusunda Tüm Ulusal Ve Uluslararası Düzenlemelere Uyumlu Hale Gelmesini Sağlıyoruz.</span>
+        'tehlikeli-madde': `
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h2>Tehlikeli Madde Güvenlik Danışmanlığı Hizmeti</h2>
+                    <p>İşyerinizin ADR kapsamında olup olmadığına karar veriyoruz. ADR / IMDG / RID’e göre, tehlikeli maddelerin lojistiği sürecinde, ulusal ve uluslararası karmaşık mevzuat yapılarına uyulması gerekmektedir. İşyerinizi tehlikeli madde taşımacılığı konusunda tüm ulusal ve uluslararası düzenlemelere uyumlu hale gelmesini sağlıyoruz.</p>
+                </div>
+                <div class="image-content">
+                    <img src="../../assets/images/services-1.png" alt="Tehlikeli Madde Güvenlik Danışmanlığı Hizmeti">
+                </div>
             </div>
         `,
-        "left-hand-menu-ilkyardim": `
-            <div style="margin-top: 50px; margin-right: 250px;">
-                <span style="color: #d83200; font-weight: bold;">İlkyardım Eğitim Hizmeti [Sağlık Bakanlığı Onaylı]</span><br><br>
-                <span style="color: black; text-align: justify;">İlkyardım eğitim hizmetimizle sağlık bakanlığı onaylı ilkyardım eğitim merkezimizde ilkyardım yönetmeliği kapsamında temel ilkyardım eğitimi ve ilkyardım güncelleme eğitimlerini veriyoruz. Ülkemiz sınırları içerisinde faaliyet gösteren özel ve resmi tüm işletmelerin, çalışanlarının belirli bir bölümünün 16 saatlik temel ilk yardım eğitimi almasını zorunlu hale gelmiştir. Bu eğitimler her ilin il sağlık müdürlüğünden eğitim verme yetkisini almış kurumumuz tarafından verilmektedir. Toplam 16 saat olan eğitim 2 gün sekizer saat olarak verilebilmektedir. Eğitim sonunda eğitime katılan kişilerin adına sertifika ve kimlik kartları düzenlenmektedir.</span>
+        'ilkyardim': `
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h2>İlkyardım Eğitim Hizmeti [Sağlık Bakanlığı Onaylı]</h2>
+                    <p>İlkyardım eğitim hizmetimizle Sağlık Bakanlığı onaylı ilkyardım eğitim merkezimizde ilkyardım yönetmeliği kapsamında temel ilkyardım eğitimi ve ilkyardım güncelleme eğitimlerini veriyoruz. Ülkemiz sınırları içerisinde faaliyet gösteren özel ve resmi tüm işletmelerin, çalışanlarının belirli bir bölümünün 16 saatlik temel ilk yardım eğitimi almasını zorunlu hale getirmiştir. Bu eğitimler her ilin il sağlık müdürlüğünden eğitim verme yetkisini almış kurumumuz tarafından verilmektedir. Toplam 16 saat olan eğitim 2 gün sekizer saat olarak verilebilmektedir. Eğitim sonunda eğitime katılan kişilerin adına sertifika ve kimlik kartları düzenlenmektedir.</p>
+                </div>
+                <div class="image-content">
+                    <img src="../../assets/images/services-2.png" alt="İlkyardım Eğitim Hizmeti [Sağlık Bakanlığı Onaylı]">
+                </div>
             </div>
         `,
-        "left-hand-menu-yuksekte-calisma": `
-            <div style="margin-top: 50px; margin-right: 250px;">
-                <span style="color: #d83200; font-weight: bold;">Yüksekte Çalışma Eğitimi</span><br><br>
-                <span style="color: black; text-align: justify;">Yüksekte çalışma eğitimlerimizle, işyerinizde yüksekte yapılan veya yapılabilecek çalışmaların tehlikelerini tespit ediyoruz. Yapılacak çalışmaya yönelik gereken önlemler ve kullanılması gereken koruyucu ekipmanlar hakkında çalışanların bilgilendirilmesini sağlıyoruz. Yüksekte çalışma yapacak personele güvenli çalışma alanlarında uygulamalı eğitim veriyoruz.</span>
+        'yuksekte-calisma': `
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h2>Yüksekte Çalışma Eğitimi</h2>
+                    <p>Yüksekte çalışma eğitimlerimizle, işyerinizde yüksekte yapılan veya yapılabilecek çalışmaların tehlikelerini tespit ediyoruz. Yapılacak çalışmaya yönelik gereken önlemler ve kullanılması gereken koruyucu ekipmanlar hakkında çalışanların bilgilendirilmesini sağlıyoruz. Yüksekte çalışma yapacak personele güvenli çalışma alanlarında uygulamalı eğitim veriyoruz.</p>
+                </div>
+                <div class="image-content">
+                    <img src="../../assets/images/services-1.png" alt="Yüksekte Çalışma Eğitimi">
+                </div>
             </div>
         `
     };
 
-    document.getElementById('left-hand-menu-content').innerHTML = content[id] || "Content not found.";
-}
-
-function toggleMenu() {
-    const menu = document.querySelector('.menu');
-    menu.classList.toggle('active');
-}
+    links.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const contentKey = this.getAttribute('data-content');
+            if (contents[contentKey]) {
+                contentDisplay.innerHTML = contents[contentKey];
+                contentDisplay.style.display = 'block';
+            }
+        });
+    });
+});

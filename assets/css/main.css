@@ -925,7 +925,8 @@ footer .services-container {
 #services-page-section h1 {
     font-size: 2rem; /* Larger font size for the title */
     font-weight: bold;
-    margin-bottom: 40px; /* Add spacing below the title */
+    margin-top: -30px;
+    margin-bottom: 4px; /* Add spacing below the title */
     color: #d83200; /* Dark text color */
 }
 
@@ -938,16 +939,13 @@ footer .services-container {
 }
 
 #services-page-section h2 > a:hover {
-    font-size: 1.5rem; /* Larger font size for the title */
-    font-weight: bold;
-    margin-bottom: 40px; /* Add spacing below the title */
-    color: #a53501; /* Dark text color */
+    color: #a53501; /* Change color on hover */
     text-decoration: none;
 }
 
 /* Services Items Container */
 .services-page-item {
-    background-color: #fff3f3; /* White background for the boxes */
+    background-color: #fff3f3; /* Light background for the boxes */
     border: 2px solid #ddd; /* Light gray border */
     border-radius: 8px; /* Rounded corners */
     padding: 20px; /* Add padding inside the boxes */
@@ -986,6 +984,7 @@ footer .services-container {
 
 /* Service Links */
 .services-page-item h2 a {
+    font-size: 1rem !important;
     text-decoration: none; /* Remove underline */
     color: inherit; /* Inherit the h2 color */
     transition: color 0.3s; /* Smooth hover effect */
@@ -996,6 +995,37 @@ footer .services-container {
     color: #a53501; /* Change color on hover */
 }
 
+/* Content Display */
+/* Styles for content display */
+.content-display {
+    display: none;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-top: -40px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: flex-start;
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 20px;
+    text-align: justify;
+}
+
+.image-content {
+    flex: 0 0 500px; /* Adjust the width as needed */
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+}
 /* Services Page Styles End */
 
 
@@ -1011,6 +1041,16 @@ footer .services-container {
 }
 
 .about-us p {
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 1rem; /* Regular font size for the text */
+    color: black; /* Light gray text color */
+    line-height: 2; /* Increase line height for readability */
+    margin-bottom: 50px; /* Add spacing below the paragraphs */
+    text-align: justify;
+}
+
+.about-us ol {
     margin-left: 15%;
     margin-right: 15%;
     font-size: 1rem; /* Regular font size for the text */
@@ -1097,6 +1137,8 @@ footer .services-container {
     padding: 30px 0;
     background-color: #fff; /* Ensure background color is set */
 }
+
+
 
 /* Form container */
 form {
@@ -1248,6 +1290,7 @@ footer h2 {
 
 footer p {
     font-size: 1rem;
+    font-family: "Libre Baskerville", serif;;
     color: black;
     text-align: justify;
     width: 100%;

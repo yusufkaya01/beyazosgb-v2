@@ -1,6 +1,5 @@
 
     sol alt logo scroll up yap
-    sss to new page
     form and maps are side by side
     contact logos go under footer
     
@@ -10,3 +9,9 @@
     <section id="services-section">
     try addd,ng table for contents
     submenus lower case
+
+    e-mail send type
+    menu forwarding
+    services contact-us goes below
+    delete unnecessary  files etc
+    check all the titles have bg color as light red
