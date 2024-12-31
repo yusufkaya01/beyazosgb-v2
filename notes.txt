@@ -1,17 +1,12 @@
 
-    sol alt logo scroll up yap
-    form and maps are side by side
-    contact logos go under footer
     
 
     other pages have an issue with justify item or flexbox related about the menu
 
     <section id="services-section">
-    try addd,ng table for contents
-    submenus lower case
+    try addding table for contents
 
     e-mail send type
-    menu forwarding
     services contact-us goes below
     delete unnecessary  files etc
     check all the titles have bg color as light red

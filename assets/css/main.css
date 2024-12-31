@@ -919,6 +919,7 @@ footer .services-container {
     background-color: white; /* Light gray background */
     padding: 50px 20px; /* Add padding for spacing */
     text-align: center; /* Center-align the text */
+    margin-top: 100px;
 }
 
 /* Section Title (h1) */
@@ -927,7 +928,7 @@ footer .services-container {
     font-weight: bold;
     margin-top: -30px;
     margin-bottom: 4px; /* Add spacing below the title */
-    color: #d83200; /* Dark text color */
+    color: white; /* Dark text color */
 }
 
 #services-page-section h2 > a {
@@ -1019,7 +1020,7 @@ footer .services-container {
 }
 
 .image-content {
-    flex: 0 0 500px; /* Adjust the width as needed */
+    flex: 0 0 250px; /* Adjust the width as needed */
 }
 
 .image-content img {
@@ -1036,7 +1037,7 @@ footer .services-container {
     font-size: 2rem; /* Larger font size for the title */
     font-weight: bold;
     margin-bottom: 40px; /* Add spacing below the title */
-    color: #d83200; /* Dark text color */
+    color: white; /* Dark text color */
     text-align: center; /* Center-align the text */
 }
 
@@ -1076,7 +1077,7 @@ footer .services-container {
 #faq-section h2 {
     text-align: center;
     font-size: 2rem;
-    color: black; /* Orange color for the main header */
+    color: white; /* Orange color for the main header */
     margin-bottom: 20px;
 }
 
@@ -1131,11 +1132,13 @@ footer .services-container {
 #service-request-section {
     padding: 30px 0;
     background-color: #fff; /* Ensure background color is set */
+    margin-top: 100px;
 }
 
 #contact-us {
     padding: 30px 0;
     background-color: #fff; /* Ensure background color is set */
+    margin-top: 600px;
 }
 
 

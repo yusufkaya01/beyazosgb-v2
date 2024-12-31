@@ -26,8 +26,8 @@
         <img src="../../assets/images/body-background.png"  alt="Beyaz OSGB Logo" />
     </a>
 
-    <a href="../../index.html" target="_blank" class="logo-icon">
-        <img src="../../assets/images/beyazosgb-logo.png"  alt="Beyaz OSGB Logo" />
+    <a href="#" id="scrollUp" class="logo-icon">
+        <img src="../../assets/images/beyazosgb-logo.png" alt="Beyaz OSGB Logo" />
     </a>
 
         <!-- ***** Header Area Start ***** -->
@@ -38,6 +38,7 @@
                         <nav class="">
                         <!-- ***** Menu Start ***** -->
                         <nav>
+                            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
                             <ul class="menu">
                                 <li class="menu-item-title">
                                     <a>BEYAZ OSGB</a>
@@ -52,27 +53,21 @@
                                     <button id="menu-arrow" class="toggle-btn" aria-label="Toggle submenu">HİZMETLERİMİZ</button>
                                     <ul class="submenu-down">
                                         <li class="menu-item">
-                                            <button id="submenu-arrow" class="submenu-btn" aria-label="OSGB Hizmetleri" onclick="location.href='../../pages/hizmetlerimiz/osgb-hizmetleri.html', '_blank'">OSGB Hizmetleri</button>
-                                            <ul class="submenu sub-submenu">
-                                                <li><button class="submenu-btn" aria-label="İş Güvenliği Hizmetleri" onclick="location.href='../../pages/hizmetlerimiz/osgb-hizmetleri/is-guvenligi-hizmetleri.html'">İş Güvenliği Hizmetleri</button></li>
-                                                <li><button class="submenu-btn" aria-label="İş Sağlığı Hizmetleri" onclick="location.href='../../pages/hizmetlerimiz/osgb-hizmetleri/is-sagligi-hizmetleri.html'">İş Sağlığı Hizmetleri</button></li>
-                                                <li><button class="submenu-btn" aria-label="Periyodik Sağlık Kontrolleri" onclick="location.href='../../pages/hizmetlerimiz/osgb-hizmetleri/periyodik-saglik-kontrolleri.html'">Periyodik Sağlık Kontrolleri</button></li>
-                                                <li><button class="submenu-btn" aria-label="İşe Giriş Sağlık Raporları Hizmetleri" onclick="location.href='../../pages/hizmetlerimiz/osgb-hizmetleri/ise-giris-saglik-raporlari-hizmetleri.html'">İşe Giriş Sağlık Raporları Hizmetleri</button></li>
-                                            </ul>
-                                        </li> 
+                                            <button id="submenu-btn" class="submenu-btn" aria-label="OSGB Hizmetleri" onclick="location.href='../../pages/hizmetlerimiz/osgb-hizmetleri.html'">OSGB Hizmetleri</button>
+                                        </li>
                                         <li class="menu-item">
                                             <button class="submenu-btn" aria-label="Danışmanlık Hizmetleri" onclick="location.href='../../pages/hizmetlerimiz/danismanlik-hizmetleri.html'">Danışmanlık Hizmetleri</button>
                                         </li>
                                         <li class="menu-item">
-                                            <button class="submenu-btn" aria-label="Eğitimlerimiz" onclick="location.href='../../pages/hizmetlerimiz/egitimlerimiz.html'">Eğitimlerimiz</button>
+                                            <button class="submenu-btn" aria-label="Eğitim Hizmetleri" onclick="location.href='../../pages/hizmetlerimiz/egitimlerimiz.html'">Eğitim Hizmetleri</button>
                                         </li>
                                     </ul>
                                 </li>
                                 <li class="menu-item">
                                     <button id="menu-arrow" class="toggle-btn" aria-label="Toggle submenu">KURUMSAL</button>
                                     <ul class="submenu">
-                                        <li><a class="scroll-to-section" href="../../index.html#why-us-section">Neden Biz</a></li>
-                                        <li><a href="#faq-section">Sıkça Sorulan Sorular</a></li>
+                                        <li><a class="scroll-to-section" href="../../index.html#why-us-section"">Neden Biz</a></li>
+                                        <li><a href="../../pages/kurumsal/sss.html">Sıkça Sorulan Sorular</a></li>
                                         <li><a href="../../pages/kurumsal/about-us.html">Hakkımızda</a></li>
                                         <li><a href="../../pages/kurumsal/insan-kaynaklari.html">İnsan Kaynakları</a></li>
                                     </ul>
@@ -105,7 +100,7 @@
 <!-- ***** Services Page Section Start ***** -->
 <section id="services-page-section">
     <div>
-        <h1>OSGB HİZMETLERİMİZ</h1>
+        <h1 class="fake-button">OSGB HİZMETLERİMİZ</h1>
         <div class="services-page-item">
             <a href="#" data-content="is-guvenligi-uzmani-hizmeti"><img src="../../assets/images/services-1.png" alt="OSGB Hizmetleri Icon"></a>
             <h2><a href="#" data-content="is-guvenligi-uzmani-hizmeti">İŞ GÜVENLİĞİ UZMANI HİZMETİ</a></h2>
@@ -237,7 +232,7 @@
             <h4>Kurumsal</h4>
             <ul>
                 <li><a href="../../index.html#why-us-section">Neden Biz</a></li>
-                <li><a href="../../index.html#faq-section">Sıkça Sorulan Sorular</a></li>
+                <li><a href="../../pages/kurumsal/sss.html">Sıkça Sorulan Sorular</a></li>
                 <li><a href="../../pages/kurumsal/about-us.html">Hakkımızda</a></li>
                 <li><a href="../../pages/kurumsal/insan-kaynaklari.html">İnsan Kaynakları</a></li>
             </ul>
@@ -251,6 +246,7 @@
             </ul>
         </div>
     </div>
+    <!-- Footer Menu End -->
         <!-- Social Media Icons -->
         <div class="social-media">
             <ul>

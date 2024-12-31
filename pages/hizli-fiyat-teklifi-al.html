@@ -22,12 +22,12 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
     </a>
 
-    <a href="./index.html" target="_blank" class="logo-icon-top">
+    <a  target="_blank" class="logo-icon-top">
         <img src="../assets/images/body-background.png"  alt="Beyaz OSGB Logo" />
     </a>
 
-    <a href="../index.html" target="_blank" class="logo-icon">
-        <img src="../assets/images/beyazosgb-logo.png"  alt="Beyaz OSGB Logo" />
+    <a href="#" id="scrollUp" class="logo-icon">
+        <img src="../assets/images/beyazosgb-logo.png" alt="Beyaz OSGB Logo" />
     </a>
 
         <!-- ***** Header Area Start ***** -->
@@ -36,62 +36,57 @@
                 <div class="row">
                     <div class="col-12">
                         <nav class="">
-                            <!-- ***** Menu Start ***** -->
-                            <nav>
-                                <ul class="menu">
-                                    <li class="menu-item-title">
-                                        <a>BEYAZ OSGB</a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a>|</a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <button class="toggle-btn" aria-label="Go to homepage" onclick="window.location.href='../index.html'">ANASAYFA</button>
-                                    </li>
-                                    <li class="menu-item">
-                                        <button id="menu-arrow" class="toggle-btn" aria-label="Toggle submenu">HİZMETLERİMİZ</button>
-                                        <ul class="submenu-down">
-                                            <li class="menu-item">
-                                                <button id="submenu-arrow" class="submenu-btn" aria-label="OSGB Hizmetleri" onclick="location.href='../pages/hizmetlerimiz/osgb-hizmetleri.html', '_blank'">OSGB Hizmetleri</button>
-                                                <ul class="submenu sub-submenu">
-                                                    <li><button class="submenu-btn" aria-label="İş Güvenliği Hizmetleri" onclick="location.href='../pages/hizmetlerimiz/osgb-hizmetleri/is-guvenligi-hizmetleri.html'">İş Güvenliği Hizmetleri</button></li>
-                                                    <li><button class="submenu-btn" aria-label="İş Sağlığı Hizmetleri" onclick="location.href='../pages/hizmetlerimiz/osgb-hizmetleri/is-sagligi-hizmetleri.html'">İş Sağlığı Hizmetleri</button></li>
-                                                    <li><button class="submenu-btn" aria-label="Periyodik Sağlık Kontrolleri" onclick="location.href='../pages/hizmetlerimiz/osgb-hizmetleri/periyodik-saglik-kontrolleri.html'">Periyodik Sağlık Kontrolleri</button></li>
-                                                    <li><button class="submenu-btn" aria-label="İşe Giriş Sağlık Raporları Hizmetleri" onclick="location.href='../pages/hizmetlerimiz/osgb-hizmetleri/ise-giris-saglik-raporlari-hizmetleri.html'">İşe Giriş Sağlık Raporları Hizmetleri</button></li>
-                                                </ul>
-                                            </li> 
-                                            <li class="menu-item">
-                                                <button class="submenu-btn" aria-label="Danışmanlık Hizmetleri" onclick="location.href='../pages/hizmetlerimiz/danismanlik-hizmetleri.html'">Danışmanlık Hizmetleri</button>
-                                            </li>
-                                            <li class="menu-item">
-                                                <button class="submenu-btn" aria-label="Eğitimlerimiz" onclick="location.href='../pages/hizmetlerimiz/egitimlerimiz.html'">Eğitimlerimiz</button>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item">
-                                        <button id="menu-arrow" class="toggle-btn" aria-label="Toggle submenu">KURUMSAL</button>
-                                        <ul class="submenu">
-                                            <li><a class="scroll-to-section" href="../index.html#why-us-section">Neden Biz</a></li>
-                                            <li><a href="#faq-section">Sıkça Sorulan Sorular</a></li>
-                                            <li><a href="../pages/kurumsal/about-us.html">Hakkımızda</a></li>
-                                            <li><a href="../pages/kurumsal/insan-kaynaklari.html">İnsan Kaynakları</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item">
-                                        <button class="toggle-btn" aria-label="Redirect to Hızlı Fiyat Teklifi" onclick="window.location.href='../pages/hizli-fiyat-teklifi-al.html'">HIZLI FİYAT TEKLİFİ AL</button>
-                                    </li>
-                                    <li class="menu-item">
-                                        <button class="toggle-btn" aria-label="Redirect to Uzman Danış" onclick="window.location.href='../pages/uzmana-danis.html'">UZMANA ÜCRETSİZ DANIŞ</button>
-                                    </li>
-                                    <li class="menu-item">
-                                        <button class="toggle-btn" aria-label="Redirect to Contact Us" onclick="window.location.href='./pages/ilkyardim-egitimleri.html'">İLK YARDIM EĞİTİMLERİ</button>
-                                    </li>
-                                    <li class="menu-item">
-                                        <button class="toggle-btn" aria-label="Redirect to Contact Us" onclick="window.location.href='#contact-us'">BİZİMLE İLETİŞİM KUR</button>
-                                    </li>
-                                </ul>
-                            </nav>
-                            <!-- ***** Menu End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <nav>
+                            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+                            <ul class="menu">
+                                <li class="menu-item-title">
+                                    <a>BEYAZ OSGB</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a>|</a>
+                                </li>
+                                <li class="menu-item">
+                                    <button class="toggle-btn" aria-label="Go to homepage" onclick="window.location.href='../index.html'">ANASAYFA</button>
+                                </li>
+                                <li class="menu-item">
+                                    <button id="menu-arrow" class="toggle-btn" aria-label="Toggle submenu">HİZMETLERİMİZ</button>
+                                    <ul class="submenu-down">
+                                        <li class="menu-item">
+                                            <button id="submenu-btn" class="submenu-btn" aria-label="OSGB Hizmetleri" onclick="location.href='../pages/hizmetlerimiz/osgb-hizmetleri.html'">OSGB Hizmetleri</button>
+                                        </li>
+                                        <li class="menu-item">
+                                            <button class="submenu-btn" aria-label="Danışmanlık Hizmetleri" onclick="location.href='../pages/hizmetlerimiz/danismanlik-hizmetleri.html'">Danışmanlık Hizmetleri</button>
+                                        </li>
+                                        <li class="menu-item">
+                                            <button class="submenu-btn" aria-label="Eğitim Hizmetleri" onclick="location.href='../pages/hizmetlerimiz/egitimlerimiz.html'">Eğitim Hizmetleri</button>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <button id="menu-arrow" class="toggle-btn" aria-label="Toggle submenu">KURUMSAL</button>
+                                    <ul class="submenu">
+                                        <li><a class="scroll-to-section" href="../index.html#why-us-section"">Neden Biz</a></li>
+                                        <li><a href="../pages/kurumsal/sss.html">Sıkça Sorulan Sorular</a></li>
+                                        <li><a href="../pages/kurumsal/about-us.html">Hakkımızda</a></li>
+                                        <li><a href="../pages/kurumsal/insan-kaynaklari.html">İnsan Kaynakları</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <button class="toggle-btn" aria-label="Redirect to Hızlı Fiyat Teklifi" onclick="window.location.href='../pages/hizli-fiyat-teklifi-al.html'">HIZLI FİYAT TEKLİFİ AL</button>
+                                </li>
+                                <li class="menu-item">
+                                    <button class="toggle-btn" aria-label="Redirect to Uzman Danış" onclick="window.location.href='../pages/uzmana-danis.html'">UZMANA ÜCRETSİZ DANIŞ</button>
+                                </li>
+                                <li class="menu-item">
+                                    <button class="toggle-btn" aria-label="Redirect to Contact Us" onclick="window.location.href='../pages/ilkyardim-egitimleri.html'">İLKYARDIM EĞİTİMLERİ</button>
+                                </li>
+                                <li class="menu-item">
+                                    <button class="toggle-btn" aria-label="Redirect to Contact Us" onclick="window.location.href='#contact-us'">BİZİMLE İLETİŞİM KUR</button>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- ***** Menu End ***** -->
 
                         </nav>
                     </div>
@@ -99,21 +94,10 @@
             </div>
         </header>
         <!-- ***** Header Text Start ***** -->
-        <div class="header-container">
-            <div class="header-content">
-                <div class="header-text">
-                    <h1>BEYAZ İŞ SAĞLIĞI<br>VE GÜVENLİĞİ HİZMETLERİNE<em><br>HOŞGELDİNİZ</em>hızlı fiyat teklifi</h1>
-                    <p>Bakanlık lisanslı Isparta'nın ilk ortak sağlık güvenlik birimi, Beyaz İş Sağlığı ve Güvenliği bünyesinde, uzman doktor ve iş güvenliği uzmanları ile pandemi ve yeni yasalar konusunda hizmetinizdeyiz.</p>
-                    <a href="../pages/hizmetlerimiz.html" class="btn-services">HİZMETLERİMİZ</a>
-                </div>
-                <div class="header-image">
-                    <img src="../assets/images/header-image.png" alt="Header Image">
-                </div>
-            </div>
-        </div>
+
         <!-- ***** Header Text End ***** -->
 
-        </div>
+
         <!-- ***** Welcome Area End ***** -->
 
 
@@ -131,31 +115,31 @@
                     </div>
                     <div class="half-width">
                         <fieldset>
-                            <input name="konu" type="text" id="konu" placeholder="Konu" required>
+                            <input name="konu" type="text" id="konu" placeholder="Konu" >
                         </fieldset>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="half-width">
                         <fieldset>
-                            <input name="company" type="text" id="company" placeholder="Şirket İsmi" required>
+                            <input name="company" type="text" id="company" placeholder="Şirket İsmi" >
                         </fieldset>
                     </div>
                     <div class="half-width">
                         <fieldset>
-                            <input name="tehlikesinifi" type="text" id="tehlikesinifi" placeholder="Tehlike Sınıfı" required>
+                            <input name="tehlikesinifi" type="text" id="tehlikesinifi" placeholder="Tehlike Sınıfı" >
                         </fieldset>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="half-width">
                         <fieldset>
-                            <input name="employees" type="text" id="employees" placeholder="Çalışan Sayısı" required>
+                            <input name="employees" type="text" id="employees" placeholder="Çalışan Sayısı" >
                         </fieldset>
                     </div>
                     <div class="half-width">
                         <fieldset>
-                            <input name="email" type="email" id="email" placeholder="E-Mail Adresi" required>
+                            <input name="email" type="email" id="email" placeholder="E-Mail Adresi" >
                         </fieldset>
                     </div>
                 </div>
@@ -251,9 +235,9 @@
         <div>
             <h4>Hizmetlerimiz</h4>
             <ul>
-                <li><a href="../pages/hizmetlerimiz.html">OSGB Hizmetleri</a></li>
-                <li><a href="../pages/hizmetlerimiz.html">Danışmanlık Hizmetleri</a></li>
-                <li><a href="../pages/hizmetlerimiz.html">Eğitimlerimiz</a></li>
+                <li><a href="../pages/hizmetlerimiz/osgb-hizmetleri.html">OSGB Hizmetleri</a></li>
+                <li><a href="../pages/hizmetlerimiz/danismanlik-hizmetleri.html">Danışmanlık Hizmetleri</a></li>
+                <li><a href="../pages/hizmetlerimiz/egitimlerimiz.html">Eğitimlerimiz</a></li>
                 <li><a href="../pages/ilkyardim-egitimleri.html">İlkyardım Eğitimleri</a></li>
             </ul>
         </div>
@@ -261,7 +245,7 @@
             <h4>Kurumsal</h4>
             <ul>
                 <li><a href="../index.html#why-us-section">Neden Biz</a></li>
-                <li><a href="../index.html#faq-section">Sıkça Sorulan Sorular</a></li>
+                <li><a href="../pages/kurumsal/sss.html">Sıkça Sorulan Sorular</a></li>
                 <li><a href="../pages/kurumsal/about-us.html">Hakkımızda</a></li>
                 <li><a href="../pages/kurumsal/insan-kaynaklari.html">İnsan Kaynakları</a></li>
             </ul>
@@ -275,6 +259,7 @@
             </ul>
         </div>
     </div>
+    <!-- Footer Menu End -->
         <!-- Social Media Icons -->
         <div class="social-media">
             <ul>

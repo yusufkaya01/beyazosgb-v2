@@ -148,3 +148,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+        // Get the scroll-up button
+        const scrollUpButton = document.getElementById('scrollUp');
+
+        // Add a click event listener to the button
+        scrollUpButton.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default anchor behavior
+
+            // Scroll to the top of the page smoothly
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
