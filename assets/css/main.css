@@ -28,6 +28,71 @@ a {
     z-index: 1; /* Ensure links stay above the background image */
 }
 
+/* Extra Small Devices (Phones) */
+@media (max-width: 600px) {
+    body {
+        margin-top: 50px; /* Adjust this based on your menu height */
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 14px;
+    }
+    body::before {
+        background-size: 50%; /* Adjust background size for smaller screens */
+    }
+}
+
+/* Small Devices (Tablets) */
+@media (min-width: 601px) and (max-width: 768px) {
+    body {
+        margin-top: 55px; /* Adjust this based on your menu height */
+        margin-left: 6%;
+        margin-right: 5%;
+        font-size: 16px;
+    }
+    body::before {
+        background-size: 40%; /* Adjust background size for tablets */
+    }
+}
+
+/* Medium Devices (Small Laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        margin-top: 60px; /* Adjust this based on your menu height */
+        margin-left: 7%;
+        margin-right: 5%;
+        font-size: 18px;
+    }
+    body::before {
+        background-size: 36%; /* Adjust background size for small laptops */
+    }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    body {
+        margin-top: 60px; /* Adjust this based on your menu height */
+        margin-left: 8%;
+        margin-right: 5%;
+        font-size: 20px;
+    }
+    body::before {
+        background-size: 36%; /* Adjust background size for desktops */
+    }
+}
+
+/* Extra Large Devices (Large Desktops) */
+@media (min-width: 1201px) {
+    body {
+        margin-top: 60px; /* Adjust this based on your menu height */
+        margin-left: 8%;
+        margin-right: 5%;
+        font-size: 22px;
+    }
+    body::before {
+        background-size: 36%; /* Adjust background size for large desktops */
+    }
+}
+
 
 
 /* Decors Start*/
@@ -56,7 +121,85 @@ a {
   }
 
 
-  
+/* Extra Small Devices (Phones) */
+@media (max-width: 600px) {
+    .left-image-decor {
+        background-size: 50%;
+        height: 100%;
+        margin-top: -100px;
+        left: -10%;
+    }
+    .right-image-decor {
+        background-size: 50%;
+        height: 100%;
+        margin-top: -100px;
+        right: -10%;
+    }
+}
+
+/* Small Devices (Tablets) */
+@media (min-width: 601px) and (max-width: 768px) {
+    .left-image-decor {
+        background-size: 60%;
+        height: 105%;
+        margin-top: -150px;
+        left: -9%;
+    }
+    .right-image-decor {
+        background-size: 60%;
+        height: 105%;
+        margin-top: -150px;
+        right: -9%;
+    }
+}
+
+/* Medium Devices (Small Laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .left-image-decor {
+        background-size: 70%;
+        height: 110%;
+        margin-top: -180px;
+        left: -8%;
+    }
+    .right-image-decor {
+        background-size: 70%;
+        height: 110%;
+        margin-top: -180px;
+        right: -8%;
+    }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .left-image-decor {
+        background-size: 80%;
+        height: 110%;
+        margin-top: -200px;
+        left: -8%;
+    }
+    .right-image-decor {
+        background-size: 80%;
+        height: 110%;
+        margin-top: -200px;
+        right: -8%;
+    }
+}
+
+/* Extra Large Devices (Large Desktops) */
+@media (min-width: 1201px) {
+    .left-image-decor {
+        background-size: 100%;
+        height: 110%;
+        margin-top: -200px;
+        left: -8%;
+    }
+    .right-image-decor {
+        background-size: 100%;
+        height: 110%;
+        margin-top: -200px;
+        right: -8%;
+    }
+}
 
 /* Decors End*/
 
@@ -188,7 +331,50 @@ a {
     font-style: italic;
   }
   
-  
+/* Extra Small Devices (Phones) */
+@media (max-width: 600px) {
+    .poppins-thin, .poppins-extralight, .poppins-light, .poppins-regular, .poppins-medium, .poppins-semibold, .poppins-bold, .poppins-extrabold, .poppins-black,
+    .poppins-thin-italic, .poppins-extralight-italic, .poppins-light-italic, .poppins-regular-italic, .poppins-medium-italic, .poppins-semibold-italic, .poppins-bold-italic, .poppins-extrabold-italic, .poppins-black-italic,
+    .libre-baskerville-regular, .libre-baskerville-bold, .libre-baskerville-regular-italic {
+        font-size: 14px; /* Adjust as needed */
+    }
+}
+
+/* Small Devices (Tablets) */
+@media (min-width: 601px) and (max-width: 768px) {
+    .poppins-thin, .poppins-extralight, .poppins-light, .poppins-regular, .poppins-medium, .poppins-semibold, .poppins-bold, .poppins-extrabold, .poppins-black,
+    .poppins-thin-italic, .poppins-extralight-italic, .poppins-light-italic, .poppins-regular-italic, .poppins-medium-italic, .poppins-semibold-italic, .poppins-bold-italic, .poppins-extrabold-italic, .poppins-black-italic,
+    .libre-baskerville-regular, .libre-baskerville-bold, .libre-baskerville-regular-italic {
+        font-size: 16px; /* Adjust as needed */
+    }
+}
+
+/* Medium Devices (Small Laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .poppins-thin, .poppins-extralight, .poppins-light, .poppins-regular, .poppins-medium, .poppins-semibold, .poppins-bold, .poppins-extrabold, .poppins-black,
+    .poppins-thin-italic, .poppins-extralight-italic, .poppins-light-italic, .poppins-regular-italic, .poppins-medium-italic, .poppins-semibold-italic, .poppins-bold-italic, .poppins-extrabold-italic, .poppins-black-italic,
+    .libre-baskerville-regular, .libre-baskerville-bold, .libre-baskerville-regular-italic {
+        font-size: 18px; /* Adjust as needed */
+    }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .poppins-thin, .poppins-extralight, .poppins-light, .poppins-regular, .poppins-medium, .poppins-semibold, .poppins-bold, .poppins-extrabold, .poppins-black,
+    .poppins-thin-italic, .poppins-extralight-italic, .poppins-light-italic, .poppins-regular-italic, .poppins-medium-italic, .poppins-semibold-italic, .poppins-bold-italic, .poppins-extrabold-italic, .poppins-black-italic,
+    .libre-baskerville-regular, .libre-baskerville-bold, .libre-baskerville-regular-italic {
+        font-size: 20px; /* Adjust as needed */
+    }
+}
+
+/* Extra Large Devices (Large Desktops) */
+@media (min-width: 1201px) {
+    .poppins-thin, .poppins-extralight, .poppins-light, .poppins-regular, .poppins-medium, .poppins-semibold, .poppins-bold, .poppins-extrabold, .poppins-black,
+    .poppins-thin-italic, .poppins-extralight-italic, .poppins-light-italic, .poppins-regular-italic, .poppins-medium-italic, .poppins-semibold-italic, .poppins-bold-italic, .poppins-extrabold-italic, .poppins-black-italic,
+    .libre-baskerville-regular, .libre-baskerville-bold, .libre-baskerville-regular-italic {
+        font-size: 22px; /* Adjust as needed */
+    }
+}
 
 /* Fonts End*/
 
@@ -232,6 +418,71 @@ a {
     width: 50px; /* Adjust the size as needed */
     height: auto;
   }
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 600px) {
+    .whatsapp-icon img {
+        width: 60px; /* Adjust the size as needed */
+    }
+    .logo-icon img {
+        width: 50px; /* Adjust the size as needed */
+    }
+    .logo-icon-top img {
+        width: 30px; /* Adjust the size as needed */
+    }
+}
+
+/* Small Devices (Tablets) */
+@media (min-width: 601px) and (max-width: 768px) {
+    .whatsapp-icon img {
+        width: 70px; /* Adjust the size as needed */
+    }
+    .logo-icon img {
+        width: 60px; /* Adjust the size as needed */
+    }
+    .logo-icon-top img {
+        width: 40px; /* Adjust the size as needed */
+    }
+}
+
+/* Medium Devices (Small Laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .whatsapp-icon img {
+        width: 80px; /* Adjust the size as needed */
+    }
+    .logo-icon img {
+        width: 70px; /* Adjust the size as needed */
+    }
+    .logo-icon-top img {
+        width: 45px; /* Adjust the size as needed */
+    }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .whatsapp-icon img {
+        width: 90px; /* Adjust the size as needed */
+    }
+    .logo-icon img {
+        width: 75px; /* Adjust the size as needed */
+    }
+    .logo-icon-top img {
+        width: 50px; /* Adjust the size as needed */
+    }
+}
+
+/* Extra Large Devices (Large Desktops) */
+@media (min-width: 1201px) {
+    .whatsapp-icon img {
+        width: 100px; /* Adjust the size as needed */
+    }
+    .logo-icon img {
+        width: 80px; /* Adjust the size as needed */
+    }
+    .logo-icon-top img {
+        width: 50px; /* Adjust the size as needed */
+    }
+}
 
   /* Static Logos End*/
 
@@ -490,85 +741,205 @@ nav {
     display: none;
 }
 
-/* General styles for smaller devices */
-@media (max-width: 768px) {
-    /* Hide the menu items and show the hamburger icon */
+/* Extra Small Devices (Phones) */
+@media (max-width: 600px) {
+    nav {
+        padding: 5px 0;
+        height: 35px;
+    }
     .menu {
-        display: none; /* Hide the menu items */
-    }
-
-    .menu.active {
-        display: flex; /* Show the menu items when active */
+        gap: 10px;
         flex-direction: column; /* Stack menu items vertically */
-        position: absolute; /* Position the menu absolutely */
-        top: 40px; /* Position below the fixed nav */
-        left: 0; /* Align to the left edge */
-        width: 100%; /* Full width */
-        background-color: white; /* Background color */
-        z-index: 1000; /* Ensure it stays on top */
+        align-items: flex-start; /* Align items to the start */
     }
-
-    .menu-item {
-        width: 100%; /* Full width for menu items */
-        text-align: center; /* Center align text */
+    .menu-item > a {
+        font-size: 0.8rem;
+        padding: 8px 10px;
     }
-
     .menu-item-title {
-        text-align: center; /* Center align title */
-        font-size: 1.2rem; /* Adjust font size */
-        padding: 10px 0; /* Padding for spacing */
+        font-size: 0.9rem;
+        padding: 8px 10px;
     }
-
-    .toggle-btn {
-        display: block; /* Show the buttons */
-        width: 100%; /* Full width */
-        text-align: left; /* Align text to left */
-        padding: 10px 15px; /* Padding for spacing */
-    }
-
-    /* Adjust submenu styles */
-    .submenu, .submenu-down, .sub-submenu {
-        position: static; /* Position relative to parent */
-        box-shadow: none; /* Remove shadow */
-        width: 100%; /* Full width */
-    }
-
     .submenu li a, .submenu-btn {
-        padding: 10px 15px; /* Padding for spacing */
+        font-size: 0.8rem;
+        padding: 8px 10px;
     }
-
-    .submenu li a:hover, .submenu-btn:hover {
-        background-color: #f0f0f0; /* Hover background color */
-    }
-
-    /* Hamburger icon styles */
     .hamburger {
-        display: block; /* Show the hamburger */
-        position: absolute; /* Position absolutely */
-        top: 10px; /* Align at the top */
-        right: 100px; /* Align to the right edge */
-        font-size: 1.5rem; /* Adjust font size */
-        cursor: pointer; /* Pointer cursor */
-        z-index: 1001; /* Ensure it stays above menu */
+        display: block; /* Show hamburger menu */
+        font-size: 2.04rem; /* 1.7 times bigger than 1.2rem */
+        top: 20px;
+        left: 25px; /* Adjusted margin */
+        position: absolute;
+        background-color: white; /* White background color */
+        z-index: 1001; /* Ensure it is on top of everything */
+        padding: 5px; /* Add padding for better touch area */
+        border-radius: 5px; /* Add border radius for rounded corners */
+    }
+    .menu {
+        display: none; /* Hide menu by default */
+    }
+    .menu.active {
+        display: flex; /* Show menu when active */
+        flex-direction: column; /* Stack menu items vertically */
+        position: fixed; /* Fix the menu to the screen */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white; /* Background color for the menu */
+        z-index: 1000; /* Ensure menu is on top of everything */
+        overflow-y: auto; /* Enable scrolling if the menu is too tall */
     }
 }
 
-/* Styles for even smaller devices like smartphones */
-@media (max-width: 480px) {
+/* Small Devices (Tablets) */
+@media (min-width: 601px) and (max-width: 768px) {
+    nav {
+        padding: 8px 0;
+        height: 38px;
+    }
+    .menu {
+        gap: 15px;
+    }
+    .menu-item > a {
+        font-size: 0.9rem;
+        padding: 9px 12px;
+    }
     .menu-item-title {
-        font-size: 1rem; /* Adjust font size */
+        font-size: 1rem;
+        padding: 9px 12px;
     }
-
-    .toggle-btn {
-        font-size: 0.9rem; /* Adjust font size */
-    }
-
     .submenu li a, .submenu-btn {
-        font-size: 0.9rem; /* Adjust font size */
+        font-size: 0.9rem;
+        padding: 9px 12px;
     }
-
     .hamburger {
-        font-size: 1.8rem; /* Adjust font size */
+        display: block; /* Show hamburger menu */
+        font-size: 2.38rem; /* 1.7 times bigger than 1.4rem */
+        top: 20px;
+        left: 25px; /* Adjusted margin */
+        position: absolute;
+        background-color: white; /* White background color */
+        z-index: 1001; /* Ensure it is on top of everything */
+        padding: 5px; /* Add padding for better touch area */
+        border-radius: 5px; /* Add border radius for rounded corners */
+    }
+    .menu {
+        display: none; /* Hide menu by default */
+    }
+    .menu.active {
+        display: flex; /* Show menu when active */
+        flex-direction: column; /* Stack menu items vertically */
+        position: fixed; /* Fix the menu to the screen */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white; /* Background color for the menu */
+        z-index: 1000; /* Ensure menu is on top of everything */
+        overflow-y: auto; /* Enable scrolling if the menu is too tall */
+    }
+}
+
+/* Medium Devices (Small Laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    nav {
+        padding: 10px 0;
+        height: 40px;
+    }
+    .menu {
+        gap: 20px;
+    }
+    .menu-item > a {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+    .menu-item-title {
+        font-size: 1.1rem;
+        padding: 10px 15px;
+    }
+    .submenu li a, .submenu-btn {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+    .hamburger {
+        display: none; /* Hide hamburger menu */
+        font-size: 2.55rem; /* 1.7 times bigger than 1.5rem */
+        top: 10px;
+        right: 40px;
+        position: absolute;
+    }
+    .menu {
+        display: flex; /* Show menu by default */
+        flex-direction: row; /* Align menu items in a row */
+    }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    nav {
+        padding: 10px 0;
+        height: 40px;
+    }
+    .menu {
+        gap: 20px;
+    }
+    .menu-item > a {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+    .menu-item-title {
+        font-size: 1.1rem;
+        padding: 10px 15px;
+    }
+    .submenu li a, .submenu-btn {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+    .hamburger {
+        display: none; /* Hide hamburger menu */
+        font-size: 2.55rem; /* 1.7 times bigger than 1.5rem */
+        top: 10px;
+        right: 50px;
+        position: absolute;
+    }
+    .menu {
+        display: flex; /* Show menu by default */
+        flex-direction: row; /* Align menu items in a row */
+    }
+}
+
+/* Extra Large Devices (Large Desktops) */
+@media (min-width: 1201px) {
+    nav {
+        padding: 10px 0;
+        height: 40px;
+    }
+    .menu {
+        gap: 20px;
+    }
+    .menu-item > a {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+    .menu-item-title {
+        font-size: 1.1rem;
+        padding: 10px 15px;
+    }
+    .submenu li a, .submenu-btn {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+    .hamburger {
+        display: none; /* Hide hamburger menu */
+        font-size: 2.55rem; /* 1.7 times bigger than 1.5rem */
+        top: 10px;
+        right: 60px;
+        position: absolute;
+    }
+    .menu {
+        display: flex; /* Show menu by default */
+        flex-direction: row; /* Align menu items in a row */
     }
 }
 
@@ -649,6 +1020,146 @@ nav {
     border-radius: 10px; /* Optional: Rounded corners */
 }
 
+/* Extra Small Devices (Phones) */
+@media (max-width: 600px) {
+    .header-container {
+        padding: 30px 10px; /* Adjust padding for smaller screens */
+    }
+    .header-content {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center; /* Center align text */
+    }
+    .header-text {
+        max-width: 100%; /* Take full width */
+    }
+    .header-text h1 {
+        font-size: 1.5rem; /* Adjust font size */
+    }
+    .header-text p {
+        font-size: 0.9rem; /* Adjust font size */
+    }
+    .header-text .btn-services {
+        font-size: 0.9rem; /* Adjust font size */
+        padding: 8px 16px; /* Adjust padding */
+    }
+    .header-image {
+        max-width: 100%; /* Take full width */
+        text-align: center; /* Center align image */
+    }
+}
+
+/* Small Devices (Tablets) */
+@media (min-width: 601px) and (max-width: 768px) {
+    .header-container {
+        padding: 40px 15px; /* Adjust padding for tablets */
+    }
+    .header-content {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center; /* Center align text */
+    }
+    .header-text {
+        max-width: 100%; /* Take full width */
+    }
+    .header-text h1 {
+        font-size: 1.75rem; /* Adjust font size */
+    }
+    .header-text p {
+        font-size: 0.95rem; /* Adjust font size */
+    }
+    .header-text .btn-services {
+        font-size: 0.95rem; /* Adjust font size */
+        padding: 9px 18px; /* Adjust padding */
+    }
+    .header-image {
+        max-width: 100%; /* Take full width */
+        text-align: center; /* Center align image */
+    }
+}
+
+/* Medium Devices (Small Laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header-container {
+        padding: 50px 20px; /* Default padding */
+    }
+    .header-content {
+        flex-direction: row; /* Align elements side by side */
+        text-align: justify; /* Justify text */
+    }
+    .header-text {
+        max-width: 50%; /* Take half the width */
+    }
+    .header-text h1 {
+        font-size: 2rem; /* Default font size */
+    }
+    .header-text p {
+        font-size: 1rem; /* Default font size */
+    }
+    .header-text .btn-services {
+        font-size: 1rem; /* Default font size */
+        padding: 10px 20px; /* Default padding */
+    }
+    .header-image {
+        max-width: 48%; /* Default width */
+        text-align: right; /* Align image to the right */
+    }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .header-container {
+        padding: 50px 20px; /* Default padding */
+    }
+    .header-content {
+        flex-direction: row; /* Align elements side by side */
+        text-align: justify; /* Justify text */
+    }
+    .header-text {
+        max-width: 50%; /* Take half the width */
+    }
+    .header-text h1 {
+        font-size: 2rem; /* Default font size */
+    }
+    .header-text p {
+        font-size: 1rem; /* Default font size */
+    }
+    .header-text .btn-services {
+        font-size: 1rem; /* Default font size */
+        padding: 10px 20px; /* Default padding */
+    }
+    .header-image {
+        max-width: 48%; /* Default width */
+        text-align: right; /* Align image to the right */
+    }
+}
+
+/* Extra Large Devices (Large Desktops) */
+@media (min-width: 1201px) {
+    .header-container {
+        padding: 50px 20px; /* Default padding */
+    }
+    .header-content {
+        flex-direction: row; /* Align elements side by side */
+        text-align: justify; /* Justify text */
+    }
+    .header-text {
+        max-width: 50%; /* Take half the width */
+    }
+    .header-text h1 {
+        font-size: 2rem; /* Default font size */
+    }
+    .header-text p {
+        font-size: 1rem; /* Default font size */
+    }
+    .header-text .btn-services {
+        font-size: 1rem; /* Default font size */
+        padding: 10px 20px; /* Default padding */
+    }
+    .header-image {
+        max-width: 48%; /* Default width */
+        text-align: right; /* Align image to the right */
+    }
+}
+
 
 /* Header Styles End*/
 
@@ -719,11 +1230,131 @@ nav {
     line-height: 1.6;
 }
 
+/* Extra Small Devices (Phones) */
+@media (max-width: 600px) {
+    #why-us-section {
+        padding: 30px 10px; /* Adjust padding for smaller screens */
+    }
+    .why-us-item {
+        width: 100%; /* Each item takes full width */
+        margin: 10px 0; /* Adjust margin for smaller screens */
+    }
+    #why-us-section h1 {
+        font-size: 1.2rem; /* Adjust font size */
+        padding: 8px 15px; /* Adjust padding */
+    }
+    .why-us-item h2 {
+        font-size: 1rem; /* Adjust font size */
+    }
+    .why-us-item p {
+        font-size: 0.9rem; /* Adjust font size */
+    }
+    .why-us-item img {
+        max-width: 60px; /* Adjust image size */
+    }
+}
+
+/* Small Devices (Tablets) */
+@media (min-width: 601px) and (max-width: 768px) {
+    #why-us-section {
+        padding: 40px 15px; /* Adjust padding for tablets */
+    }
+    .why-us-item {
+        width: 48%; /* Each item takes half the width */
+        margin: 10px 1%; /* Adjust margin for smaller screens */
+    }
+    #why-us-section h1 {
+        font-size: 1.3rem; /* Adjust font size */
+        padding: 9px 18px; /* Adjust padding */
+    }
+    .why-us-item h2 {
+        font-size: 1.1rem; /* Adjust font size */
+    }
+    .why-us-item p {
+        font-size: 0.95rem; /* Adjust font size */
+    }
+    .why-us-item img {
+        max-width: 70px; /* Adjust image size */
+    }
+}
+
+/* Medium Devices (Small Laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #why-us-section {
+        padding: 50px 20px; /* Default padding */
+    }
+    .why-us-item {
+        width: 30%; /* Each item takes 30% of the width */
+        margin: 10px 1.5%; /* Adjust margin */
+    }
+    #why-us-section h1 {
+        font-size: 1.4rem; /* Adjust font size */
+        padding: 10px 20px; /* Default padding */
+    }
+    .why-us-item h2 {
+        font-size: 1.15rem; /* Adjust font size */
+    }
+    .why-us-item p {
+        font-size: 1rem; /* Default font size */
+    }
+    .why-us-item img {
+        max-width: 75px; /* Adjust image size */
+    }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    #why-us-section {
+        padding: 50px 20px; /* Default padding */
+    }
+    .why-us-item {
+        width: 25%; /* Each item takes 25% of the width */
+        margin: 10px; /* Default margin */
+    }
+    #why-us-section h1 {
+        font-size: 1.5rem; /* Default font size */
+        padding: 10px 20px; /* Default padding */
+    }
+    .why-us-item h2 {
+        font-size: 1.2rem; /* Default font size */
+    }
+    .why-us-item p {
+        font-size: 1rem; /* Default font size */
+    }
+    .why-us-item img {
+        max-width: 80px; /* Default image size */
+    }
+}
+
+/* Extra Large Devices (Large Desktops) */
+@media (min-width: 1201px) {
+    #why-us-section {
+        padding: 50px 20px; /* Default padding */
+    }
+    .why-us-item {
+        width: 25%; /* Each item takes 25% of the width */
+        margin: 10px; /* Default margin */
+    }
+    #why-us-section h1 {
+        font-size: 1.5rem; /* Default font size */
+        padding: 10px 20px; /* Default padding */
+    }
+    .why-us-item h2 {
+        font-size: 1.2rem; /* Default font size */
+    }
+    .why-us-item p {
+        font-size: 1rem; /* Default font size */
+    }
+    .why-us-item img {
+        max-width: 80px; /* Default image size */
+    }
+}
+
 /* Why Us Section Styles End */
 
 
 
-/* left hand menu test start */
+/* left hand menu test start (deprecated)*/
 
 
 .left-hand-menu {
@@ -780,7 +1411,7 @@ footer .services-container {
 
 
 
-/* left hand menu end */
+/* left hand menu end  (deprecated) */
 
 /* Services Section Styles Start */
 
@@ -907,6 +1538,160 @@ footer .services-container {
     color: #a53501; /* Lighter orange on hover */
 }
 
+/* Extra Small Devices (Phones) */
+@media (max-width: 600px) {
+    #services-section {
+        padding: 30px 10px; /* Adjust padding for smaller screens */
+    }
+    #services-section .btn-services {
+        font-size: 1.2rem; /* Adjust font size */
+        padding: 8px 16px; /* Adjust padding */
+    }
+    #services-section h1 {
+        font-size: 1.5rem; /* Adjust font size */
+    }
+    #services-section h2 {
+        font-size: 1.5rem; /* Adjust font size */
+    }
+    #services-section ul li {
+        width: 100%; /* Each item takes full width */
+        margin-left: 0; /* Remove left margin */
+    }
+    #services-section ul li img {
+        width: 50px; /* Adjust image size */
+        height: 50px; /* Adjust image size */
+    }
+    #services-section ul li .text h4 {
+        font-size: 1rem; /* Adjust font size */
+    }
+    #services-section ul li .text p {
+        font-size: 0.9rem; /* Adjust font size */
+    }
+}
+
+/* Small Devices (Tablets) */
+@media (min-width: 601px) and (max-width: 768px) {
+    #services-section {
+        padding: 40px 15px; /* Adjust padding for tablets */
+    }
+    #services-section .btn-services {
+        font-size: 1.3rem; /* Adjust font size */
+        padding: 9px 18px; /* Adjust padding */
+    }
+    #services-section h1 {
+        font-size: 1.75rem; /* Adjust font size */
+    }
+    #services-section h2 {
+        font-size: 1.75rem; /* Adjust font size */
+    }
+    #services-section ul li {
+        width: 100%; /* Each item takes full width */
+        margin-left: 0; /* Remove left margin */
+    }
+    #services-section ul li img {
+        width: 60px; /* Adjust image size */
+        height: 60px; /* Adjust image size */
+    }
+    #services-section ul li .text h4 {
+        font-size: 1.1rem; /* Adjust font size */
+    }
+    #services-section ul li .text p {
+        font-size: 0.95rem; /* Adjust font size */
+    }
+}
+
+/* Medium Devices (Small Laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #services-section {
+        padding: 50px 20px; /* Default padding */
+    }
+    #services-section .btn-services {
+        font-size: 1.4rem; /* Adjust font size */
+        padding: 10px 20px; /* Default padding */
+    }
+    #services-section h1 {
+        font-size: 2rem; /* Default font size */
+    }
+    #services-section h2 {
+        font-size: 2rem; /* Default font size */
+    }
+    #services-section ul li {
+        width: 80%; /* Each item takes 80% of the width */
+        margin-left: 10%; /* Center align */
+    }
+    #services-section ul li img {
+        width: 70px; /* Default image size */
+        height: 70px; /* Default image size */
+    }
+    #services-section ul li .text h4 {
+        font-size: 1.2rem; /* Default font size */
+    }
+    #services-section ul li .text p {
+        font-size: 1rem; /* Default font size */
+    }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    #services-section {
+        padding: 50px 20px; /* Default padding */
+    }
+    #services-section .btn-services {
+        font-size: 1.5rem; /* Default font size */
+        padding: 10px 20px; /* Default padding */
+    }
+    #services-section h1 {
+        font-size: 2rem; /* Default font size */
+    }
+    #services-section h2 {
+        font-size: 2rem; /* Default font size */
+    }
+    #services-section ul li {
+        width: 70%; /* Each item takes 70% of the width */
+        margin-left: 15%; /* Center align */
+    }
+    #services-section ul li img {
+        width: 70px; /* Default image size */
+        height: 70px; /* Default image size */
+    }
+    #services-section ul li .text h4 {
+        font-size: 1.2rem; /* Default font size */
+    }
+    #services-section ul li .text p {
+        font-size: 1rem; /* Default font size */
+    }
+}
+
+/* Extra Large Devices (Large Desktops) */
+@media (min-width: 1201px) {
+    #services-section {
+        padding: 50px 20px; /* Default padding */
+    }
+    #services-section .btn-services {
+        font-size: 1.5rem; /* Default font size */
+        padding: 10px 20px; /* Default padding */
+    }
+    #services-section h1 {
+        font-size: 2rem; /* Default font size */
+    }
+    #services-section h2 {
+        font-size: 2rem; /* Default font size */
+    }
+    #services-section ul li {
+        width: 70%; /* Each item takes 70% of the width */
+        margin-left: 15%; /* Center align */
+    }
+    #services-section ul li img {
+        width: 70px; /* Default image size */
+        height: 70px; /* Default image size */
+    }
+    #services-section ul li .text h4 {
+        font-size: 1.2rem; /* Default font size */
+    }
+    #services-section ul li .text p {
+        font-size: 1rem; /* Default font size */
+    }
+}
 
 /* Services Section Styles End */
 
@@ -1027,6 +1812,184 @@ footer .services-container {
     max-width: 100%;
     height: auto;
 }
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 600px) {
+    #services-page-section {
+        padding: 30px 10px; /* Adjust padding for smaller screens */
+        margin-top: 50px; /* Adjust margin for smaller screens */
+    }
+    #services-page-section h1 {
+        font-size: 1.5rem; /* Adjust font size */
+        margin-top: -20px; /* Adjust margin */
+    }
+    #services-page-section h2 > a {
+        font-size: 1.2rem; /* Adjust font size */
+    }
+    .services-page-item {
+        max-width: 100%; /* Each item takes full width */
+        margin: 10px 0; /* Adjust margin for smaller screens */
+    }
+    .services-page-item img {
+        width: 40px; /* Adjust image size */
+        height: 40px; /* Adjust image size */
+    }
+    .services-page-item h2 {
+        font-size: 1rem; /* Adjust font size */
+    }
+    .services-page-item h2 a {
+        font-size: 0.9rem !important; /* Adjust font size */
+    }
+    .content-display {
+        flex-direction: column; /* Stack content vertically */
+    }
+    .image-content {
+        flex: 0 0 auto; /* Adjust the width */
+        margin-bottom: 20px; /* Add margin below the image */
+    }
+}
+
+/* Small Devices (Tablets) */
+@media (min-width: 601px) and (max-width: 768px) {
+    #services-page-section {
+        padding: 40px 15px; /* Adjust padding for tablets */
+        margin-top: 75px; /* Adjust margin for tablets */
+    }
+    #services-page-section h1 {
+        font-size: 1.75rem; /* Adjust font size */
+        margin-top: -25px; /* Adjust margin */
+    }
+    #services-page-section h2 > a {
+        font-size: 1.3rem; /* Adjust font size */
+    }
+    .services-page-item {
+        max-width: 100%; /* Each item takes full width */
+        margin: 15px 0; /* Adjust margin for tablets */
+    }
+    .services-page-item img {
+        width: 45px; /* Adjust image size */
+        height: 45px; /* Adjust image size */
+    }
+    .services-page-item h2 {
+        font-size: 1.1rem; /* Adjust font size */
+    }
+    .services-page-item h2 a {
+        font-size: 1rem !important; /* Adjust font size */
+    }
+    .content-display {
+        flex-direction: column; /* Stack content vertically */
+    }
+    .image-content {
+        flex: 0 0 auto; /* Adjust the width */
+        margin-bottom: 20px; /* Add margin below the image */
+    }
+}
+
+/* Medium Devices (Small Laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #services-page-section {
+        padding: 50px 20px; /* Default padding */
+        margin-top: 100px; /* Default margin */
+    }
+    #services-page-section h1 {
+        font-size: 2rem; /* Default font size */
+        margin-top: -30px; /* Default margin */
+    }
+    #services-page-section h2 > a {
+        font-size: 1.5rem; /* Default font size */
+    }
+    .services-page-item {
+        max-width: 300px; /* Default width */
+        margin: 20px auto; /* Default margin */
+    }
+    .services-page-item img {
+        width: 50px; /* Default image size */
+        height: 50px; /* Default image size */
+    }
+    .services-page-item h2 {
+        font-size: 1.2rem; /* Default font size */
+    }
+    .services-page-item h2 a {
+        font-size: 1rem !important; /* Default font size */
+    }
+    .content-display {
+        flex-direction: row; /* Default flex direction */
+    }
+    .image-content {
+        flex: 0 0 250px; /* Default width */
+    }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    #services-page-section {
+        padding: 50px 20px; /* Default padding */
+        margin-top: 100px; /* Default margin */
+    }
+    #services-page-section h1 {
+        font-size: 2rem; /* Default font size */
+        margin-top: -30px; /* Default margin */
+    }
+    #services-page-section h2 > a {
+        font-size: 1.5rem; /* Default font size */
+    }
+    .services-page-item {
+        max-width: 300px; /* Default width */
+        margin: 20px auto; /* Default margin */
+    }
+    .services-page-item img {
+        width: 50px; /* Default image size */
+        height: 50px; /* Default image size */
+    }
+    .services-page-item h2 {
+        font-size: 1.2rem; /* Default font size */
+    }
+    .services-page-item h2 a {
+        font-size: 1rem !important; /* Default font size */
+    }
+    .content-display {
+        flex-direction: row; /* Default flex direction */
+    }
+    .image-content {
+        flex: 0 0 250px; /* Default width */
+    }
+}
+
+/* Extra Large Devices (Large Desktops) */
+@media (min-width: 1201px) {
+    #services-page-section {
+        padding: 50px 20px; /* Default padding */
+        margin-top: 100px; /* Default margin */
+    }
+    #services-page-section h1 {
+        font-size: 2rem; /* Default font size */
+        margin-top: -30px; /* Default margin */
+    }
+    #services-page-section h2 > a {
+        font-size: 1.5rem; /* Default font size */
+    }
+    .services-page-item {
+        max-width: 300px; /* Default width */
+        margin: 20px auto; /* Default margin */
+    }
+    .services-page-item img {
+        width: 50px; /* Default image size */
+        height: 50px; /* Default image size */
+    }
+    .services-page-item h2 {
+        font-size: 1.2rem; /* Default font size */
+    }
+    .services-page-item h2 a {
+        font-size: 1rem !important; /* Default font size */
+    }
+    .content-display {
+        flex-direction: row; /* Default flex direction */
+    }
+    .image-content {
+        flex: 0 0 250px; /* Default width */
+    }
+}
+
 /* Services Page Styles End */
 
 
@@ -1059,6 +2022,81 @@ footer .services-container {
     line-height: 2; /* Increase line height for readability */
     margin-bottom: 50px; /* Add spacing below the paragraphs */
     text-align: justify;
+}
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 600px) {
+    .about-us h1 {
+        margin-top: 50px; /* Adjust margin for smaller screens */
+        font-size: 1.5rem; /* Adjust font size */
+        margin-bottom: 30px; /* Adjust margin */
+    }
+    .about-us p, .about-us ol {
+        margin-left: 5%; /* Adjust margins for smaller screens */
+        margin-right: 5%; /* Adjust margins for smaller screens */
+        font-size: 0.9rem; /* Adjust font size */
+        margin-bottom: 30px; /* Adjust margin */
+    }
+}
+
+/* Small Devices (Tablets) */
+@media (min-width: 601px) and (max-width: 768px) {
+    .about-us h1 {
+        margin-top: 75px; /* Adjust margin for tablets */
+        font-size: 1.75rem; /* Adjust font size */
+        margin-bottom: 35px; /* Adjust margin */
+    }
+    .about-us p, .about-us ol {
+        margin-left: 10%; /* Adjust margins for tablets */
+        margin-right: 10%; /* Adjust margins for tablets */
+        font-size: 0.95rem; /* Adjust font size */
+        margin-bottom: 40px; /* Adjust margin */
+    }
+}
+
+/* Medium Devices (Small Laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .about-us h1 {
+        margin-top: 100px; /* Default margin */
+        font-size: 2rem; /* Default font size */
+        margin-bottom: 40px; /* Default margin */
+    }
+    .about-us p, .about-us ol {
+        margin-left: 15%; /* Default margins */
+        margin-right: 15%; /* Default margins */
+        font-size: 1rem; /* Default font size */
+        margin-bottom: 50px; /* Default margin */
+    }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .about-us h1 {
+        margin-top: 100px; /* Default margin */
+        font-size: 2rem; /* Default font size */
+        margin-bottom: 40px; /* Default margin */
+    }
+    .about-us p, .about-us ol {
+        margin-left: 15%; /* Default margins */
+        margin-right: 15%; /* Default margins */
+        font-size: 1rem; /* Default font size */
+        margin-bottom: 50px; /* Default margin */
+    }
+}
+
+/* Extra Large Devices (Large Desktops) */
+@media (min-width: 1201px) {
+    .about-us h1 {
+        margin-top: 100px; /* Default margin */
+        font-size: 2rem; /* Default font size */
+        margin-bottom: 40px; /* Default margin */
+    }
+    .about-us p, .about-us ol {
+        margin-left: 15%; /* Default margins */
+        margin-right: 15%; /* Default margins */
+        font-size: 1rem; /* Default font size */
+        margin-bottom: 50px; /* Default margin */
+    }
 }
 
 /* About US Page Styles End */
@@ -1120,6 +2158,140 @@ footer .services-container {
     cursor: pointer;
 }
 
+/* Extra Small Devices (Phones) */
+@media (max-width: 600px) {
+    #faq-section {
+        padding: 20px 10px; /* Adjust padding for smaller screens */
+    }
+    #faq-section h2 {
+        font-size: 1.5rem; /* Adjust font size */
+        margin-bottom: 15px; /* Adjust margin */
+    }
+    #faq-section p {
+        font-size: 0.9rem; /* Adjust font size */
+        margin-bottom: 30px; /* Adjust margin */
+    }
+    #faq-section h3 {
+        font-size: 1rem; /* Adjust font size */
+        margin-bottom: 8px; /* Adjust margin */
+    }
+    #faq-section div p {
+        font-size: 0.9rem; /* Adjust font size */
+        margin-bottom: 15px; /* Adjust margin */
+    }
+    #faq-section div {
+        margin-bottom: 20px; /* Adjust margin */
+        padding-left: 10px; /* Adjust padding */
+    }
+}
+
+/* Small Devices (Tablets) */
+@media (min-width: 601px) and (max-width: 768px) {
+    #faq-section {
+        padding: 30px 15px; /* Adjust padding for tablets */
+    }
+    #faq-section h2 {
+        font-size: 1.75rem; /* Adjust font size */
+        margin-bottom: 18px; /* Adjust margin */
+    }
+    #faq-section p {
+        font-size: 0.95rem; /* Adjust font size */
+        margin-bottom: 35px; /* Adjust margin */
+    }
+    #faq-section h3 {
+        font-size: 1.1rem; /* Adjust font size */
+        margin-bottom: 9px; /* Adjust margin */
+    }
+    #faq-section div p {
+        font-size: 0.95rem; /* Adjust font size */
+        margin-bottom: 18px; /* Adjust margin */
+    }
+    #faq-section div {
+        margin-bottom: 25px; /* Adjust margin */
+        padding-left: 15px; /* Adjust padding */
+    }
+}
+
+/* Medium Devices (Small Laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #faq-section {
+        padding: 40px 20px; /* Default padding */
+    }
+    #faq-section h2 {
+        font-size: 2rem; /* Default font size */
+        margin-bottom: 20px; /* Default margin */
+    }
+    #faq-section p {
+        font-size: 1rem; /* Default font size */
+        margin-bottom: 40px; /* Default margin */
+    }
+    #faq-section h3 {
+        font-size: 1.2rem; /* Default font size */
+        margin-bottom: 10px; /* Default margin */
+    }
+    #faq-section div p {
+        font-size: 1rem; /* Default font size */
+        margin-bottom: 20px; /* Default margin */
+    }
+    #faq-section div {
+        margin-bottom: 30px; /* Default margin */
+        padding-left: 20px; /* Default padding */
+    }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    #faq-section {
+        padding: 40px 20px; /* Default padding */
+    }
+    #faq-section h2 {
+        font-size: 2rem; /* Default font size */
+        margin-bottom: 20px; /* Default margin */
+    }
+    #faq-section p {
+        font-size: 1rem; /* Default font size */
+        margin-bottom: 40px; /* Default margin */
+    }
+    #faq-section h3 {
+        font-size: 1.2rem; /* Default font size */
+        margin-bottom: 10px; /* Default margin */
+    }
+    #faq-section div p {
+        font-size: 1rem; /* Default font size */
+        margin-bottom: 20px; /* Default margin */
+    }
+    #faq-section div {
+        margin-bottom: 30px; /* Default margin */
+        padding-left: 20px; /* Default padding */
+    }
+}
+
+/* Extra Large Devices (Large Desktops) */
+@media (min-width: 1201px) {
+    #faq-section {
+        padding: 40px 20px; /* Default padding */
+    }
+    #faq-section h2 {
+        font-size: 2rem; /* Default font size */
+        margin-bottom: 20px; /* Default margin */
+    }
+    #faq-section p {
+        font-size: 1rem; /* Default font size */
+        margin-bottom: 40px; /* Default margin */
+    }
+    #faq-section h3 {
+        font-size: 1.2rem; /* Default font size */
+        margin-bottom: 10px; /* Default margin */
+    }
+    #faq-section div p {
+        font-size: 1rem; /* Default font size */
+        margin-bottom: 20px; /* Default margin */
+    }
+    #faq-section div {
+        margin-bottom: 30px; /* Default margin */
+        padding-left: 20px; /* Default padding */
+    }
+}
 
 /* FAQ Section End */
 
@@ -1215,6 +2387,171 @@ button {
 /* Button hover effect */
 button:hover {
     background-color: #a53501;
+}
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 600px) {
+    #service-request-section {
+        padding: 20px 10px; /* Adjust padding for smaller screens */
+        margin-top: 50px; /* Adjust margin for smaller screens */
+    }
+    #contact-us {
+        padding: 20px 10px; /* Adjust padding for smaller screens */
+        margin-top: 300px; /* Adjust margin for smaller screens */
+    }
+    form {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+    form h2 {
+        font-size: 1.5rem; /* Adjust font size */
+        margin-bottom: 15px; /* Adjust margin */
+    }
+    input, textarea {
+        padding: 10px; /* Adjust padding */
+        font-size: 0.9rem; /* Adjust font size */
+    }
+    .form-row {
+        flex-direction: column; /* Stack fields vertically */
+    }
+    .form-row .half-width {
+        width: 100%; /* Each field takes full width */
+    }
+    button {
+        font-size: 0.9rem; /* Adjust font size */
+        padding: 10px 15px; /* Adjust padding */
+    }
+}
+
+/* Small Devices (Tablets) */
+@media (min-width: 601px) and (max-width: 768px) {
+    #service-request-section {
+        padding: 25px 15px; /* Adjust padding for tablets */
+        margin-top: 75px; /* Adjust margin for tablets */
+    }
+    #contact-us {
+        padding: 25px 15px; /* Adjust padding for tablets */
+        margin-top: 400px; /* Adjust margin for tablets */
+    }
+    form {
+        padding: 18px; /* Adjust padding for tablets */
+    }
+    form h2 {
+        font-size: 1.75rem; /* Adjust font size */
+        margin-bottom: 18px; /* Adjust margin */
+    }
+    input, textarea {
+        padding: 11px; /* Adjust padding */
+        font-size: 0.95rem; /* Adjust font size */
+    }
+    .form-row {
+        flex-direction: column; /* Stack fields vertically */
+    }
+    .form-row .half-width {
+        width: 100%; /* Each field takes full width */
+    }
+    button {
+        font-size: 0.95rem; /* Adjust font size */
+        padding: 11px 18px; /* Adjust padding */
+    }
+}
+
+/* Medium Devices (Small Laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #service-request-section {
+        padding: 30px 20px; /* Default padding */
+        margin-top: 100px; /* Default margin */
+    }
+    #contact-us {
+        padding: 30px 20px; /* Default padding */
+        margin-top: 500px; /* Adjust margin for small laptops */
+    }
+    form {
+        padding: 20px; /* Default padding */
+    }
+    form h2 {
+        font-size: 2rem; /* Default font size */
+        margin-bottom: 20px; /* Default margin */
+    }
+    input, textarea {
+        padding: 12px; /* Default padding */
+        font-size: 1rem; /* Default font size */
+    }
+    .form-row {
+        flex-direction: row; /* Default flex direction */
+    }
+    .form-row .half-width {
+        width: 48%; /* Default width */
+    }
+    button {
+        font-size: 1rem; /* Default font size */
+        padding: 12px 20px; /* Default padding */
+    }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    #service-request-section {
+        padding: 30px 20px; /* Default padding */
+        margin-top: 100px; /* Default margin */
+    }
+    #contact-us {
+        padding: 30px 20px; /* Default padding */
+        margin-top: 600px; /* Default margin */
+    }
+    form {
+        padding: 20px; /* Default padding */
+    }
+    form h2 {
+        font-size: 2rem; /* Default font size */
+        margin-bottom: 20px; /* Default margin */
+    }
+    input, textarea {
+        padding: 12px; /* Default padding */
+        font-size: 1rem; /* Default font size */
+    }
+    .form-row {
+        flex-direction: row; /* Default flex direction */
+    }
+    .form-row .half-width {
+        width: 48%; /* Default width */
+    }
+    button {
+        font-size: 1rem; /* Default font size */
+        padding: 12px 20px; /* Default padding */
+    }
+}
+
+/* Extra Large Devices (Large Desktops) */
+@media (min-width: 1201px) {
+    #service-request-section {
+        padding: 30px 20px; /* Default padding */
+        margin-top: 100px; /* Default margin */
+    }
+    #contact-us {
+        padding: 30px 20px; /* Default padding */
+        margin-top: 600px; /* Default margin */
+    }
+    form {
+        padding: 20px; /* Default padding */
+    }
+    form h2 {
+        font-size: 2rem; /* Default font size */
+        margin-bottom: 20px; /* Default margin */
+    }
+    input, textarea {
+        padding: 12px; /* Default padding */
+        font-size: 1rem; /* Default font size */
+    }
+    .form-row {
+        flex-direction: row; /* Default flex direction */
+    }
+    .form-row .half-width {
+        width: 48%; /* Default width */
+    }
+    button {
+        font-size: 1rem; /* Default font size */
+        padding: 12px 20px; /* Default padding */
+    }
 }
 
 /* ***** Service Request Form End ***** */
@@ -1418,6 +2755,320 @@ footer .footer-menu ul li:hover .submenu {
     margin: 0 5px; /* Add some space between the icon and the text */
 }
 
+/* Extra Small Devices (Phones) */
+@media (max-width: 600px) {
+    footer {
+        padding: 30px 10px; /* Adjust padding for smaller screens */
+    }
+    footer .container {
+        flex-direction: column; /* Stack items vertically */
+        margin-left: 5%; /* Adjust margins */
+        margin-right: 5%; /* Adjust margins */
+    }
+    footer .map-container {
+        width: 100%; /* Full width */
+        height: 200px; /* Adjust height */
+        margin-right: 0; /* Remove right margin */
+    }
+    footer .footer-text {
+        margin-right: 5%; /* Adjust margins */
+        margin-left: 5%; /* Adjust margins */
+    }
+    .fake-button {
+        margin-left: 0; /* Adjust margin */
+        margin-bottom: 20px; /* Adjust margin */
+    }
+    .fake-button h1 {
+        font-size: 1.2rem; /* Adjust font size */
+    }
+    footer h2 {
+        font-size: 1.5rem; /* Adjust font size */
+    }
+    footer p {
+        font-size: 0.9rem; /* Adjust font size */
+        padding: 0 10px; /* Adjust padding */
+    }
+    .social-media {
+        padding: 15px 0; /* Adjust padding */
+    }
+    .social-media i {
+        font-size: 1.5rem; /* Adjust icon size */
+    }
+    footer .footer-menu {
+        flex-direction: column; /* Stack items vertically */
+        gap: 20px; /* Adjust gap */
+    }
+    footer .footer-menu div {
+        width: 100%; /* Full width */
+    }
+    footer .footer-menu h4 {
+        font-size: 0.9rem; /* Adjust font size */
+    }
+    footer .footer-menu ul li a {
+        font-size: 0.8rem; /* Adjust font size */
+    }
+    .sub-footer {
+        font-size: 0.9rem; /* Adjust font size */
+    }
+    #sub-footer-items {
+        font-size: 1rem; /* Adjust font size */
+    }
+    #sub-footer-items-2 {
+        font-size: 0.7rem; /* Adjust font size */
+    }
+}
+
+/* Small Devices (Tablets) */
+@media (min-width: 601px) and (max-width: 768px) {
+    footer {
+        padding: 40px 15px; /* Adjust padding for tablets */
+    }
+    footer .container {
+        flex-direction: column; /* Stack items vertically */
+        margin-left: 10%; /* Adjust margins */
+        margin-right: 10%; /* Adjust margins */
+    }
+    footer .map-container {
+        width: 100%; /* Full width */
+        height: 250px; /* Adjust height */
+        margin-right: 0; /* Remove right margin */
+    }
+    footer .footer-text {
+        margin-right: 10%; /* Adjust margins */
+        margin-left: 10%; /* Adjust margins */
+    }
+    .fake-button {
+        margin-left: 0; /* Adjust margin */
+        margin-bottom: 20px; /* Adjust margin */
+    }
+    .fake-button h1 {
+        font-size: 1.3rem; /* Adjust font size */
+    }
+    footer h2 {
+        font-size: 1.75rem; /* Adjust font size */
+    }
+    footer p {
+        font-size: 0.95rem; /* Adjust font size */
+        padding: 0 15px; /* Adjust padding */
+    }
+    .social-media {
+        padding: 18px 0; /* Adjust padding */
+    }
+    .social-media i {
+        font-size: 1.75rem; /* Adjust icon size */
+    }
+    footer .footer-menu {
+        flex-direction: column; /* Stack items vertically */
+        gap: 25px; /* Adjust gap */
+    }
+    footer .footer-menu div {
+        width: 100%; /* Full width */
+    }
+    footer .footer-menu h4 {
+        font-size: 0.95rem; /* Adjust font size */
+    }
+    footer .footer-menu ul li a {
+        font-size: 0.85rem; /* Adjust font size */
+    }
+    .sub-footer {
+        font-size: 0.95rem; /* Adjust font size */
+    }
+    #sub-footer-items {
+        font-size: 1.1rem; /* Adjust font size */
+    }
+    #sub-footer-items-2 {
+        font-size: 0.75rem; /* Adjust font size */
+    }
+}
+
+/* Medium Devices (Small Laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    footer {
+        padding: 50px 20px; /* Default padding */
+    }
+    footer .container {
+        flex-direction: row; /* Default flex direction */
+        margin-left: 15%; /* Default margins */
+        margin-right: 15%; /* Default margins */
+    }
+    footer .map-container {
+        width: 46%; /* Default width */
+        height: 350px; /* Default height */
+        margin-right: 20px; /* Default margin */
+    }
+    footer .footer-text {
+        margin-right: 15%; /* Default margins */
+        margin-left: 15%; /* Default margins */
+    }
+    .fake-button {
+        margin-left: 100px; /* Default margin */
+        margin-bottom: 20px; /* Default margin */
+    }
+    .fake-button h1 {
+        font-size: 1.5rem; /* Default font size */
+    }
+    footer h2 {
+        font-size: 2rem; /* Default font size */
+    }
+    footer p {
+        font-size: 1rem; /* Default font size */
+        padding: 0 20px; /* Default padding */
+    }
+    .social-media {
+        padding: 20px 0; /* Default padding */
+    }
+    .social-media i {
+        font-size: 2rem; /* Default icon size */
+    }
+    footer .footer-menu {
+        flex-direction: row; /* Default flex direction */
+        gap: 5%; /* Default gap */
+    }
+    footer .footer-menu div {
+        width: 200px; /* Default width */
+    }
+    footer .footer-menu h4 {
+        font-size: 1rem; /* Default font size */
+    }
+    footer .footer-menu ul li a {
+        font-size: 0.9rem; /* Default font size */
+    }
+    .sub-footer {
+        font-size: 1rem; /* Default font size */
+    }
+    #sub-footer-items {
+        font-size: 1.3rem; /* Default font size */
+    }
+    #sub-footer-items-2 {
+        font-size: 0.8rem; /* Default font size */
+    }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    footer {
+        padding: 50px 20px; /* Default padding */
+    }
+    footer .container {
+        flex-direction: row; /* Default flex direction */
+        margin-left: 15%; /* Default margins */
+        margin-right: 15%; /* Default margins */
+    }
+    footer .map-container {
+        width: 46%; /* Default width */
+        height: 350px; /* Default height */
+        margin-right: 20px; /* Default margin */
+    }
+    footer .footer-text {
+        margin-right: 15%; /* Default margins */
+        margin-left: 15%; /* Default margins */
+    }
+    .fake-button {
+        margin-left: 100px; /* Default margin */
+        margin-bottom: 20px; /* Default margin */
+    }
+    .fake-button h1 {
+        font-size: 1.5rem; /* Default font size */
+    }
+    footer h2 {
+        font-size: 2rem; /* Default font size */
+    }
+    footer p {
+        font-size: 1rem; /* Default font size */
+        padding: 0 20px; /* Default padding */
+    }
+    .social-media {
+        padding: 20px 0; /* Default padding */
+    }
+    .social-media i {
+        font-size: 2rem; /* Default icon size */
+    }
+    footer .footer-menu {
+        flex-direction: row; /* Default flex direction */
+        gap: 5%; /* Default gap */
+    }
+    footer .footer-menu div {
+        width: 200px; /* Default width */
+    }
+    footer .footer-menu h4 {
+        font-size: 1rem; /* Default font size */
+    }
+    footer .footer-menu ul li a {
+        font-size: 0.9rem; /* Default font size */
+    }
+    .sub-footer {
+        font-size: 1rem; /* Default font size */
+    }
+    #sub-footer-items {
+        font-size: 1.3rem; /* Default font size */
+    }
+    #sub-footer-items-2 {
+        font-size: 0.8rem; /* Default font size */
+    }
+}
+
+/* Extra Large Devices (Large Desktops) */
+@media (min-width: 1201px) {
+    footer {
+        padding: 50px 20px; /* Default padding */
+    }
+    footer .container {
+        flex-direction: row; /* Default flex direction */
+        margin-left: 15%; /* Default margins */
+        margin-right: 15%; /* Default margins */
+    }
+    footer .map-container {
+        width: 46%; /* Default width */
+        height: 350px; /* Default height */
+        margin-right: 20px; /* Default margin */
+    }
+    footer .footer-text {
+        margin-right: 15%; /* Default margins */
+        margin-left: 15%; /* Default margins */
+    }
+    .fake-button {
+        margin-left: 100px; /* Default margin */
+        margin-bottom: 20px; /* Default margin */
+    }
+    .fake-button h1 {
+        font-size: 1.5rem; /* Default font size */
+    }
+    footer h2 {
+        font-size: 2rem; /* Default font size */
+    }
+    footer p {
+        font-size: 1rem; /* Default font size */
+        padding: 0 20px; /* Default padding */
+    }
+    .social-media {
+        padding: 20px 0; /* Default padding */
+    }
+    .social-media i {
+        font-size: 2rem; /* Default icon size */
+    }
+    footer .footer-menu {
+        flex-direction: row; /* Default flex direction */
+        gap: 5%; /* Default gap */
+    }
+    footer .footer-menu div {
+        width: 200px; /* Default width */
+    }
+    footer .footer-menu h4 {
+        font-size: 1rem; /* Default font size */
+    }
+    footer .footer-menu ul li a {
+        font-size: 0.9rem; /* Default font size */
+    }
+    .sub-footer {
+        font-size: 1rem; /* Default font size */
+    }
+    #sub-footer-items {
+        font-size: 1.3rem; /* Default font size */
+    }
+    #sub-footer-items-2 {
+        font-size: 0.8rem; /* Default font size */
+    }
+}
 
 /* Footer End */
 
