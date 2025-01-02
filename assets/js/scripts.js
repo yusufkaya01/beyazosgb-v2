@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="content-wrapper">
                 <div class="text-content">
                     <h2>İş Sağlığı Ve Güvenliği Eğitim Hizmeti</h2>
-                    <p>İş sağlığı ve güvenliği eğitim hizmetlerimizle, 6331 sayılı iş sağlığı ve güvenliği kanunu çalışanların eğitimi madde 17 kapsamında çalışanların ISG ile ilgili mevzuatta belirtilen tüm eğitimlerini veriyoruz. Eğitimler işletmelerde sağlıklı ve güvenli ortamlar oluşturmak, iş kazaları ve meslek hastalıklarını azaltmak amacıyla düzenlenmektedir. Bu eğitimlerde çalışanlar yasal hak ve sorumlulukları konusunda ve karşılaşabilecekleri mesleki riskler ve bu riskler için alınması gerekli tedbirler konusunda bilinçlendirilirler. Çalışanlara eğitimler sonunda sertifikalarını veriyoruz.</p>
+                    <p>İş sağlığı ve güvenliği eğitim hizmetlerimizle, 6331 sayılı iş sağlığı ve güvenliği kanunu çalışanların eğitimi madde 17 kapsamında çalışanların İSG ile ilgili mevzuatta belirtilen tüm eğitimlerini veriyoruz. Eğitimler işletmelerde sağlıklı ve güvenli ortamlar oluşturmak, iş kazaları ve meslek hastalıklarını azaltmak amacıyla düzenlenmektedir. Bu eğitimlerde çalışanlar yasal hak ve sorumlulukları konusunda ve karşılaşabilecekleri mesleki riskler ve bu riskler için alınması gerekli tedbirler konusunda bilinçlendirilirler. Çalışanlara eğitimler sonunda sertifikalarını veriyoruz.</p>
                 </div>
                 <div class="image-content">
                     <img src="../../assets/images/osgb-5.png" alt="İş Sağlığı Ve Güvenliği Eğitim Hizmeti">
