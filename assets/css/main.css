@@ -1851,6 +1851,11 @@ footer .services-container {
         flex: 0 0 auto; /* Adjust the width */
         margin-bottom: 20px; /* Add margin below the image */
     }
+
+    .image-content img {
+    max-width: 7%;
+    height: auto;
+    }
 }
 
 /* Small Devices (Tablets) */
@@ -1886,6 +1891,10 @@ footer .services-container {
     .image-content {
         flex: 0 0 auto; /* Adjust the width */
         margin-bottom: 20px; /* Add margin below the image */
+    }
+    .image-content img {
+    max-width: 7%;
+    height: auto;
     }
 }
 
