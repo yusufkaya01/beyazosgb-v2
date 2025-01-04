@@ -441,6 +441,9 @@ a {
     .logo-icon-top img {
         width: 40px; /* Adjust the size as needed */
     }
+    .logo-icon-top {
+        left: 500px;
+    }
 }
 
 /* Medium Devices (Small Laptops) */
@@ -470,7 +473,7 @@ a {
 }
 
 /* Extra Large Devices (Large Desktops) */
-@media (min-width: 1201px) {
+@media (min-width: 1201px) and (max-width: 1600px) {
     .whatsapp-icon img {
         width: 100px; /* Adjust the size as needed */
     }
@@ -479,6 +482,10 @@ a {
     }
     .logo-icon-top img {
         width: 50px; /* Adjust the size as needed */
+    }
+
+    .logo-icon-top {
+        left: 50px;
     }
 }
 
@@ -751,11 +758,11 @@ nav {
         align-items: flex-start; /* Align items to the start */
     }
     .menu-item > a {
-        font-size: 0.8rem;
+        font-size: 0.01rem;
         padding: 8px 10px;
     }
     .menu-item-title {
-        font-size: 0.9rem;
+        font-size: 2rem;
         padding: 8px 10px;
     }
     .submenu li a, .submenu-btn {
@@ -788,6 +795,9 @@ nav {
         z-index: 1000; /* Ensure menu is on top of everything */
         overflow-y: auto; /* Enable scrolling if the menu is too tall */
     }
+    .toggle-btn {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
 }
 
 /* Small Devices (Tablets) */
@@ -800,11 +810,11 @@ nav {
         gap: 15px;
     }
     .menu-item > a {
-        font-size: 0.9rem;
+        font-size: 0.01rem;
         padding: 9px 12px;
     }
     .menu-item-title {
-        font-size: 1rem;
+        font-size: 2rem;
         padding: 9px 12px;
     }
     .submenu li a, .submenu-btn {
@@ -836,6 +846,9 @@ nav {
         background-color: white; /* Background color for the menu */
         z-index: 1000; /* Ensure menu is on top of everything */
         overflow-y: auto; /* Enable scrolling if the menu is too tall */
+    }
+    .toggle-btn {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
     }
 }
 
@@ -1847,6 +1860,9 @@ footer .services-container {
     .content-display {
         flex-direction: column; /* Stack content vertically */
     }
+    .text-content h2 {
+        text-align: left;
+    }
     .image-content {
         flex: 0 0 auto; /* Adjust the width */
         margin-bottom: 20px; /* Add margin below the image */
@@ -1855,6 +1871,7 @@ footer .services-container {
     .image-content img {
     max-width: 7%;
     height: auto;
+    display: none;
     }
 }
 
@@ -1888,6 +1905,9 @@ footer .services-container {
     .content-display {
         flex-direction: column; /* Stack content vertically */
     }
+    .text-content h2 {
+        text-align: left;
+    }
     .image-content {
         flex: 0 0 auto; /* Adjust the width */
         margin-bottom: 20px; /* Add margin below the image */
@@ -1895,6 +1915,7 @@ footer .services-container {
     .image-content img {
     max-width: 7%;
     height: auto;
+    display: none;
     }
 }
 
@@ -1927,6 +1948,9 @@ footer .services-container {
     }
     .content-display {
         flex-direction: row; /* Default flex direction */
+    }
+    .text-content h2 {
+        text-align: left;
     }
     .image-content {
         flex: 0 0 250px; /* Default width */
