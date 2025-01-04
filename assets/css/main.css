@@ -188,13 +188,11 @@ a {
 /* Extra Large Devices (Large Desktops) */
 @media (min-width: 1201px) {
     .left-image-decor {
-        background-size: 100%;
         height: 110%;
         margin-top: -200px;
         left: -8%;
     }
     .right-image-decor {
-        background-size: 100%;
         height: 110%;
         margin-top: -200px;
         right: -8%;
@@ -501,7 +499,7 @@ nav {
     left: 0; /* Align to the left edge */
     width: 100%; /* Make the menu full width */
     z-index: 1000; /* Ensure the menu stays on top of other content */
-    height: 40px;
+    height: 55px !important;
 }
 
 /* Parent menu */
@@ -540,7 +538,7 @@ nav {
     font-weight: 700;
     font-family: "Poppins", serif;
     font-style: normal;
-    margin-top: 0px;
+    margin-top: -25px;
     line-height: 1; /* Ensure consistent height */
 }
 
@@ -1199,7 +1197,7 @@ nav {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a modern look */
     transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
-    text-align: center;
+    text-align: justify;
 }
 
 .why-us-item:hover {
@@ -1214,6 +1212,7 @@ nav {
     color: #d83200; /* A red color for subheadings */
     margin-bottom: 15px;
     font-weight: bold;
+    text-align: center;
 }
 
 /* Styling for the Images */
@@ -1229,6 +1228,7 @@ nav {
     color: black;
     line-height: 1.6;
 }
+
 
 /* Extra Small Devices (Phones) */
 @media (max-width: 600px) {
@@ -1423,6 +1423,7 @@ footer .services-container {
 }
 
 
+
 #services-section .btn-services {
     display: inline-block;
     padding: 10px 20px;
@@ -1511,6 +1512,8 @@ footer .services-container {
     text-align: left;
 }
 
+
+
 /* Styling for the Service Title (h4) */
 #services-section ul li .text h4 {
     font-size: 1.2rem;
@@ -1524,6 +1527,7 @@ footer .services-container {
     font-size: 1rem;
     color: #666;
     line-height: 1.6;
+    text-align: justify;
 }
 
 /* Styling for the "Daha Fazla" Link */
