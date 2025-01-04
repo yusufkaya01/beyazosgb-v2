@@ -1473,7 +1473,7 @@ footer .services-container {
 #services-section h2 {
     color: #d83200; /* Lighter orange color for subheadings */
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     font-weight: bold;
 }
 
@@ -1504,7 +1504,7 @@ footer .services-container {
 #services-section ul li {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     padding: 15px;
     border: 1px solid #ddd; /* Light border for each service item */
     border-radius: 10px;
@@ -1539,7 +1539,7 @@ footer .services-container {
 #services-section ul li .text p {
     font-size: 1rem;
     color: #666;
-    line-height: 1.6;
+    line-height: 1.4;
     text-align: justify;
 }
 
