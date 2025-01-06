@@ -81,7 +81,7 @@ a {
 }
 
 /* Extra Large Devices (Large Desktops) */
-@media (min-width: 1201px) {
+@media (min-width: 1201px) and (max-width: 1900px) {
     body {
         margin-top: 60px; /* Adjust this based on your menu height */
         margin-left: 8%;
@@ -90,6 +90,19 @@ a {
     }
     body::before {
         background-size: 36%; /* Adjust background size for large desktops */
+    }
+}
+
+/* Ultra Large Devices (Screens larger than 1900px) */
+@media (min-width: 1901px) {
+    body {
+        margin-top: 60px; /* Adjust this based on your menu height */
+        margin-left: 8%;
+        margin-right: 5%;
+        font-size: 24px;
+    }
+    body::before {
+        background-size: 36%; /* Adjust background size for ultra large screens */
     }
 }
 
@@ -186,7 +199,21 @@ a {
 }
 
 /* Extra Large Devices (Large Desktops) */
-@media (min-width: 1201px) {
+@media (min-width: 1201px) and (max-width: 1900px) {
+    .left-image-decor {
+        height: 110%;
+        margin-top: -200px;
+        left: -8%;
+    }
+    .right-image-decor {
+        height: 110%;
+        margin-top: -200px;
+        right: -8%;
+    }
+}
+
+/* Ultra Large Devices (Screens larger than 1900px) */
+@media (min-width: 1901px) {
     .left-image-decor {
         height: 110%;
         margin-top: -200px;
@@ -374,6 +401,15 @@ a {
     }
 }
 
+/* Ultra Large Devices (Screens larger than 1900px) */
+@media (min-width: 1901px) {
+    .poppins-thin, .poppins-extralight, .poppins-light, .poppins-regular, .poppins-medium, .poppins-semibold, .poppins-bold, .poppins-extrabold, .poppins-black,
+    .poppins-thin-italic, .poppins-extralight-italic, .poppins-light-italic, .poppins-regular-italic, .poppins-medium-italic, .poppins-semibold-italic, .poppins-bold-italic, .poppins-extrabold-italic, .poppins-black-italic,
+    .libre-baskerville-regular, .libre-baskerville-bold, .libre-baskerville-regular-italic {
+        font-size: 24px; /* Adjust as needed */
+    }
+}
+
 /* Fonts End*/
 
 /* Static Logos Start*/
@@ -470,6 +506,9 @@ a {
     .logo-icon-top img {
         width: 50px; /* Adjust the size as needed */
     }
+    .logo-icon-top {
+        left: 0px;
+    }
 }
 
 /* Extra Large Devices (Large Desktops) */
@@ -481,11 +520,11 @@ a {
         width: 80px; /* Adjust the size as needed */
     }
     .logo-icon-top img {
-        width: 50px; /* Adjust the size as needed */
+        width: 45px; /* Adjust the size as needed */
     }
 
     .logo-icon-top {
-        left: 50px;
+        left: 0px;
     }
 }
 
@@ -954,6 +993,40 @@ nav {
     }
 }
 
+/* Ultra Large Devices (Screens larger than 1600px) */
+@media (min-width: 1601px) {
+    nav {
+        padding: 10px 0;
+        height: 45px;
+    }
+    .menu {
+        gap: 25px;
+    }
+    .menu-item > a {
+        font-size: 1.1rem;
+        padding: 12px 18px;
+    }
+    .menu-item-title {
+        font-size: 1.2rem;
+        padding: 12px 18px;
+    }
+    .submenu li a, .submenu-btn {
+        font-size: 1.1rem;
+        padding: 12px 18px;
+    }
+    .hamburger {
+        display: none; /* Hide hamburger menu */
+        font-size: 2.7rem; /* 1.7 times bigger than 1.6rem */
+        top: 10px;
+        right: 70px;
+        position: absolute;
+    }
+    .menu {
+        display: flex; /* Show menu by default */
+        flex-direction: row; /* Align menu items in a row */
+    }
+}
+
 /****** Menu End *********/
 
 
@@ -1171,6 +1244,33 @@ nav {
     }
 }
 
+/* Ultra Large Devices (Screens larger than 1600px) */
+@media (min-width: 1601px) {
+    .header-container {
+        padding: 60px 30px; /* Adjust padding for ultra large screens */
+    }
+    .header-content {
+        flex-direction: row; /* Align elements side by side */
+        text-align: justify; /* Justify text */
+    }
+    .header-text {
+        max-width: 50%; /* Take half the width */
+    }
+    .header-text h1 {
+        font-size: 2.5rem; /* Adjust font size */
+    }
+    .header-text p {
+        font-size: 1.2rem; /* Adjust font size */
+    }
+    .header-text .btn-services {
+        font-size: 1.2rem; /* Adjust font size */
+        padding: 12px 24px; /* Adjust padding */
+    }
+    .header-image {
+        max-width: 50%; /* Adjust width */
+        text-align: right; /* Align image to the right */
+    }
+}
 
 /* Header Styles End*/
 
@@ -1361,6 +1461,30 @@ nav {
     }
     .why-us-item img {
         max-width: 80px; /* Default image size */
+    }
+}
+
+/* Ultra Large Devices (Screens larger than 1600px) */
+@media (min-width: 1601px) {
+    #why-us-section {
+        padding: 60px 30px; /* Adjust padding for ultra large screens */
+    }
+    .why-us-item {
+        width: 20%; /* Each item takes 20% of the width */
+        margin: 15px; /* Adjust margin */
+    }
+    #why-us-section h1 {
+        font-size: 1.8rem; /* Adjust font size */
+        padding: 12px 25px; /* Adjust padding */
+    }
+    .why-us-item h2 {
+        font-size: 1.4rem; /* Adjust font size */
+    }
+    .why-us-item p {
+        font-size: 1.2rem; /* Adjust font size */
+    }
+    .why-us-item img {
+        max-width: 90px; /* Adjust image size */
     }
 }
 
@@ -1711,6 +1835,37 @@ footer .services-container {
     }
 }
 
+/* Ultra Large Devices (Screens larger than 1600px) */
+@media (min-width: 1601px) {
+    #services-section {
+        padding: 60px 30px; /* Adjust padding for ultra large screens */
+    }
+    #services-section .btn-services {
+        font-size: 1.7rem; /* Adjust font size */
+        padding: 12px 24px; /* Adjust padding */
+    }
+    #services-section h1 {
+        font-size: 2.2rem; /* Adjust font size */
+    }
+    #services-section h2 {
+        font-size: 2.2rem; /* Adjust font size */
+    }
+    #services-section ul li {
+        width: 60%; /* Each item takes 60% of the width */
+        margin-left: 20%; /* Center align */
+    }
+    #services-section ul li img {
+        width: 80px; /* Adjust image size */
+        height: 80px; /* Adjust image size */
+    }
+    #services-section ul li .text h4 {
+        font-size: 1.4rem; /* Adjust font size */
+    }
+    #services-section ul li .text p {
+        font-size: 1.2rem; /* Adjust font size */
+    }
+}
+
 /* Services Section Styles End */
 
 
@@ -2028,6 +2183,76 @@ footer .services-container {
     }
 }
 
+/* Extra Large Devices (1201px to 1600px) */
+@media (min-width: 1201px) and (max-width: 1600px) {
+    #services-page-section {
+        padding: 50px 20px; /* Default padding */
+        margin-top: 100px; /* Default margin */
+    }
+    #services-page-section h1 {
+        font-size: 2rem; /* Default font size */
+        margin-top: -30px; /* Default margin */
+    }
+    #services-page-section h2 > a {
+        font-size: 1.5rem; /* Default font size */
+    }
+    .services-page-item {
+        max-width: 250px; /* Smaller width */
+        margin: 20px auto; /* Default margin */
+    }
+    .services-page-item img {
+        width: 45px; /* Smaller image size */
+        height: 45px; /* Smaller image size */
+    }
+    .services-page-item h2 {
+        font-size: 1.1rem; /* Smaller font size */
+    }
+    .services-page-item h2 a {
+        font-size: 0.95rem !important; /* Smaller font size */
+    }
+    .content-display {
+        flex-direction: row; /* Default flex direction */
+    }
+    .image-content {
+        flex: 0 0 200px; /* Smaller width */
+    }
+}
+
+/* Ultra Large Devices (Screens larger than 1600px) */
+@media (min-width: 1601px) {
+    #services-page-section {
+        padding: 60px 30px; /* Adjust padding for ultra large screens */
+        margin-top: 120px; /* Adjust margin for ultra large screens */
+    }
+    #services-page-section h1 {
+        font-size: 2.2rem; /* Adjust font size */
+        margin-top: -35px; /* Adjust margin */
+    }
+    #services-page-section h2 > a {
+        font-size: 1.7rem; /* Adjust font size */
+    }
+    .services-page-item {
+        max-width: 280px; /* Adjust width */
+        margin: 25px auto; /* Adjust margin */
+    }
+    .services-page-item img {
+        width: 50px; /* Default image size */
+        height: 50px; /* Default image size */
+    }
+    .services-page-item h2 {
+        font-size: 1.2rem; /* Default font size */
+    }
+    .services-page-item h2 a {
+        font-size: 1rem !important; /* Default font size */
+    }
+    .content-display {
+        flex-direction: row; /* Default flex direction */
+    }
+    .image-content {
+        flex: 0 0 250px; /* Default width */
+    }
+}
+
 /* Services Page Styles End */
 
 
@@ -2134,6 +2359,36 @@ footer .services-container {
         margin-right: 15%; /* Default margins */
         font-size: 1rem; /* Default font size */
         margin-bottom: 50px; /* Default margin */
+    }
+}
+
+/* Extra Large Devices (1201px to 1600px) */
+@media (min-width: 1201px) and (max-width: 1600px) {
+    .about-us h1 {
+        margin-top: 100px; /* Default margin */
+        font-size: 1.8rem; /* Slightly smaller font size */
+        margin-bottom: 35px; /* Adjust margin */
+    }
+    .about-us p, .about-us ol {
+        margin-left: 12%; /* Adjust margins */
+        margin-right: 12%; /* Adjust margins */
+        font-size: 0.95rem; /* Slightly smaller font size */
+        margin-bottom: 45px; /* Adjust margin */
+    }
+}
+
+/* Ultra Large Devices (Screens larger than 1600px) */
+@media (min-width: 1601px) {
+    .about-us h1 {
+        margin-top: 120px; /* Increase margin for ultra large screens */
+        font-size: 2.2rem; /* Increase font size */
+        margin-bottom: 45px; /* Increase margin */
+    }
+    .about-us p, .about-us ol {
+        margin-left: 18%; /* Increase margins */
+        margin-right: 18%; /* Increase margins */
+        font-size: 1.1rem; /* Increase font size */
+        margin-bottom: 55px; /* Increase margin */
     }
 }
 
@@ -2328,6 +2583,60 @@ footer .services-container {
     #faq-section div {
         margin-bottom: 30px; /* Default margin */
         padding-left: 20px; /* Default padding */
+    }
+}
+
+/* Extra Large Devices (1201px to 1600px) */
+@media (min-width: 1201px) and (max-width: 1600px) {
+    #faq-section {
+        padding: 40px 20px; /* Default padding */
+    }
+    #faq-section h2 {
+        font-size: 1.8rem; /* Slightly smaller font size */
+        margin-bottom: 18px; /* Adjust margin */
+    }
+    #faq-section p {
+        font-size: 0.95rem; /* Slightly smaller font size */
+        margin-bottom: 35px; /* Adjust margin */
+    }
+    #faq-section h3 {
+        font-size: 1.1rem; /* Slightly smaller font size */
+        margin-bottom: 9px; /* Adjust margin */
+    }
+    #faq-section div p {
+        font-size: 0.95rem; /* Slightly smaller font size */
+        margin-bottom: 18px; /* Adjust margin */
+    }
+    #faq-section div {
+        margin-bottom: 25px; /* Adjust margin */
+        padding-left: 15px; /* Adjust padding */
+    }
+}
+
+/* Ultra Large Devices (Screens larger than 1600px) */
+@media (min-width: 1601px) {
+    #faq-section {
+        padding: 50px 30px; /* Increase padding for ultra large screens */
+    }
+    #faq-section h2 {
+        font-size: 2.2rem; /* Increase font size */
+        margin-bottom: 22px; /* Increase margin */
+    }
+    #faq-section p {
+        font-size: 1.1rem; /* Increase font size */
+        margin-bottom: 45px; /* Increase margin */
+    }
+    #faq-section h3 {
+        font-size: 1.3rem; /* Increase font size */
+        margin-bottom: 12px; /* Increase margin */
+    }
+    #faq-section div p {
+        font-size: 1.1rem; /* Increase font size */
+        margin-bottom: 22px; /* Increase margin */
+    }
+    #faq-section div {
+        margin-bottom: 35px; /* Increase margin */
+        padding-left: 25px; /* Increase padding */
     }
 }
 
@@ -2592,6 +2901,72 @@ button:hover {
     }
 }
 
+/* Extra Large Devices (1201px to 1600px) */
+@media (min-width: 1201px) and (max-width: 1600px) {
+    #service-request-section {
+        padding: 30px 20px; /* Default padding */
+        margin-top: 100px; /* Default margin */
+    }
+    #contact-us {
+        padding: 30px 20px; /* Default padding */
+        margin-top: 600px; /* Default margin */
+    }
+    form {
+        padding: 20px; /* Default padding */
+    }
+    form h2 {
+        font-size: 1.8rem; /* Slightly smaller font size */
+        margin-bottom: 18px; /* Adjust margin */
+    }
+    input, textarea {
+        padding: 11px; /* Slightly smaller padding */
+        font-size: 0.95rem; /* Slightly smaller font size */
+    }
+    .form-row {
+        flex-direction: row; /* Default flex direction */
+    }
+    .form-row .half-width {
+        width: 48%; /* Default width */
+    }
+    button {
+        font-size: 0.95rem; /* Slightly smaller font size */
+        padding: 11px 18px; /* Slightly smaller padding */
+    }
+}
+
+/* Ultra Large Devices (Screens larger than 1600px) */
+@media (min-width: 1601px) {
+    #service-request-section {
+        padding: 40px 30px; /* Increase padding for ultra large screens */
+        margin-top: 120px; /* Increase margin for ultra large screens */
+    }
+    #contact-us {
+        padding: 40px 30px; /* Increase padding for ultra large screens */
+        margin-top: 700px; /* Increase margin for ultra large screens */
+    }
+    form {
+        padding: 25px; /* Increase padding */
+    }
+    form h2 {
+        font-size: 2.2rem; /* Increase font size */
+        margin-bottom: 22px; /* Increase margin */
+    }
+    input, textarea {
+        padding: 14px; /* Increase padding */
+        font-size: 1.1rem; /* Increase font size */
+    }
+    .form-row {
+        flex-direction: row; /* Default flex direction */
+    }
+    .form-row .half-width {
+        width: 48%; /* Default width */
+    }
+    button {
+        font-size: 1.1rem; /* Increase font size */
+        padding: 14px 22px; /* Increase padding */
+    }
+}
+
 /* ***** Service Request Form End ***** */
 
 
@@ -2807,6 +3182,7 @@ footer .footer-menu ul li:hover .submenu {
         width: 100%; /* Full width */
         height: 200px; /* Adjust height */
         margin-right: 0; /* Remove right margin */
+        margin-bottom: 200px;
     }
     footer .footer-text {
         margin-right: 5%; /* Adjust margins */
@@ -2870,6 +3246,7 @@ footer .footer-menu ul li:hover .submenu {
         width: 100%; /* Full width */
         height: 250px; /* Adjust height */
         margin-right: 0; /* Remove right margin */
+        margin-bottom: 200px;
     }
     footer .footer-text {
         margin-right: 10%; /* Adjust margins */
@@ -2925,14 +3302,17 @@ footer .footer-menu ul li:hover .submenu {
         padding: 50px 20px; /* Default padding */
     }
     footer .container {
+        display: flex; /* Ensure flexbox layout */
         flex-direction: row; /* Default flex direction */
+        align-items: flex-start; /* Align items to the top */
         margin-left: 15%; /* Default margins */
         margin-right: 15%; /* Default margins */
     }
     footer .map-container {
-        width: 46%; /* Default width */
+        width: 100%; /* Default width */
         height: 350px; /* Default height */
         margin-right: 20px; /* Default margin */
+        margin-bottom: 100px;
     }
     footer .footer-text {
         margin-right: 15%; /* Default margins */
@@ -2988,14 +3368,17 @@ footer .footer-menu ul li:hover .submenu {
         padding: 50px 20px; /* Default padding */
     }
     footer .container {
+        display: flex; /* Ensure flexbox layout */
         flex-direction: row; /* Default flex direction */
+        align-items: flex-start; /* Align items to the top */
         margin-left: 15%; /* Default margins */
         margin-right: 15%; /* Default margins */
     }
     footer .map-container {
-        width: 46%; /* Default width */
+        width: 100%; /* Default width */
         height: 350px; /* Default height */
         margin-right: 20px; /* Default margin */
+        margin-bottom: 100px;
     }
     footer .footer-text {
         margin-right: 15%; /* Default margins */
@@ -3045,66 +3428,131 @@ footer .footer-menu ul li:hover .submenu {
     }
 }
 
-/* Extra Large Devices (Large Desktops) */
-@media (min-width: 1201px) {
+/* Extra Large Devices (1201px to 1600px) */
+@media (min-width: 1201px) and (max-width: 1600px) {
     footer {
         padding: 50px 20px; /* Default padding */
     }
     footer .container {
+        display: flex; /* Ensure flexbox layout */
         flex-direction: row; /* Default flex direction */
-        margin-left: 15%; /* Default margins */
-        margin-right: 15%; /* Default margins */
+        align-items: flex-start; /* Align items to the top */
+        margin-left: 10%; /* Adjust margins */
+        margin-right: 10%; /* Adjust margins */
     }
     footer .map-container {
-        width: 46%; /* Default width */
+        width: 33%; /* Slightly smaller width */
         height: 350px; /* Default height */
         margin-right: 20px; /* Default margin */
     }
     footer .footer-text {
-        margin-right: 15%; /* Default margins */
-        margin-left: 15%; /* Default margins */
+        margin-right: 10%; /* Adjust margins */
+        margin-left: 10%; /* Adjust margins */
     }
     .fake-button {
-        margin-left: 100px; /* Default margin */
+        margin-left: 80px; /* Adjust margin */
         margin-bottom: 20px; /* Default margin */
     }
     .fake-button h1 {
-        font-size: 1.5rem; /* Default font size */
+        font-size: 1.4rem; /* Slightly smaller font size */
     }
     footer h2 {
-        font-size: 2rem; /* Default font size */
+        font-size: 1.8rem; /* Slightly smaller font size */
     }
     footer p {
-        font-size: 1rem; /* Default font size */
+        font-size: 0.95rem; /* Slightly smaller font size */
         padding: 0 20px; /* Default padding */
     }
     .social-media {
         padding: 20px 0; /* Default padding */
     }
     .social-media i {
-        font-size: 2rem; /* Default icon size */
+        font-size: 1.8rem; /* Slightly smaller icon size */
     }
     footer .footer-menu {
         flex-direction: row; /* Default flex direction */
-        gap: 5%; /* Default gap */
+        gap: 4%; /* Adjust gap */
     }
     footer .footer-menu div {
-        width: 200px; /* Default width */
+        width: 180px; /* Slightly smaller width */
     }
     footer .footer-menu h4 {
-        font-size: 1rem; /* Default font size */
+        font-size: 0.95rem; /* Slightly smaller font size */
     }
     footer .footer-menu ul li a {
-        font-size: 0.9rem; /* Default font size */
+        font-size: 0.85rem; /* Slightly smaller font size */
     }
     .sub-footer {
-        font-size: 1rem; /* Default font size */
+        font-size: 0.95rem; /* Slightly smaller font size */
     }
     #sub-footer-items {
-        font-size: 1.3rem; /* Default font size */
+        font-size: 1.2rem; /* Slightly smaller font size */
     }
     #sub-footer-items-2 {
-        font-size: 0.8rem; /* Default font size */
+        font-size: 0.75rem; /* Slightly smaller font size */
+    }
+}
+
+/* Ultra Large Devices (Screens larger than 1600px) */
+@media (min-width: 1601px) {
+    footer {
+        padding: 60px 30px; /* Increase padding for ultra large screens */
+    }
+    footer .container {
+        flex-direction: row; /* Default flex direction */
+        margin-left: 20%; /* Increase margins */
+        margin-right: 20%; /* Increase margins */
+    }
+    footer .map-container {
+        width: 48%; /* Increase width */
+        height: 400px; /* Increase height */
+        margin-right: 30px; /* Increase margin */
+    }
+    footer .footer-text {
+        margin-right: 20%; /* Increase margins */
+        margin-left: 20%; /* Increase margins */
+    }
+    .fake-button {
+        margin-left: 120px; /* Increase margin */
+        margin-bottom: 25px; /* Increase margin */
+    }
+    .fake-button h1 {
+        font-size: 1.6rem; /* Increase font size */
+    }
+    footer h2 {
+        font-size: 2.2rem; /* Increase font size */
+    }
+    footer p {
+        font-size: 1.1rem; /* Increase font size */
+        padding: 0 25px; /* Increase padding */
+    }
+    .social-media {
+        padding: 25px 0; /* Increase padding */
+    }
+    .social-media i {
+        font-size: 2.2rem; /* Increase icon size */
+    }
+    footer .footer-menu {
+        flex-direction: row; /* Default flex direction */
+        gap: 6%; /* Increase gap */
+    }
+    footer .footer-menu div {
+        width: 220px; /* Increase width */
+    }
+    footer .footer-menu h4 {
+        font-size: 1.1rem; /* Increase font size */
+    }
+    footer .footer-menu ul li a {
+        font-size: 1rem; /* Increase font size */
+    }
+    .sub-footer {
+        font-size: 1.1rem; /* Increase font size */
+    }
+    #sub-footer-items {
+        font-size: 1.4rem; /* Increase font size */
+    }
+    #sub-footer-items-2 {
+        font-size: 0.9rem; /* Increase font size */
     }
 }
 
