@@ -1244,33 +1244,6 @@ nav {
     }
 }
 
-/* Ultra Large Devices (Screens larger than 1600px) */
-@media (min-width: 1601px) {
-    .header-container {
-        padding: 60px 30px; /* Adjust padding for ultra large screens */
-    }
-    .header-content {
-        flex-direction: row; /* Align elements side by side */
-        text-align: justify; /* Justify text */
-    }
-    .header-text {
-        max-width: 50%; /* Take half the width */
-    }
-    .header-text h1 {
-        font-size: 2.5rem; /* Adjust font size */
-    }
-    .header-text p {
-        font-size: 1.2rem; /* Adjust font size */
-    }
-    .header-text .btn-services {
-        font-size: 1.2rem; /* Adjust font size */
-        padding: 12px 24px; /* Adjust padding */
-    }
-    .header-image {
-        max-width: 50%; /* Adjust width */
-        text-align: right; /* Align image to the right */
-    }
-}
 
 /* Header Styles End*/
 
@@ -1464,29 +1437,7 @@ nav {
     }
 }
 
-/* Ultra Large Devices (Screens larger than 1600px) */
-@media (min-width: 1601px) {
-    #why-us-section {
-        padding: 60px 30px; /* Adjust padding for ultra large screens */
-    }
-    .why-us-item {
-        width: 20%; /* Each item takes 20% of the width */
-        margin: 15px; /* Adjust margin */
-    }
-    #why-us-section h1 {
-        font-size: 1.8rem; /* Adjust font size */
-        padding: 12px 25px; /* Adjust padding */
-    }
-    .why-us-item h2 {
-        font-size: 1.4rem; /* Adjust font size */
-    }
-    .why-us-item p {
-        font-size: 1.2rem; /* Adjust font size */
-    }
-    .why-us-item img {
-        max-width: 90px; /* Adjust image size */
-    }
-}
+
 
 /* Why Us Section Styles End */
 
@@ -1835,36 +1786,7 @@ footer .services-container {
     }
 }
 
-/* Ultra Large Devices (Screens larger than 1600px) */
-@media (min-width: 1601px) {
-    #services-section {
-        padding: 60px 30px; /* Adjust padding for ultra large screens */
-    }
-    #services-section .btn-services {
-        font-size: 1.7rem; /* Adjust font size */
-        padding: 12px 24px; /* Adjust padding */
-    }
-    #services-section h1 {
-        font-size: 2.2rem; /* Adjust font size */
-    }
-    #services-section h2 {
-        font-size: 2.2rem; /* Adjust font size */
-    }
-    #services-section ul li {
-        width: 60%; /* Each item takes 60% of the width */
-        margin-left: 20%; /* Center align */
-    }
-    #services-section ul li img {
-        width: 80px; /* Adjust image size */
-        height: 80px; /* Adjust image size */
-    }
-    #services-section ul li .text h4 {
-        font-size: 1.4rem; /* Adjust font size */
-    }
-    #services-section ul li .text p {
-        font-size: 1.2rem; /* Adjust font size */
-    }
-}
+
 
 /* Services Section Styles End */
 
