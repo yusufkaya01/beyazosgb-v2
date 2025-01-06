@@ -444,7 +444,7 @@ a {
   .logo-icon-top {
     position: fixed;
     top: 0px;
-    left: 210px;
+    left: 170px;
     z-index: 9990; /* Ensures it's above other content */
     }
   
