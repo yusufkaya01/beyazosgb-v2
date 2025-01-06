@@ -3499,9 +3499,12 @@ footer .footer-menu ul li:hover .submenu {
         padding: 60px 30px; /* Increase padding for ultra large screens */
     }
     footer .container {
+        display: flex; /* Ensure flexbox layout */
         flex-direction: row; /* Default flex direction */
-        margin-left: 20%; /* Increase margins */
-        margin-right: 20%; /* Increase margins */
+        align-items: flex-start; /* Align items to the top */
+        justify-content: space-between; /* Ensure items are spaced out */
+        margin-left: 10%; /* Adjust margins */
+        margin-right: 10%; /* Adjust margins */
     }
     footer .map-container {
         width: 48%; /* Increase width */
