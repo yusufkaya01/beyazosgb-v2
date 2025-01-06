@@ -1882,7 +1882,7 @@ footer .services-container {
     display: none;
     padding: 20px;
     background-color: #f9f9f9;
-    border: 1px solid #ddd;
+    border: 10px solid #ddd;
     margin-top: -40px;
     display: flex;
     align-items: flex-start;
